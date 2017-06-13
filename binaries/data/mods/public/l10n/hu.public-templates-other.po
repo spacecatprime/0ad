@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 18:37+0000\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-06 14:40+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/wildfire-games/0ad/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -123,7 +123,7 @@ msgstr "Egy kincs, amely gyorsan begyűjthető."
 msgid "Structure"
 msgstr "Épület"
 
-#: simulation/templates/template_unit.xml:40
+#: simulation/templates/template_unit.xml:41
 msgid "Unit"
 msgstr "Egység"
 
@@ -312,16 +312,16 @@ msgid "African Bush Elephant"
 msgstr "Afrikai bokor elefánt"
 
 #: simulation/templates/gaia/fauna_elephant_african_infant.xml:4
-msgid "African Elephant (Infant)"
-msgstr "Afrikai elefánt (újszülött)"
+msgid "African Elephant Calf"
+msgstr "Afrikai elefántborjú"
 
 #: simulation/templates/gaia/fauna_elephant_asian.xml:11
 msgid "Asian Elephant"
 msgstr "Ázsiai elefánt"
 
 #: simulation/templates/gaia/fauna_elephant_asian_infant.xml:4
-msgid "Asian Elephant (Infant)"
-msgstr "Ázsiai elefánt (újszülött)"
+msgid "Asian Elephant Calf"
+msgstr "Ázsiai elefántborjú"
 
 #: simulation/templates/gaia/fauna_elephant_north_african.xml:11
 msgid "North African Elephant"
@@ -344,6 +344,14 @@ msgstr "Tilápia hal"
 #: simulation/templates/gaia/fauna_fish_tilapia.xml:6
 msgid "Collect food from this bountiful riparian resource."
 msgstr "Élelem gyűjtése ebből a bőséges part menti nyersanyagból."
+
+#: simulation/templates/gaia/fauna_fox_arctic.xml:4
+msgid "Arctic Fox"
+msgstr "Sarki róka"
+
+#: simulation/templates/gaia/fauna_fox_red.xml:4
+msgid "Red Fox"
+msgstr "Vörös róka"
 
 #: simulation/templates/gaia/fauna_gazelle.xml:9
 msgid "Gazelle"
@@ -558,8 +566,8 @@ msgid "Poplar Tree"
 msgstr "Nyárfa"
 
 #: simulation/templates/gaia/flora_tree_poplar_lombardy.xml:4
-msgid "Lombardy Poplar Tree"
-msgstr "Jegenyenyárfa"
+msgid "Black Poplar Tree"
+msgstr "Fekete nyár"
 
 #: simulation/templates/gaia/flora_tree_senegal_date_palm.xml:4
 msgid "Senegal Date Palm"
@@ -1042,11 +1050,6 @@ msgid ""
 "Changes in a 5-pop house for civilisations with those houses, is deleted for"
 " other civs"
 msgstr "Átváltozik egy 5 személyes házzá azoknál a civilizációknál, ahol van ilyen ház. Más civilizációknál törlődik."
-
-#: simulation/templates/special/marker_object_sound.xml:15
-#: simulation/templates/special/marker_object_sound.xml:16
-msgid "Marker"
-msgstr "Jelölő"
 
 #: simulation/templates/special/player.xml:57
 msgid "Player"

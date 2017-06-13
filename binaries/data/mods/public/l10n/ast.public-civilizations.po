@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2016-11-28 09:00+0100\n"
-"PO-Revision-Date: 2017-04-16 01:55+0000\n"
-"Last-Translator: David Sowa <isithere2@yahoo.com>\n"
+"POT-Creation-Date: 2017-06-05 09:01+0200\n"
+"PO-Revision-Date: 2017-06-05 14:23+0000\n"
+"Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Asturian (http://www.transifex.com/wildfire-games/0ad/language/ast/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -184,13 +184,14 @@ msgstr "La clásica formación de falanxe perdesendolcóse alredor del sieglu VI
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[0].History
 msgid ""
-"The general whom persuaded the Athenians to invest their income from silver "
+"The general who persuaded the Athenians to invest their income from silver "
 "mines in a war navy of 200 Triremes. A key figure during the Persian Wars, "
 "he commanded the victorious Athenian navy at the decisive battle of Salamis "
 "in 479 B.C. Later, he pursued an active policy against the Persians in the "
-"Aegean, thereby laying the foundations of future Athenian power. Ostracised "
-"by the Athenians, he was forced to flee to the protection of the Persians."
-msgstr "El xeneral que convenció a los atenienses pa qu'inviertan los ingresos de les mines de plata nuna armada de guerra de doscientes trirremes. Una figura clave nes guerres médiques, comandó la victoriosa armada ateniense na decisiva batalla de Salamina nel añu 479 a.C. Más sero, siguió una política activa escontra los perses nel Axéu, lo que sentó les bases del futuru poder ateniense. Condergáu al ostracismu polos atenienses, viose obligáu a fuxir a los perses pa proteición."
+"Aegean, thereby laying the foundations of future Athenian power. However, he"
+" was eventually ostracised by the Athenians and forced to flee to the "
+"protection of the Persians."
+msgstr ""
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[1].History
 msgid "Pericles was the foremost Athenian politician of the 5th Century B.C."
@@ -308,17 +309,14 @@ msgid "Celtic religion and druidry inspired their warlike mindset. "
 msgstr "La relixón celta y el druidismu inspiraron belicosidá."
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Description
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
-msgid "Bonus to tech speed."
-msgstr "Beneficia la velocidá teunolóxica."
+msgid "-20% resources cost for allies healers."
+msgstr ""
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Name
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
-msgid "Druides"
-msgstr "Druides"
+msgid "Druids"
+msgstr ""
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].History
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
 msgid ""
 "The Druids of the Celts maintained an organized religion that advanced the "
 "technology of their people even during wartime."
@@ -327,7 +325,7 @@ msgstr "Los druides de los celtes caltuvieron una relixón organizada que fixo a
 #: simulation/data/civs/brit.jsonAINames[0]
 #: simulation/data/civs/brit.jsonFactions[0].Heroes[0].Name
 msgid "Karatakos"
-msgstr "Carátaco"
+msgstr "Carataco"
 
 #: simulation/data/civs/brit.jsonAINames[1]
 #: simulation/data/civs/brit.jsonFactions[0].Heroes[1].Name
@@ -418,7 +416,7 @@ msgid ""
 "displays to celebrate. Karatakos was brought before the Emperor and Senate "
 "at his request to explain himself. What he said is not known for certainty, "
 "but Tacitus applies to him a famous speech..."
-msgstr "Carátaco vien del britónicu Caratacos, el so nome verdaderu, qu'apaez nes sos perabondoses monedes. Por esti nome recuérdase-y como un feroz defensor de Britania contra los romanos tres la so invasión nel añu 43 a.C. Fíu del Rei Cunobelín de la confederación tribal de los catuvellaunos, Carátaco lluchó per nueve años escontra los romanos con pocu ésitu, finalmente fugándose a Gales, u lu vencieron decisivamente. Llueu entró nel norte de Britania, onde foi entregáu a los romanos. Lleváu a Roma y permitíu vivir pol emperador, Cloyu, Carátaco finaría n'Italia. Según la tradición, convirtióse al cristianismu cola muyer, pero esto nun ta comprobao. Al meyor ye más notable que se-y dexó vivir una vegada cativu. La política romana solía consistir na execución pública de talos homes como forma de celebración. A pidimientu propiu, Carátaco compaeció énte l'emperador y el senáu pa esplicase. Nun se sabe por seguro lo que dixo, pero Tácitu atribúi-y un famosu discursu..."
+msgstr "Carataco vien del britónicu Caratacos, el so nome verdaderu, qu'apaez nes sos perabondoses monedes. Por esti nome recuérdase-y como un feroz defensor de Britania contra los romanos tres la so invasión nel añu 43 a.C. Fíu del Rei Cunobelín de la confederación tribal de los catuvellaunos, Carataco lluchó per nueve años escontra los romanos con pocu ésitu, finalmente fugándose a Gales, u lu vencieron decisivamente. Llueu entró nel norte de Britania, onde foi entregáu a los romanos. Lleváu a Roma y permitíu vivir pol emperador, Cloyu, Carataco finaría n'Italia. Según la tradición, convirtióse al cristianismu cola muyer, pero esto nun ta comprobao. Al meyor ye más notable que se-y dexó vivir una vegada cativu. La política romana solía consistir na execución pública de talos homes como forma de celebración. A pidimientu propiu, Carataco compaeció énte l'emperador y el senáu pa esplicase. Nun se sabe por seguro lo que dixo, pero Tácitu atribúi-y un famosu discursu..."
 
 #: simulation/data/civs/brit.jsonFactions[0].Heroes[1].History
 msgid ""
@@ -453,7 +451,7 @@ msgid ""
 "their British allies, and Kunobelinos was held up by the post-Roman Britons "
 "as one of their great heroes; a conqueror and uniter of petty kingdoms, "
 "something the post-Roman Britons or Romano-British sorely needed."
-msgstr "Cunobelín, (del celta Cunobelinos), foi un poderosu rei de los catuvellaunos. Los romanos refiriéronse a él como «el Rei de los Britanos». Los dominios de so abarcaron la ciudá de Camulodunon (Camulodúnum en llatín), que coincide anguaño con Cólchester. Cunobelín aprovechóse de la derrota romana na batalla la viesca de Teutoburgu (Alemaña) pa conquistar una tribu vecina, los trinovantes, que yeren aliaos de Roma, pero que nun podíen recibir sofitu d'ella. Abulta qu'a Cunobelín los romanos nun-y llevaron xera. Negoció con ellos ensin reserves, pero nun tarreció sopiar a los conocíos aliaos de Roma, y unvió al so fíu menor, Adminiu, a la Galia romana como neñu acoyíu pa recibir una educación. Adminiu, poro, cuntaba con amigos romanos. A Adminiu Cunobelín apurrió-y el señoríu de los cantiacos, qu'habitaben Kent. Esa fastera yera'l focu de la influyencia romana y del comerciu en Britania, y Cunobelín vio astutamente que les amistaes del so fíu menor con poderosos políticos y comerciantes romanos y galorromanos podríen resultar útiles enforma a la hora d'alministrar la rexón. Sicasí, a los sos demás fíos los romanos nun-yos prestaron un res. Al morrer Cunobelín de malura, sustitúilu'l so fíu, Togdubno, qu'apresa, executa o espuxa a numberosos simpatizantes romanos. Ente ellos yeren Adminiu, el so propiu hermanu, y Vérica, el rei depuestu de los atrebates, que pidieron a los sos contautos del imperiu romanu que los aidaren a recobrar les tierres. Togdubno morrió na batalla colos romanos, asina que lu sustituyó'l so hermanu, Carátaco. Ye irónico que fore'l fíu terceru de Cunobelín que primero provocare esta venganza romana. Sicasí, na so dómina Cunobelín yera ente los mayores de tolos reis britanos. Llogró conquistar la gran mayoría de la metada sureña de Britania, (les sos monedes acuñáronse fasta les llendes de lo que sedría Gales). Entamó'l so reinu gobernando una confederación de cuatro tribus menores, los catuvellaunos, y acabó consiguiendo que se-y reconociere como'l rei de Britania. Tan grande yera esta reconocencia que tribus de Cambria vinieron pa encontiar a los sos fíos na llucha escontra los romanos y los sos aliaos britanos, y que los britanos posromanos lu tuvieron por ún de los sos mayores héroes; un conquistador y unificador de pequeños reinos, dalgo de que los britanos posromanos, o romano-británicos, tanto precisaben."
+msgstr "Cunobelín, (del celta Cunobelinos), foi un poderosu rei de los catuvellaunos. Los romanos refiriéronse a él como «el Rei de los Britanos». Los dominios de so abarcaron la ciudá de Camulodunon (Camulodúnum en llatín), que coincide anguaño con Cólchester. Cunobelín aprovechóse de la derrota romana na batalla la viesca de Teutoburgu (Alemaña) pa conquistar una tribu vecina, los trinovantes, que yeren aliaos de Roma, pero que nun podíen recibir sofitu d'ella. Abulta qu'a Cunobelín los romanos nun-y llevaron xera. Negoció con ellos ensin reserves, pero nun tarreció sopiar a los conocíos aliaos de Roma, y unvió al so fíu menor, Adminiu, a la Galia romana como neñu acoyíu pa recibir una educación. Adminiu, poro, cuntaba con amigos romanos. A Adminiu Cunobelín apurrió-y el señoríu de los cantiacos, qu'habitaben Kent. Esa fastera yera'l focu de la influyencia romana y del comerciu en Britania, y Cunobelín vio astutamente que les amistaes del so fíu menor con poderosos políticos y comerciantes romanos y galorromanos podríen resultar útiles enforma a la hora d'alministrar la rexón. Sicasí, a los sos demás fíos los romanos nun-yos prestaron un res. Al morrer Cunobelín de malura, sustitúilu'l so fíu, Togdubno, qu'apresa, executa o espuxa a numberosos simpatizantes romanos. Ente ellos yeren Adminiu, el so propiu hermanu, y Verica, el rei depuestu de los atrebates, que pidieron a los sos contautos del imperiu romanu que los aidaren a recobrar les tierres. Togdubno morrió na batalla colos romanos, asina que lu sustituyó'l so hermanu, Carataco. Ye irónico que fore'l fíu terceru de Cunobelín que primero provocare esta venganza romana. Sicasí, na so dómina Cunobelín yera ente los mayores de tolos reis britanos. Llogró conquistar la gran mayoría de la metada sureña de Britania, (les sos monedes acuñáronse fasta les llendes de lo que sedría Gales). Entamó'l so reinu gobernando una confederación de cuatro tribus menores, los catuvellaunos, y acabó consiguiendo que se-y reconociere como'l rei de Britania. Tan grande yera esta reconocencia que tribus de Cambria vinieron pa encontiar a los sos fíos na llucha escontra los romanos y los sos aliaos britanos, y que los britanos posromanos lu tuvieron por ún de los sos mayores héroes; un conquistador y unificador de pequeños reinos, dalgo de que los britanos posromanos, o romano-británicos, tanto precisaben."
 
 #: simulation/data/civs/brit.jsonFactions[0].Heroes[2].History
 msgid ""
@@ -556,8 +554,8 @@ msgid ""
 msgstr "Neto que la península ibérica, l'África del Norte conocíase como un país de caballos, capaz de producir fasta 100,000 montures nueves al añu. Yera tamién el llar del elefante la viesca'l norte l'África."
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Description
-msgid "+33% trade profit international routes."
-msgstr "+33% ganancia del comerciu de rutes internacionales."
+msgid "10% bonus of trade profit for allies' international routes."
+msgstr ""
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Name
 msgid "Trademasters"
@@ -762,19 +760,33 @@ msgstr "Cártagu, una ciudá-estáu de la Tunicia moderna, yera una fuercia del 
 msgid "Gauls"
 msgstr "Galos"
 
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
+msgid "-10% research time for technologies of allies."
+msgstr ""
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
+msgid "Druidic Wisdom"
+msgstr ""
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
+msgid ""
+"The Druids of the Gauls maintained an organized religion that advanced the "
+"technology of their people even during wartime."
+msgstr ""
+
 #: simulation/data/civs/gaul.jsonAINames[0]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].Name
-msgid "Britomartos"
-msgstr "Britomarto"
+msgid "Viridomarus"
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonAINames[1]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].Name
-msgid "Brennos"
-msgstr "Breno"
+msgid "Brennus"
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonAINames[2]
 msgid "Cativolcus"
-msgstr "Catuvulcu"
+msgstr "Catuvolcu"
 
 #: simulation/data/civs/gaul.jsonAINames[3]
 msgid "Cingetorix"
@@ -782,8 +794,8 @@ msgstr "Cinxétorix"
 
 #: simulation/data/civs/gaul.jsonAINames[4]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].Name
-msgid "Uerkingetorix"
-msgstr "Vercinxétorix"
+msgid "Vercingetorix"
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonAINames[5]
 msgid "Divico"
@@ -798,8 +810,8 @@ msgid "Liscus"
 msgstr "Liscu"
 
 #: simulation/data/civs/gaul.jsonAINames[8]
-msgid "Valetiacos"
-msgstr "Valeciaco"
+msgid "Valetiacus"
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonAINames[9]
 msgid "Viridovix"
@@ -811,13 +823,16 @@ msgid ""
 msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].Name
-msgid "Uae Uictos"
+msgid "Vae Victis"
 msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].History
 msgid ""
-"Means Woe to the Defeated. It was the words that the Gallic Leader, Brennos,"
-" spoke at the Capitol at Rome after they took their plunder."
+"Woe to the Defeated! The Gallic chieftain Brennus seized Rome (with the "
+"exception of a garrison on Capitoline Hill). When Camillus besieged him with"
+" a relief force from Veii, he negotiated his surrender for 1000 pounds of "
+"gold, and adding the weight of his sword on the scale when the Romans "
+"complained that he used false weights he uttered those famous words."
 msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[1].Description
@@ -837,20 +852,20 @@ msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].History
 msgid ""
-"When celt armies met the enemy, before the battle would start, the celt "
+"When Celtic armies met the enemy, before the battle would start, the Celtic "
 "leader would go to the first line and challenge the bravest of the enemy "
 "warriors to a single combat. The story of how Marcus Claudius Marcellus "
 "killed a Gallic leader at Clastidium (222 B.C.) is typical of such "
-"encounters. Advancing with a smallish army, Marcellus met a combined force "
-"of Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with"
-" the usual rush and terrifying cries, and their king, Britomartos, picking "
+"encounters. Advancing with a small army, Marcellus met a combined force of "
+"Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with "
+"the usual rush and terrifying cries, and their king, Viridomarus, picking "
 "out Marcellus by means of his badges of rank, made for him, shouting a "
-"challenge and brandishing his spear. Britomartos was an outstanding figure "
+"challenge and brandishing his spear. Viridomarus was an outstanding figure "
 "not only for his size but also for his adornments; for he was resplendent in"
 " bright colors and his armor shone with gold and silver. This armor, thought"
 " Marcellus, would be a fitting offering to the gods. He charged the Gaul, "
 "pierced his bright breastplate and cast him to the ground. It was an easy "
-"task to kill Britomartos and strip him of his armor."
+"task to kill Viridomarus and strip him of his armor."
 msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].History
@@ -862,18 +877,18 @@ msgid ""
 "that Britons had conquered Rome, the greatest civilization in the world, "
 "long before Rome conquered the Britons. We know from many ancient sources "
 "which predate Geoffrey that Rome was indeed sacked, but in 387 not 390, and "
-"that the raid was led by a man named Brennos (which was latinized to "
-"Brennus), but he and his invading horde were Gallic Senones, not British. In"
-" this episode several features of Geoffrey's editing method can be seen: he "
-"modified the historical Brennus/Brennos, created the brother Belinus, "
-"borrowed the Gallic invasion, but omitted the parts where the Celts seemed "
-"weak or foolish. His technique is both additive and subtractive. Like the "
-"tale of Trojan origin, the story of the sack of Rome is not pure "
-"fabrication; it is a creative rearrangement of the available facts, with "
-"details added as necessary. By virtue of their historical association, Beli "
-"and Bran are often muddled with the earlier brothers Belinus and Brennus "
-"(the sons of Dunvallo Molmutius) who contended for power in northern Britain"
-" in around 390 B.C., and were regarded as gods in old Celtic tradition."
+"that the raid was led by a man named Brennus, but he and his invading horde "
+"were Gallic Senones, not British. In this episode several features of "
+"Geoffrey's editing method can be seen: he modified the historical Brennus, "
+"created the brother Belinus, borrowed the Gallic invasion, but omitted the "
+"parts where the Celts seemed weak or foolish. His technique is both additive"
+" and subtractive. Like the tale of Trojan origin, the story of the sack of "
+"Rome is not pure fabrication; it is a creative rearrangement of the "
+"available facts, with details added as necessary. By virtue of their "
+"historical association, Beli and Bran are often muddled with the earlier "
+"brothers Belinus and Brennus (the sons of Dunvallo Molmutius) who contended "
+"for power in northern Britain in around 390 B.C., and were regarded as gods "
+"in old Celtic tradition."
 msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].History
@@ -1154,7 +1169,7 @@ msgid ""
 msgstr ""
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Description
-msgid "+15% tribute and trade bonus on metal."
+msgid "+20% sell prices at market."
 msgstr ""
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Name
@@ -1415,11 +1430,11 @@ msgid ""
 msgstr ""
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Description
-msgid "Allied Temple techs -50% cost and research time."
+msgid "Allied temples and temple technologies -50% cost and research time."
 msgstr ""
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Name
-msgid "Evangelism."
+msgid "Ashoka's Religious Support"
 msgstr ""
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].History
@@ -1593,7 +1608,7 @@ msgid ""
 msgstr ""
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Description
-msgid "+25% trade profit land routes."
+msgid "Higher income (+15%) from land trade routes for ally's traders."
 msgstr ""
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Name
@@ -1689,10 +1704,10 @@ msgstr ""
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[1].History
 msgid ""
-"The Persians built the wonderful 1677 mile-long Royal Highway from Sardis to"
-" Susa; Darius the Great and Xerxes also built the magnificent Persepolis; "
-"Cyrus the Great greatly improved Ecbatana and virtually 'rebuilt' the old "
-"Elamite capital of Susa."
+"The Persians built the wonderful 2700 kilometer-long Royal Highway from "
+"Sardis to Susa; Darius the Great and Xerxes also built the magnificent "
+"Persepolis; Cyrus the Great greatly improved Ecbatana and virtually "
+"'rebuilt' the old Elamite capital of Susa."
 msgstr ""
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[2].Description
@@ -1808,13 +1823,12 @@ msgid "Mercenary Army"
 msgstr ""
 
 #: simulation/data/civs/ptol.jsonCivBonuses[0].History
-#: simulation/data/civs/ptol.jsonStructures[1].History
 msgid ""
 "The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
 "foreign mercenaries for the bulk of its military force, mainly because the "
 "loyalty of native Egyptian units was often suspect. Indeed, during one "
 "native uprising, Upper Egypt was lost to the Ptolemies for decades. "
-"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"Mercenaries were often battle-hardened and their loyalty could be bought, "
 "sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
 " under the Ptolemies was so prosperous as to be the richest of Alexander's "
 "successor states."
@@ -1995,6 +2009,18 @@ msgid ""
 "Trains all 'mercenary' units."
 msgstr ""
 
+#: simulation/data/civs/ptol.jsonStructures[1].History
+msgid ""
+"The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
+"foreign mercenaries for the bulk of its military force, mainly because the "
+"loyalty of native Egyptian units was often suspect. Indeed, during one "
+"native uprising, Upper Egypt was lost to the Ptolemies for decades. "
+"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
+" under the Ptolemies was so prosperous as to be the richest of Alexander's "
+"successor states."
+msgstr ""
+
 #: simulation/data/civs/ptol.jsonStructures[2].Name
 msgid "Lighthouse"
 msgstr ""
@@ -2060,16 +2086,22 @@ msgid ""
 msgstr ""
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Description
-msgid "Allied citizen-soldiers gain a +15% attack when in Roman territory."
+msgid "-20% training time for allied infantry."
 msgstr ""
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Name
-msgid "Socii"
+msgid "Conscription"
 msgstr ""
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].History
 msgid ""
-"Being allied with Rome came with great benefits (as well as great peril)."
+"Many Roman soldiers were conscripted into service. While volunteers were "
+"preferred, the Roman state did maintain an annual military draft. During an "
+"emergency the draft and the terms of service were enlarged. The importance "
+"of military service in Republican Rome was so great it was a prerequisite "
+"for a political career. Members of the Senate were called Conscript Fathers "
+"because of this, reflected in how the ordo equester was said to have been "
+"\"conscripted\" into the Senate."
 msgstr ""
 
 #: simulation/data/civs/rome.jsonAINames[0]
@@ -2451,13 +2483,13 @@ msgstr ""
 msgid ""
 "Antiochus inherited a troubled kingdom upon the beginning of his reign. From"
 " the verge of collapse he managed to weld back together the empire Seleukus "
-"I so hard to found. The rebellious eastern satraps of Bactria and Parthia "
-"were brought to heel , temporarily securing his eastern borders. He then "
-"turned his attention to mother Greece, attempting to fulfill the dreams of "
-"his fathers by invading Greece under the pretext of liberation. The Achaean "
-"League and the Kingdom of Pergamon banded together with the Romans to defeat"
-" him at the Battle of Magnesia, forever burying the dream of reuniting "
-"Alexander's empire."
+"I fought so hard to found. The rebellious eastern satraps of Bactria and "
+"Parthia were brought to heel , temporarily securing his eastern borders. He "
+"then turned his attention to mother Greece, attempting to fulfill the dreams"
+" of his fathers by invading Greece under the pretext of liberation. The "
+"Achaean League and the Kingdom of Pergamon banded together with the Romans "
+"to defeat him at the Battle of Magnesia, forever burying the dream of "
+"reuniting Alexander's empire."
 msgstr ""
 
 #: simulation/data/civs/sele.jsonFactions[0].Heroes[1].Name
@@ -2491,7 +2523,7 @@ msgstr ""
 
 #: simulation/data/civs/sele.jsonStructures[2].Name
 msgid "Military Colony"
-msgstr ""
+msgstr "Colonia militar"
 
 #: simulation/data/civs/sele.jsonStructures[2].Special
 msgid ""
@@ -2554,7 +2586,9 @@ msgid ""
 msgstr ""
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Description
-msgid "Allies can train Spartiates."
+msgid ""
+"Increases the health for citizen-soldier infantry spearmen by 10% for allies"
+" of Spartan players."
 msgstr ""
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Name

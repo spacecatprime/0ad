@@ -11,8 +11,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2016-11-28 09:00+0100\n"
-"PO-Revision-Date: 2017-03-31 15:53+0000\n"
+"POT-Creation-Date: 2017-06-05 09:01+0200\n"
+"PO-Revision-Date: 2017-06-10 15:28+0000\n"
 "Last-Translator: Mielanjel Iraeta <pospolos@gmail.com>\n"
 "Language-Team: Basque (http://www.transifex.com/wildfire-games/0ad/language/eu/)\n"
 "MIME-Version: 1.0\n"
@@ -188,13 +188,14 @@ msgstr "Falangeen formazio klasikoa K. a. VIII. mende inguruan garatu zen. Zortz
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[0].History
 msgid ""
-"The general whom persuaded the Athenians to invest their income from silver "
+"The general who persuaded the Athenians to invest their income from silver "
 "mines in a war navy of 200 Triremes. A key figure during the Persian Wars, "
 "he commanded the victorious Athenian navy at the decisive battle of Salamis "
 "in 479 B.C. Later, he pursued an active policy against the Persians in the "
-"Aegean, thereby laying the foundations of future Athenian power. Ostracised "
-"by the Athenians, he was forced to flee to the protection of the Persians."
-msgstr "Atenarrak zilar-meategietako irabaziak 200 trirremeko itsas-armada bat sortzeko erabil zitzaten konbentzitu zituen jenerala. Pertsonaia gakoa Persiako gerran, berak gidatu baitzuen Atenasko itsas-armada garailea Salamiseko borroka erabakiorrean, K. a. 479an. Geroago, persiarren aurkako politika aktiboa erabili zuen Egeoan, etorkizuneko indar atenarraren oinarriak ezarriz. Atenarrek bazterturik, persiarren babesaren bila ihes egitera behartuta ikusi zuen bere burua."
+"Aegean, thereby laying the foundations of future Athenian power. However, he"
+" was eventually ostracised by the Athenians and forced to flee to the "
+"protection of the Persians."
+msgstr "Atenarrak zilar-meategietako irabaziak 200 trirremeko itsas-armada bat sortzeko erabil zitzaten konbentzitu zituen jenerala. Pertsonaia gakoa Persiako gerran, berak gidatu baitzuen Atenasko itsas-armada garailea Salamiseko borroka erabakiorrean, K. a. 479an. Geroago, persiarren aurkako politika aktiboa erabili zuen Egeoan, etorkizuneko indar atenarraren oinarriak ezarriz. Atenarrek bazterturik, hauek egonean egotera behartu zuten, persiarren babesaren bila ihes egitera behartuta ikusi zuen bere burua."
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[1].History
 msgid "Pericles was the foremost Athenian politician of the 5th Century B.C."
@@ -312,17 +313,14 @@ msgid "Celtic religion and druidry inspired their warlike mindset. "
 msgstr "Zelta erlijioak eta druiden egiteak bere borroka izpiritua pizten zuten"
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Description
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
-msgid "Bonus to tech speed."
-msgstr "Ikerketa abiadura apur bat hobetzen du."
+msgid "-20% resources cost for allies healers."
+msgstr "Sendagile aliatuentzat baliabideen kostua %20- gutxitzen da."
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Name
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
-msgid "Druides"
+msgid "Druids"
 msgstr "Aztiak"
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].History
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
 msgid ""
 "The Druids of the Celts maintained an organized religion that advanced the "
 "technology of their people even during wartime."
@@ -560,8 +558,8 @@ msgid ""
 msgstr "Iberiar Penintsulan nola, Afrika Iparraldea zaldi aberria bezala ezaguna zen, urtero 100.000 zela sortzeko gai zelarik. Basoko iparafrikar elefantearen bizilekua ere izan zen."
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Description
-msgid "+33% trade profit international routes."
-msgstr "%33+ irabazia nazioarteko bide trukeengatik."
+msgid "10% bonus of trade profit for allies' international routes."
+msgstr "%10+ irabazia merkataritzan aliatuen bide internazionaletatik."
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Name
 msgid "Trademasters"
@@ -766,15 +764,29 @@ msgstr "Kartago, gaur egungo Tunezen kokaturiko estatu-hiria, mendebaldeko Medit
 msgid "Gauls"
 msgstr "Galiarrak"
 
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
+msgid "-10% research time for technologies of allies."
+msgstr "%10- ikertze denboran aliatuen teknologientzako."
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
+msgid "Druidic Wisdom"
+msgstr "Druidic Wisdom"
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
+msgid ""
+"The Druids of the Gauls maintained an organized religion that advanced the "
+"technology of their people even during wartime."
+msgstr "Druida Galiarrek erlijioa antolaturik mantentzen zuten bere jendearen teknologia hobetuz baita guda garaietan ere."
+
 #: simulation/data/civs/gaul.jsonAINames[0]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].Name
-msgid "Britomartos"
-msgstr "Britomartoak"
+msgid "Viridomarus"
+msgstr "Viridomarus"
 
 #: simulation/data/civs/gaul.jsonAINames[1]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].Name
-msgid "Brennos"
-msgstr "Brennos"
+msgid "Brennus"
+msgstr "Brennus"
 
 #: simulation/data/civs/gaul.jsonAINames[2]
 msgid "Cativolcus"
@@ -786,8 +798,8 @@ msgstr "Zingetorix"
 
 #: simulation/data/civs/gaul.jsonAINames[4]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].Name
-msgid "Uerkingetorix"
-msgstr "Uerkingetorix"
+msgid "Vercingetorix"
+msgstr "Vercingetorix"
 
 #: simulation/data/civs/gaul.jsonAINames[5]
 msgid "Divico"
@@ -802,8 +814,8 @@ msgid "Liscus"
 msgstr "Lisko"
 
 #: simulation/data/civs/gaul.jsonAINames[8]
-msgid "Valetiacos"
-msgstr "Valetiackos"
+msgid "Valetiacus"
+msgstr "Valetiacus"
 
 #: simulation/data/civs/gaul.jsonAINames[9]
 msgid "Viridovix"
@@ -815,14 +827,17 @@ msgid ""
 msgstr "Hitzartutako janari eta metal kopurua eraitsi edo atzemandako egitura bakoitzeko."
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].Name
-msgid "Uae Uictos"
-msgstr "Uae UiKtos"
+msgid "Vae Victis"
+msgstr "Vae Victis"
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].History
 msgid ""
-"Means Woe to the Defeated. It was the words that the Gallic Leader, Brennos,"
-" spoke at the Capitol at Rome after they took their plunder."
-msgstr "«Vae victis» edo «Gaixoak garaituak!» izan ziren Galiar buruzagi Brenoren hitzak, Erromako Kapitolioa hustu eta gero."
+"Woe to the Defeated! The Gallic chieftain Brennus seized Rome (with the "
+"exception of a garrison on Capitoline Hill). When Camillus besieged him with"
+" a relief force from Veii, he negotiated his surrender for 1000 pounds of "
+"gold, and adding the weight of his sword on the scale when the Romans "
+"complained that he used false weights he uttered those famous words."
+msgstr "Ai garaituak! Brennus Galiar nagusiak Erroma eskuratu zuen (Kapitolioko mendixka bateko goarnizio bat salbu). Camilok Velen laguntzaz inguratu zuenean, 1000 libera urrez hitzartu zuen bere errendizioa, eta pisatzean bere ezpataren pisua jarri zuen Erromatarrak faltsututako pisuak erabili zituelako kexu azaldu zirenean eta hitz entzutetsu hauek esan zituen."
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[1].Description
 msgid "Gallic druids gain a small melee attack."
@@ -841,21 +856,21 @@ msgstr "Carnutoak Aulerciako aztiak izan ziren. Behar zenean baino ez ziren borr
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].History
 msgid ""
-"When celt armies met the enemy, before the battle would start, the celt "
+"When Celtic armies met the enemy, before the battle would start, the Celtic "
 "leader would go to the first line and challenge the bravest of the enemy "
 "warriors to a single combat. The story of how Marcus Claudius Marcellus "
 "killed a Gallic leader at Clastidium (222 B.C.) is typical of such "
-"encounters. Advancing with a smallish army, Marcellus met a combined force "
-"of Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with"
-" the usual rush and terrifying cries, and their king, Britomartos, picking "
+"encounters. Advancing with a small army, Marcellus met a combined force of "
+"Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with "
+"the usual rush and terrifying cries, and their king, Viridomarus, picking "
 "out Marcellus by means of his badges of rank, made for him, shouting a "
-"challenge and brandishing his spear. Britomartos was an outstanding figure "
+"challenge and brandishing his spear. Viridomarus was an outstanding figure "
 "not only for his size but also for his adornments; for he was resplendent in"
 " bright colors and his armor shone with gold and silver. This armor, thought"
 " Marcellus, would be a fitting offering to the gods. He charged the Gaul, "
 "pierced his bright breastplate and cast him to the ground. It was an easy "
-"task to kill Britomartos and strip him of his armor."
-msgstr "Zelten armadak borroka hasi aurretik etsaiaren aurrean jartzen zirenean, bere buruzagiek nor zirenei erronka botatzen zieten. Elkarketa hauen adierazgarri Marcus Claudius Marcellusek Clastidiumen (K.a. 222) Galiar buruzagi bat nola menderatu zuen kontakizuna da. Armada txiki batez aurrera zihoala, Marcelusek parez-pare aurkitu zuen Insubriar Galiarrak eta Gaesaetarrez osatutako talde batekin Clastidiumen. Galiarrak betiko moduan azkar eta oihuka  eraso zieten. Hauen errege Britomartosek Marcelus ezagutu zuen gainean zeramatzan nagusi dominak zirela eta, bereak, eta erronka bota zion lantza astinduz. Britomartos ezaguna zen ez bakarrik indarragatik, baita gainean zeramatzan apaingarriengatik ere; kolore biziaz distiratuz eta bere urre eta zilarrezko armaduraz. Horrelako armadura, pentsatu zuen Marcelusek, jainkoentzako eskaintza polita izango zen. Galiarraren kontra jo zuen bularrekoa zulatuz eta lurrera botaz. Britomartos hil eta armadura kentzea lan erraza izan zen."
+"task to kill Viridomarus and strip him of his armor."
+msgstr "Armada Zeltek etsaia aurkitu zutenean, borroka hasi aurretik, Zelten liderrak aurrera jo eta etsaien gerlari ausartenak borroka bakar baterako desafioa botako zien.  Marcus Claudius Marcellusek Galiar bat nola hil zuen Clastidiumen (222 K.a.) elkartze horietako adierazlea da. Armada txiki batez aurrera zihoala, Marcellusek Insubrian eta Gaesatae Galiarren bat egindako armada batekin egin zuen topo Clastidiumen. Galiar armada ohiko ohitura eta oihu handiez egin zuen aurrera, eta bere erregeak, Viridomarusek, Marcelus bere ezaugarriengatik ezaguturik, beregana jo zuen, desafioa oihukatuz eta bere lantza erakutsiz. Viridomarus ezaguna zen ez bakarrik zuen tamainagatik, zituen apaingarriengatik ere ezaguna zen; kolore biziengatik ikusgarria zelako eta bere armadurak urre eta zilarraren argiaz distiratzen zuelako . Armadura hori, pentsatu zuen Marcellusek, jainkoentzako moduko oparia izango zen. Galiarraren kontra jo, bere bularreko distiratsua zeharkatu eta lurrera bota zuen.Viridomarus hil eta armadura kentzea lan erraza zen."
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].History
 msgid ""
@@ -866,19 +881,19 @@ msgid ""
 "that Britons had conquered Rome, the greatest civilization in the world, "
 "long before Rome conquered the Britons. We know from many ancient sources "
 "which predate Geoffrey that Rome was indeed sacked, but in 387 not 390, and "
-"that the raid was led by a man named Brennos (which was latinized to "
-"Brennus), but he and his invading horde were Gallic Senones, not British. In"
-" this episode several features of Geoffrey's editing method can be seen: he "
-"modified the historical Brennus/Brennos, created the brother Belinus, "
-"borrowed the Gallic invasion, but omitted the parts where the Celts seemed "
-"weak or foolish. His technique is both additive and subtractive. Like the "
-"tale of Trojan origin, the story of the sack of Rome is not pure "
-"fabrication; it is a creative rearrangement of the available facts, with "
-"details added as necessary. By virtue of their historical association, Beli "
-"and Bran are often muddled with the earlier brothers Belinus and Brennus "
-"(the sons of Dunvallo Molmutius) who contended for power in northern Britain"
-" in around 390 B.C., and were regarded as gods in old Celtic tradition."
-msgstr "Breno izena Erromatar historialariek Camilusen garaian Erroma hartu zuen Galiar buruzagiari eman ioten. Geoffrey Momouthekoak, \"Bretainiako Erregeen Historia\"ren egilea, dioenez berak eta bere anai Belinusek Erroma eskuratu zuten K.a.390 inguruan horrela \"frogatuz\" Britainiarrak munduko zibilizaziorik handiena garaitu zutela, laster garaitu zituzten Erromatarrek Britainiarrak. Geoffrey baino antzinagoko iturriek diotenez Erroma garbitu zuten, baino ez 390ean  K.a.387an baizik, eta erasoa Breno (latindarrak Brennus bezala ezagutua) izeneko bat zela haien buruzagia, baino bera eta bere taldea Galiar Senoneak ziren, ez Britainiarrak. Kontaera honengatik antzeman daitezke Geoffreyren idazteko teknika ezagunak: historiako Breno aldatu zuen, anaia Belinus asmatu, galiarren inbasioa maileguz hartu, baino Galiarrak ahul eta lerdo samarrak azaltzen ziren zatiak gordez. Bere teknika bai gehigarria bai kenkaria da. Troiako kontakizunean bezala, Erromako lapurreta ez da dena ipuina; gertaera tartekako osagarriz betetakoa da. Historiaren araberako loturaz, Beli eta Bran nahasten dira haien aurreko Belinus eta Brenusekin (Dunvallo Molmutiusen semeak), K.a.390ean Britainiaren iparraldea eskuratu nahi zutenak eta Zelten ohituretan jainko gisa ezagutuak."
+"that the raid was led by a man named Brennus, but he and his invading horde "
+"were Gallic Senones, not British. In this episode several features of "
+"Geoffrey's editing method can be seen: he modified the historical Brennus, "
+"created the brother Belinus, borrowed the Gallic invasion, but omitted the "
+"parts where the Celts seemed weak or foolish. His technique is both additive"
+" and subtractive. Like the tale of Trojan origin, the story of the sack of "
+"Rome is not pure fabrication; it is a creative rearrangement of the "
+"available facts, with details added as necessary. By virtue of their "
+"historical association, Beli and Bran are often muddled with the earlier "
+"brothers Belinus and Brennus (the sons of Dunvallo Molmutius) who contended "
+"for power in northern Britain in around 390 B.C., and were regarded as gods "
+"in old Celtic tradition."
+msgstr "Brennus izena eman zioten Erromatar historialariek Camilo garaian Erroma menderatu zuen Galiar liderrari .Geoffrey Monmouthekoak, \"Bretainia Handiko Erregeen Historia\" idatzi zuen elizgizonak zioenez, Brennusek eta bere anai Belinusek Galia inbaditu eta Erroma ostu zuten K.a. 390ean, horrela 'erakutsiz' Britainiarrek Erroma, munduko zibilizaziorik handiena,  konkistatu zutela Erromak Britainiarrak konkistatu aurretik. Geoffreyren jarraitzaile askok esan dutenez Erroma ostu zuten, baino 387an eta ez 390ean, eta erasoa Brennus izeneko batek gidatu zuela, baino bera eta bere gizonak Galiar Senonesak ziren, ez Britainiarrak. Pasarte honetan Geoffreyren editatzeko ezaugarriak antzeman daitezke: Brennus historikoa aldatu zuen, Belinus anaia sortu zuen, Galiarren inbasioa hartu zuen, baino zeltak ahul edo ergel azaltzen zituzten zatiak ezkutatu zituen. Bere teknika aldi berean da eranskorra eta kenkaria. Troiar jatorriko ipuinean bezala, Erroma osteko historia ez da erabat asmatua; ezagutzen diren datuekin sorkuntza da, beharraren araberako datuak gehituz. Elkarketa historikoaren ondorioz, Bell eta Bran sarri nahasten dira Belinus eta Brennus anaiekin (Dunvallo Molmutiusen semeak) K.a. 390ean Bretainia Handiaren boterearen zaindariak eta Zelten ohituretan jainkotzat hartuak."
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].History
 msgid ""
@@ -1158,8 +1173,8 @@ msgid ""
 msgstr "Greziarrak onak ziren atzerritarrak Helenizatzen. Garai Helenistikoan zehar, greziera zen mundu zaharreko 'lingua franca', Espainiatik Indiaraino mintzatua."
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Description
-msgid "+15% tribute and trade bonus on metal."
-msgstr "%15 gehiagoko bonusa metalaren zerga eta salerosketan."
+msgid "+20% sell prices at market."
+msgstr "%20+ prezioak saldu merkatuan."
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Name
 msgid "Standardized Currency"
@@ -1419,12 +1434,12 @@ msgid ""
 msgstr "Kshatriya edo Kashtriya, hau da borrokalaria, Hinduismoaren lau varnetako (gizarte kasta nagusiak) bat da. Ohituraren aginduz Kshatriya herrialdea zuzentzen zuen elite militarra zen, eta horrela azaltzen zen Vedic-Hindu Vedak eutsitako giza erakundean, Manuren legeetan azalduak."
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Description
-msgid "Allied Temple techs -50% cost and research time."
-msgstr "Aliatuen tenpluen teknologiak %50- gutxitzen dute bere kostua eta ikerketa denbora."
+msgid "Allied temples and temple technologies -50% cost and research time."
+msgstr "Bakoitzaren eta aliatuen tenpluen teknologiak %50-  kostua eta ikerketa denbora."
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Name
-msgid "Evangelism."
-msgstr "Ebanjelismoa."
+msgid "Ashoka's Religious Support"
+msgstr "Ashokaren Laguntza Erlijiosoa "
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].History
 msgid ""
@@ -1597,8 +1612,8 @@ msgid ""
 msgstr "Persiarrek infanteriako derrigorrezko erreklutatzeak egin ahal izan zituzten eta egin zituzten gerra garaian Arkemenida inperioaren tamaina handia eta berau osatzeko era zela eta. Orokorrean, infanteria ondo erakutsita zegoen eta indartsu oldartzen zen, nahiz aurrez-aurreko borroketan ahul ibili. Aipatzekoa da eliteko erregimentuez aparte, persiar infanteria ez zegoela profesional gisa edo egonkor bezala ikusia."
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Description
-msgid "+25% trade profit land routes."
-msgstr "%33+ irabazia lurreko ibilbideengatik."
+msgid "Higher income (+15%) from land trade routes for ally's traders."
+msgstr "Irabazi handiagoak (%15+) lurretik egiten duten ibilbideentzat aliatutako merkatarientzako."
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Name
 msgid "Royal Road"
@@ -1693,10 +1708,10 @@ msgstr "Persiar Arkitektura"
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[1].History
 msgid ""
-"The Persians built the wonderful 1677 mile-long Royal Highway from Sardis to"
-" Susa; Darius the Great and Xerxes also built the magnificent Persepolis; "
-"Cyrus the Great greatly improved Ecbatana and virtually 'rebuilt' the old "
-"Elamite capital of Susa."
+"The Persians built the wonderful 2700 kilometer-long Royal Highway from "
+"Sardis to Susa; Darius the Great and Xerxes also built the magnificent "
+"Persepolis; Cyrus the Great greatly improved Ecbatana and virtually "
+"'rebuilt' the old Elamite capital of Susa."
 msgstr "Persiarrek 2700 kilometroetan zehar eraiki zuten sinistu ezinezko Errege Bidea, Sardestik Susaraino; Dario Handiak eta Jerjesek ere Persepolis ikaragarria eraiki zuten; Ziro Handiak Ekbatana asko aurreratu zuen eta Susako Elamita Kapitala berreraiki zuen."
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[2].Description
@@ -1812,17 +1827,16 @@ msgid "Mercenary Army"
 msgstr "Armada Mertzenarioa"
 
 #: simulation/data/civs/ptol.jsonCivBonuses[0].History
-#: simulation/data/civs/ptol.jsonStructures[1].History
 msgid ""
 "The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
 "foreign mercenaries for the bulk of its military force, mainly because the "
 "loyalty of native Egyptian units was often suspect. Indeed, during one "
 "native uprising, Upper Egypt was lost to the Ptolemies for decades. "
-"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"Mercenaries were often battle-hardened and their loyalty could be bought, "
 "sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
 " under the Ptolemies was so prosperous as to be the richest of Alexander's "
 "successor states."
-msgstr "Ptolomeoren dinastia Greziar-Mazedoniarra greziar eta atzerritar mertzenarioek sostengatzen zuten, gehienbat bertako egiptoarren leialtasuna susmagarria zelako. Horrela, bertakoen altxamendu batean, Goiko Egipto hamarkadetako galdu zen Ptolomearrentzat. Mertzenarioak porrokatuak izaten ziren eta euren leialtasuna erosi ahal zen, batzuetan merke, gehienetan garesti. Hau ez zen oso garrantzitsua izan ezen Ptolomearren Egipto hain zen aurreratua Alejandro ondorengo estaturik aberatsena izan zela esan daitekelarik. "
+msgstr "Ptolomeoren dinastia Greziar-Mazedoniarra greziar eta atzerritar mertzenarioek sostengatzen zuten, gehienbat bertako egiptoarren leialtasuna susmagarria zelako. Horrela, bertakoen altxamendu batean, Goiko Egipto hamarkadetako galdu zen Ptolomearrentzat. Mertzenarioak porrokatuak izaten ziren eta euren leialtasuna erosi ahal zitekeen, batzuetan merke, gehienetan garesti. Hau ez zen oso garrantzitsua izan ezen Ptolomearren Egipto hain zen aurreratua Alejandro ondorengo estaturik aberatsena izan zela esan daitekeelarik. "
 
 #: simulation/data/civs/ptol.jsonCivBonuses[1].Description
 msgid "The Ptolemaic Egyptians receive 3 additional farming technologies."
@@ -1999,6 +2013,18 @@ msgid ""
 "Trains all 'mercenary' units."
 msgstr "Inoren lurrean eraiki behar da. Ez du lurraren radio efektua. 'Mertzenario' unitate guztiak erreklutatzen ditu."
 
+#: simulation/data/civs/ptol.jsonStructures[1].History
+msgid ""
+"The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
+"foreign mercenaries for the bulk of its military force, mainly because the "
+"loyalty of native Egyptian units was often suspect. Indeed, during one "
+"native uprising, Upper Egypt was lost to the Ptolemies for decades. "
+"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
+" under the Ptolemies was so prosperous as to be the richest of Alexander's "
+"successor states."
+msgstr "Ptolomeoren dinastia Greziar-Mazedoniarra greziar eta atzerritar mertzenarioek sostengatzen zuten, gehienbat bertako egiptoarren leialtasuna susmagarria zelako. Horrela, bertakoen altxamendu batean, Goiko Egipto hamarkadetako galdu zen Ptolomearrentzat. Mertzenarioak porrokatuak izaten ziren eta euren leialtasuna erosi ahal zen, batzuetan merke, gehienetan garesti. Hau ez zen oso garrantzitsua izan ezen Ptolomearren Egipto hain zen aurreratua Alejandro ondorengo estaturik aberatsena izan zela esan daitekelarik. "
+
 #: simulation/data/civs/ptol.jsonStructures[2].Name
 msgid "Lighthouse"
 msgstr "Itsasargia"
@@ -2064,17 +2090,23 @@ msgid ""
 msgstr "Antzinen Erromatar hiritarrak oso estimatuak ziren. Erromatarrek zituzten oinarrizko eskubide eta abantailak konkistatutako beste herriei ukatzen zitzaizkien. Erromako hiritar bat zauritzea Erroma bera zauritzea zela esaten zen, eta Erromako botere dena jaso zezakeen arau hausleak. "
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Description
-msgid "Allied citizen-soldiers gain a +15% attack when in Roman territory."
-msgstr "Hiritar-soldadu aliatuek %15+ irabazten dute erasoan Erromatarren lurretan."
+msgid "-20% training time for allied infantry."
+msgstr "%20- entrenatzen aliatuen infanterirako."
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Name
-msgid "Socii"
-msgstr "Socii"
+msgid "Conscription"
+msgstr "Derrigorrezko erreklutatzea"
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].History
 msgid ""
-"Being allied with Rome came with great benefits (as well as great peril)."
-msgstr "Erromarekin bat egiteak onura asko ekarri zituen (baita arrisku handia ere)."
+"Many Roman soldiers were conscripted into service. While volunteers were "
+"preferred, the Roman state did maintain an annual military draft. During an "
+"emergency the draft and the terms of service were enlarged. The importance "
+"of military service in Republican Rome was so great it was a prerequisite "
+"for a political career. Members of the Senate were called Conscript Fathers "
+"because of this, reflected in how the ordo equester was said to have been "
+"\"conscripted\" into the Senate."
+msgstr "Erromatar soldadu asko zerbitzuan erreklutatuak izan ziren. Boluntarioak nahiago zituenean, Erromatar estatuak urteroko proiektuarekin jarraitu zuen. Larrialdi baten bitartean proiektua eta zerbitzuaren baldintzak luzatu ziren. Zerbitzu militarraren garrantzia Erromako errepublikan, ezinbesteko bete beharra zela politikan aritzeko. Hau dela eta, senatuko partaideak Soldadu Gurasoak izan ziren deituak, eta hau ikusten da ordo equester Senatuan \"erreklutatua\" izan zela esatean."
 
 #: simulation/data/civs/rome.jsonAINames[0]
 msgid "Lucius Junius Brutus"
@@ -2455,14 +2487,14 @@ msgstr "Seleukos A' Nikator"
 msgid ""
 "Antiochus inherited a troubled kingdom upon the beginning of his reign. From"
 " the verge of collapse he managed to weld back together the empire Seleukus "
-"I so hard to found. The rebellious eastern satraps of Bactria and Parthia "
-"were brought to heel , temporarily securing his eastern borders. He then "
-"turned his attention to mother Greece, attempting to fulfill the dreams of "
-"his fathers by invading Greece under the pretext of liberation. The Achaean "
-"League and the Kingdom of Pergamon banded together with the Romans to defeat"
-" him at the Battle of Magnesia, forever burying the dream of reuniting "
-"Alexander's empire."
-msgstr "Antiokok bere erregetzaren hasieran arazoak besterik ez zituen jaso aurrekoetatik. Amiltzear zegoela lortu zuen, berriz ere, Seleukusen Inperioa bereganatzea. Bactria eta Partiako Ekialdeko satrapak menderatu zituen, aldi baterako ekialdeko mugak egonkortuz. Honen ondoren Grezia amari begira jarri zen bere aitaren nahia bete nahian, Grezia inbaditu askatuko zuen aitzakian. Aquea elkartea eta Pergamoko erreinua elkartu ziren eta Erromatarrekin bat egin eta Magnesiako borrokan garaitu zuten, Alexanderren Inperioa berriz elkartzeko bere aitaren nahia betirako zapuztuz."
+"I fought so hard to found. The rebellious eastern satraps of Bactria and "
+"Parthia were brought to heel , temporarily securing his eastern borders. He "
+"then turned his attention to mother Greece, attempting to fulfill the dreams"
+" of his fathers by invading Greece under the pretext of liberation. The "
+"Achaean League and the Kingdom of Pergamon banded together with the Romans "
+"to defeat him at the Battle of Magnesia, forever burying the dream of "
+"reuniting Alexander's empire."
+msgstr "Antiokok bere erregetzaren hasieran arazoak besterik ez zituen jaso aurrekoetatik. Amiltzear zegoela lortu zuen, berriz ere, Seleukusen Inperioa bereganatzeko borrokatu. Bactria eta Partiako Ekialdeko satrapak menderatu zituen, aldi baterako ekialdeko mugak egonkortuz. Honen ondoren Grezia amari begira jarri zen bere aitaren nahia bete nahian, Grezia inbaditu askatuko zuen aitzakian. Aquea elkartea eta Pergamoko erreinua elkartu ziren eta Erromatarrekin bat egin eta Magnesiako borrokan garaitu zuten, Alexanderren Inperioa berriz elkartzeko bere aitaren nahia betirako zapuztuz."
 
 #: simulation/data/civs/sele.jsonFactions[0].Heroes[1].Name
 msgid "Antiokhos G' Megas"
@@ -2558,8 +2590,10 @@ msgid ""
 msgstr "Lycurgus legegile ospetsuak idatzitako konstituzioaren pean, Agoge instituzioa sortu zen, non Espartarrak Espartar estatua defendatzeko goi mailako gudariak izateko ikasten zuten 6 urte betetzen zituztenetik aurrera."
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Description
-msgid "Allies can train Spartiates."
-msgstr "Aliatuek Espartiatak entrenatu ditzakete."
+msgid ""
+"Increases the health for citizen-soldier infantry spearmen by 10% for allies"
+" of Spartan players."
+msgstr "Espartar jokalarien aliatuei infanteriako lantzari hiritar gudarien kostua %10 igotzen die."
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Name
 msgid "Peloponnesian League"

@@ -4,7 +4,9 @@
 # 
 # Translators:
 # Antoine Adet <antoine.adet@gmail.com>, 2013
+# Arnaud Rochés <roches.arn@gmail.com>, 2017
 # A W <flaco@core-unit.net>, 2016
+# Brian BERNARD <brianbernard16@gmail.com>, 2017
 # Buggi, 2014
 # Caius Julius <samoth-maoly@hotmail.fr>, 2016
 # Calinou, 2013
@@ -14,13 +16,15 @@
 # Irriep Nala Novram <allannkorh@yahoo.fr>, 2017
 # Jibi, 2013
 # Julien Bernard, 2013
+# jy jrts <lucashavard35@hotmail.fr>, 2017
 # Kachimatte <erwan.trestan.laigle@gmail.com>, 2013
 # kalemiro <cuvillier.cl@gmail.com>, 2014
 # lemiaou, 2014
 # LordIgorIIIofKiev <igorpono@hotmail.com>, 2014
+# Lucas Bertram <lucasjbertram@gmail.com>, 2017
 # minissimo <lucanium@gmail.com>, 2014
 # Nexus nexus <neocrysis@gmail.com>, 2016
-# Nicolas Auvray <na.itms76@gmail.com>, 2013-2015
+# Nicolas Auvray <na.itms76@gmail.com>, 2013-2015,2017
 # nicolas caillard <nick2paris@gmail.com>, 2013
 # Oimat <pgersberg@free.fr>, 2014
 # Olivier <olivier.torrens@gmail.com>, 2013
@@ -34,10 +38,10 @@
 # Sander Deryckere, 2014
 # slimkhan, 2014
 # Slim Khan, 2014
-# Polakrity <sxk-fr@live.fr>, 2014
+# Polakrity <sxk-fr@live.fr>, 2014,2017
 # tavariz <guipoi@yahoo.fr>, 2014
 # Thedemos <thekingadn@gmail.com>, 2014
-# Timothee KNOBLOCH <timothee.knobloch@gmail.com>, 2014
+# Timothee KNOBLOCH <inactive+nouillorque@transifex.com>, 2014
 # Tito221 <Titanomachy221@hotmail.fr>, 2013
 # Loki <tontonloul@hotmail.fr>, 2013
 # Valentin Ambroise <valentin.amb@hotmail.com>, 2015
@@ -47,9 +51,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2016-11-28 09:00+0100\n"
-"PO-Revision-Date: 2017-01-02 10:53+0000\n"
-"Last-Translator: Irriep Nala Novram <allannkorh@yahoo.fr>\n"
+"POT-Creation-Date: 2017-06-05 09:01+0200\n"
+"PO-Revision-Date: 2017-06-09 13:12+0000\n"
+"Last-Translator: Polakrity <sxk-fr@live.fr>\n"
 "Language-Team: French (http://www.transifex.com/wildfire-games/0ad/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -179,7 +183,7 @@ msgstr "Démosthène"
 
 #: simulation/data/civs/athen.jsonFactions[0].Technologies[0].Description
 msgid "Athenian triremes can train Marines (Epibastes Athenaikos)."
-msgstr "Les trières athéniennes peuvent entraîner de l'infanterie de marine (Epibastes Athenaikos)."
+msgstr "Les trirèmes athéniennes peuvent entraîner de l'infanterie marine (Epibastes Athenaikos)."
 
 #: simulation/data/civs/athen.jsonFactions[0].Technologies[0].Name
 msgid "Iphicratean Reforms"
@@ -207,7 +211,7 @@ msgstr "Les Longs Murs d’Athènes, érigés sous les auspices de l'astucieux T
 msgid ""
 "The player gains the ability to order spear-armed troops into Phalanx "
 "formation, providing greater attack and armor."
-msgstr "Le joueur gagne la possibilité d'ordonner à ses troupes de lanciers de se mettre en formation de la phalange, leur conférant un bonus d'attaque et d'armure."
+msgstr "Le joueur gagne la possibilité d'ordonner à ses troupes de lanciers de se mettre en formation Phalange, leur conférant un bonus d'attaque et d'armure."
 
 #: simulation/data/civs/athen.jsonFactions[0].Technologies[2].Name
 #: simulation/data/civs/spart.jsonCivBonuses[0].Name
@@ -224,13 +228,14 @@ msgstr "La formation en phalange classique fut développée au tournant du VIIIe
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[0].History
 msgid ""
-"The general whom persuaded the Athenians to invest their income from silver "
+"The general who persuaded the Athenians to invest their income from silver "
 "mines in a war navy of 200 Triremes. A key figure during the Persian Wars, "
 "he commanded the victorious Athenian navy at the decisive battle of Salamis "
 "in 479 B.C. Later, he pursued an active policy against the Persians in the "
-"Aegean, thereby laying the foundations of future Athenian power. Ostracised "
-"by the Athenians, he was forced to flee to the protection of the Persians."
-msgstr "Le général qui persuada les Athéniens d'investir leur revenu provenant des mines d'argent dans une flotte armée de 200 trières. Personnage clé durant les Guerres Médiques, il commanda la victorieuse marine athénienne lors de la décisive bataille de Salamine en 479 av. JC. Plus tard, il poursuivit activement les Perses en mer Egée, posant ainsi les bases de la future puissance athénienne. Ostracisé par les Athéniens, il fut contraint à l'exil et trouva refuge auprès du roi de Perse."
+"Aegean, thereby laying the foundations of future Athenian power. However, he"
+" was eventually ostracised by the Athenians and forced to flee to the "
+"protection of the Persians."
+msgstr "Le général qui persuada les Athéniens d'investir leur revenu des mines d'argent dans un flotte de guerre de 200 trirèmes. Une figure clé durant les guerres Perses, il commanda les forces Athéniennes victorieuses lors de la bataille décisive de Salamis en 479 av. J.C.. Plus tard, il poursuivit activement une politique contre les Perses en Égée, posant ainsi les bases de la future puissance Athénienne. Il fut toutefois ostracisé par les Athéniens, et forcé à fuir sous la protection des Perses."
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[1].History
 msgid "Pericles was the foremost Athenian politician of the 5th Century B.C."
@@ -348,17 +353,14 @@ msgid "Celtic religion and druidry inspired their warlike mindset. "
 msgstr "La religion et le druidisme celtes ont inspiré leur mentalité guerrière."
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Description
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
-msgid "Bonus to tech speed."
-msgstr "Bonus d'accélération technologique."
+msgid "-20% resources cost for allies healers."
+msgstr "-20% de coût en ressources pour les guérisseurs alliés."
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Name
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
-msgid "Druides"
+msgid "Druids"
 msgstr "Druides"
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].History
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
 msgid ""
 "The Druids of the Celts maintained an organized religion that advanced the "
 "technology of their people even during wartime."
@@ -596,8 +598,8 @@ msgid ""
 msgstr "À l'instar de la péninsule ibérique, l'Afrique du Nord était connue comme le pays du cheval, capable de produire jusqu'à 100 000 nouvelles montures chaque année. Les Numides avaient la passion des chevaux et étaient réputés à être des cavaliers sans frein, servant notamment dans l'armée carthaginoise. C'était aussi l'habitat de l'éléphant des forêts d'Afrique du Nord."
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Description
-msgid "+33% trade profit international routes."
-msgstr "+33% de profits commerciaux grâce aux routes internationales."
+msgid "10% bonus of trade profit for allies' international routes."
+msgstr "10% de bonus de profit pour les routes commerciales internationale des alliés."
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Name
 msgid "Trademasters"
@@ -607,7 +609,7 @@ msgstr "Maîtres marchands"
 msgid ""
 "The Phoenicians and Carthaginians were broadly known as the greatest trading"
 " civilization of the ancient and classical world."
-msgstr "Les phéniciens et les carthaginois étaient connus pour être les meilleures civilisations marchandes de l'époque antique et classique."
+msgstr "Les Phéniciens et les Carthaginois étaient connus pour être les meilleures civilisations marchandes de l'époque antique et classique."
 
 #: simulation/data/civs/cart.jsonAINames[0]
 #: simulation/data/civs/cart.jsonFactions[0].Heroes[0].Name
@@ -802,15 +804,29 @@ msgstr "Carthage, une cité-État de l'actuelle Tunisie, était une formidable f
 msgid "Gauls"
 msgstr "Gaulois"
 
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
+msgid "-10% research time for technologies of allies."
+msgstr "-10% de temps de recherche de technologies pour les alliés."
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
+msgid "Druidic Wisdom"
+msgstr "Sagesse druidique"
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
+msgid ""
+"The Druids of the Gauls maintained an organized religion that advanced the "
+"technology of their people even during wartime."
+msgstr "Les druides gaulois ont maintenu une religion organisée, qui a fait progresser la technologie de leur peuple même en temps de guerre."
+
 #: simulation/data/civs/gaul.jsonAINames[0]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].Name
-msgid "Britomartos"
-msgstr "Viridomaros"
+msgid "Viridomarus"
+msgstr "Viridomarus"
 
 #: simulation/data/civs/gaul.jsonAINames[1]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].Name
-msgid "Brennos"
-msgstr "Brennos"
+msgid "Brennus"
+msgstr "Brennus"
 
 #: simulation/data/civs/gaul.jsonAINames[2]
 msgid "Cativolcus"
@@ -822,8 +838,8 @@ msgstr "Cingétorix"
 
 #: simulation/data/civs/gaul.jsonAINames[4]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].Name
-msgid "Uerkingetorix"
-msgstr "Vercingétorix"
+msgid "Vercingetorix"
+msgstr "Vercingetorix"
 
 #: simulation/data/civs/gaul.jsonAINames[5]
 msgid "Divico"
@@ -838,8 +854,8 @@ msgid "Liscus"
 msgstr "Liscos"
 
 #: simulation/data/civs/gaul.jsonAINames[8]
-msgid "Valetiacos"
-msgstr "Valétiacos"
+msgid "Valetiacus"
+msgstr "Valetiacus"
 
 #: simulation/data/civs/gaul.jsonAINames[9]
 msgid "Viridovix"
@@ -851,14 +867,17 @@ msgid ""
 msgstr "Une quantité fixe de métal et de nourriture venant de chaque structure détruite ou capturée."
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].Name
-msgid "Uae Uictos"
-msgstr "Uae Uictos"
+msgid "Vae Victis"
+msgstr "Vae Victis"
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].History
 msgid ""
-"Means Woe to the Defeated. It was the words that the Gallic Leader, Brennos,"
-" spoke at the Capitol at Rome after they took their plunder."
-msgstr "Malheurs aux vaincus furent les mots prononcés par le chef Gaulois, Brennos, s'adressant dans le capitole à Rome après qu'ils aient pris leurs butins."
+"Woe to the Defeated! The Gallic chieftain Brennus seized Rome (with the "
+"exception of a garrison on Capitoline Hill). When Camillus besieged him with"
+" a relief force from Veii, he negotiated his surrender for 1000 pounds of "
+"gold, and adding the weight of his sword on the scale when the Romans "
+"complained that he used false weights he uttered those famous words."
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[1].Description
 msgid "Gallic druids gain a small melee attack."
@@ -877,21 +896,21 @@ msgstr "Les druides Carnutes étaient des Aulerques. Ils se battaient qu'en cas 
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].History
 msgid ""
-"When celt armies met the enemy, before the battle would start, the celt "
+"When Celtic armies met the enemy, before the battle would start, the Celtic "
 "leader would go to the first line and challenge the bravest of the enemy "
 "warriors to a single combat. The story of how Marcus Claudius Marcellus "
 "killed a Gallic leader at Clastidium (222 B.C.) is typical of such "
-"encounters. Advancing with a smallish army, Marcellus met a combined force "
-"of Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with"
-" the usual rush and terrifying cries, and their king, Britomartos, picking "
+"encounters. Advancing with a small army, Marcellus met a combined force of "
+"Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with "
+"the usual rush and terrifying cries, and their king, Viridomarus, picking "
 "out Marcellus by means of his badges of rank, made for him, shouting a "
-"challenge and brandishing his spear. Britomartos was an outstanding figure "
+"challenge and brandishing his spear. Viridomarus was an outstanding figure "
 "not only for his size but also for his adornments; for he was resplendent in"
 " bright colors and his armor shone with gold and silver. This armor, thought"
 " Marcellus, would be a fitting offering to the gods. He charged the Gaul, "
 "pierced his bright breastplate and cast him to the ground. It was an easy "
-"task to kill Britomartos and strip him of his armor."
-msgstr "Lorsqu'une armée celte recontrait l'ennemi, avant la bataille, le chef celte allait en première ligne pour provoquer et affronter le plus brave parmi les guerriers ennemis en combat singulier. La façon dont Marcus Claudius Marcellus tua un chef gaulois à Clastidium (222 av. J.C.) en est un exemple typique. Avançant avec une petite armée, Marcellus rencontra une force combinée de Gaulois d'Insubrie et de Gésates à Clastidium. L'armée gauloise progressait comme d'habitude rapidement au milieu de cris terrifiants et leur roi, Britomartos, repérant Marcellus par ses insignes et son rang, se dirigea vers lui pour lui lancer un défi et brandir son épée. Britomartos était un personnage exceptionnel non seulement par la taille mais aussi par ses atours ; il resplendissait de couleurs vives et sa cuirasse brillait d'or et d'argent. Marcellus se dit que cette cuirasse serait une juste offrande aux Dieux. Il provoqua le Gaulois, transperça son plastron luisant et l'envoya au sol. Tuer Britomartos et lui retirer sa cuirasse fût une action aisée. "
+"task to kill Viridomarus and strip him of his armor."
+msgstr "Lorsque les armées celtiques rencontraient l'ennemi, avant la bataille, le chef celte allait en première ligne et allait défier le plus valeureux des guerriers ennemis en combat singulier. L'histoire sur la façon dont Marcus Claudius Marcellus tua un chef gaulois à Clastidium (222 av. J.-C) en est un exemple typique. Avançant avec une petite armée, Marcellus rencontra une force combinée de Gaulois insubres et gésates à Clastidium. L'armée gauloise progressait avec leurs cris pressants et terrifiants habituels, et leur roi, Viridomarus, choisissa Marcellus le repérant au moyen de ses insignes de rang, faites pour lui, le provoquant au défi et brandissant sa lance. Viridomarus était une figure remarquable non seulement par sa taille mais aussi pour ses ornements; car il était resplendissant dans des couleurs vives et son armure brillait d'or et d'argent. Cette armure, pensait Marcellus, serait une offrande appropriée aux dieux. Il chargea le Gaulois, perça son brillant plastron et le jeta au sol. Pour lui, c'était chose facile de tuer Viridomarus et de le dépouiller de son armure."
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].History
 msgid ""
@@ -902,19 +921,19 @@ msgid ""
 "that Britons had conquered Rome, the greatest civilization in the world, "
 "long before Rome conquered the Britons. We know from many ancient sources "
 "which predate Geoffrey that Rome was indeed sacked, but in 387 not 390, and "
-"that the raid was led by a man named Brennos (which was latinized to "
-"Brennus), but he and his invading horde were Gallic Senones, not British. In"
-" this episode several features of Geoffrey's editing method can be seen: he "
-"modified the historical Brennus/Brennos, created the brother Belinus, "
-"borrowed the Gallic invasion, but omitted the parts where the Celts seemed "
-"weak or foolish. His technique is both additive and subtractive. Like the "
-"tale of Trojan origin, the story of the sack of Rome is not pure "
-"fabrication; it is a creative rearrangement of the available facts, with "
-"details added as necessary. By virtue of their historical association, Beli "
-"and Bran are often muddled with the earlier brothers Belinus and Brennus "
-"(the sons of Dunvallo Molmutius) who contended for power in northern Britain"
-" in around 390 B.C., and were regarded as gods in old Celtic tradition."
-msgstr "Brennus est le nom que les historiens Romains attribuent au célèbre chef des Gaules qui conquît Rome au temps de Camillus. Selon Geoffrey de Monmouth, le clerc qui écrivit « Histoire des Rois de Bretagne », Brennus et son frère Belinus envahirent la Gaule et saccagèrent Rome en 390 av.J.-C., 'prouvant' que les Bretons insulaires avaient conquis Rome, la plus grande civilisation au monde, bien avant que Rome n'ait conquis les Bretons. On sait de nombreuses sources antérieures à Geoffrey que Rome a effectivement été saccagée, en 387 et non pas en 390, lors d'un raid mené par un homme nommé Brennos (qui fut latinisé en Brennus). Lui et sa horde d'envahisseurs étaient des Gaulois Sénons et non pas des Bretons insulaires. Dans cet épisode, plusieurs techniques d'édition de Geoffrey peuvent être observées : il a modifié le personnage historique de Brennus/Brennos, il a créé le frère Belinus, s'est inspiré de l'invasion Gauloise, mais a omis les passages où les Celtes semblaient faibles ou idiots. Sa technique est à la fois additive et soustractive. Comme pour le conte de l'origine Troyenne, l'histoire du saccage de Rome n'est pas une pure fiction; il s'agit d'un réarrangement créatif des faits historiques, avec des ajouts de détails lorsque cela est nécessaire. En vertu de leur association historique, Beli et Bran sont souvent confondus avec les frères Belinus et Brennus (les fils de Dunvallo Molmutius) qui se sont disputés le pouvoir dans le nord de l'île de Bretagne aux alentours de 390 av.J.-C. et étaient considérés comme des dieux dans l'ancienne tradition Celtique."
+"that the raid was led by a man named Brennus, but he and his invading horde "
+"were Gallic Senones, not British. In this episode several features of "
+"Geoffrey's editing method can be seen: he modified the historical Brennus, "
+"created the brother Belinus, borrowed the Gallic invasion, but omitted the "
+"parts where the Celts seemed weak or foolish. His technique is both additive"
+" and subtractive. Like the tale of Trojan origin, the story of the sack of "
+"Rome is not pure fabrication; it is a creative rearrangement of the "
+"available facts, with details added as necessary. By virtue of their "
+"historical association, Beli and Bran are often muddled with the earlier "
+"brothers Belinus and Brennus (the sons of Dunvallo Molmutius) who contended "
+"for power in northern Britain in around 390 B.C., and were regarded as gods "
+"in old Celtic tradition."
+msgstr "Brennus est le nom que les historiens romains donnèrent au célèbre chef des Gaulois qui prirent Rome au temps de Camillus. Selon Geoffroy de Monmouth, le clerc qui écrivit l' \"Histoire des Rois de Bretagne\", Brennus et son frère Belinus ont envahi la Gaule et ont saccagé Rome en 390 av. J.-C, 'prouvant' que les Bretons conquirent Rome, la plus grande civilisation du monde, bien avant que Rome ne conquit les Bretons. Nous savons, de nombreuses sources anciennes qui sont antérieures à Geoffroy, que Rome a effectivement été conquis, mais en 387 non en 390, et que le raid a été dirigé par un homme nommé Brennus, mais lui et sa horde envahissante étaient des Gaulois sénons et non des Bretons. Dans cet épisode, on peut voir plusieurs caractéristiques qui diffèrent par rapport à l'édition de Geoffroy: il a modifié l'histoire de Brennus, a créé le frère Belinus, s'est inspiré de l'invasion gauloise, mais a omis les parties où les Celtes semblaient faibles ou stupides. Sa technique est à la fois additive et soustractive. Comme l'histoire de Troie, l'histoire du sac de Rome ne sont pas une pure invention; c'est un réaménagement créatif des faits disponibles, avec des ajouts de détails si nécessaire. En raison de leur association historique, Beli et Bran sont souvent confondus avec les frères précédents Belinus et Brennus (les fils de Dunvallo Molmutius) qui ont défendu le pouvoir dans le nord de la Grande-Bretagne vers 390 av J.-C. et ont été considérés comme des dieux dans la vieille tradition celte."
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].History
 msgid ""
@@ -1194,8 +1213,8 @@ msgid ""
 msgstr "Les Grecs ont très bien réussi à helléniser de nombreux étrangers. Au cours de l'époque hellénistique, le grec, largement parlé de l'Espagne à l'Inde, était la langue véhiculaire du Monde Antique."
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Description
-msgid "+15% tribute and trade bonus on metal."
-msgstr "+15% de tribut et de bonus commercial sur le métal."
+msgid "+20% sell prices at market."
+msgstr "+20% de prix de vente au marché."
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Name
 msgid "Standardized Currency"
@@ -1455,12 +1474,12 @@ msgid ""
 msgstr "Kshatriya, ou Kashtriya, qui signifie guerrier, est l'une des quatre varnas (castes) de l'Hindouisme. Dans la tradition, les Kshatriya constituent l'élite militaire et dirigeante du système social Védique et Hindou tel que décrit dans les Védas et dans les lois de Manou."
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Description
-msgid "Allied Temple techs -50% cost and research time."
-msgstr "-50% de coûts et temps de recherche pour les temple alliés  "
+msgid "Allied temples and temple technologies -50% cost and research time."
+msgstr "Les temples alliés et leurs technologies ont -50% de coût en ressources et en temps de recherche."
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Name
-msgid "Evangelism."
-msgstr "Évangélisation."
+msgid "Ashoka's Religious Support"
+msgstr "Soutien religieux d'Ashoka"
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].History
 msgid ""
@@ -1616,7 +1635,7 @@ msgstr "Alors que les Perses employaient les chameaux seulement que dans quelque
 msgid ""
 "Persians have a +10% population cap bonus (e.g. 330 pop cap instead of the "
 "usual 300)."
-msgstr "Les perses ont un bonus de +10% population maximale (par exemple 330 max au lieu de l'habituel 300)."
+msgstr "Les Perses ont un bonus de +10% population maximale (par exemple 330 max au lieu de l'habituel 300)."
 
 #: simulation/data/civs/pers.jsonCivBonuses[1].Name
 msgid "Great King's Levy"
@@ -1633,8 +1652,8 @@ msgid ""
 msgstr "Les Perses durent et ont prélevé un grand nombre d'infanterie pendant la guerre à cause de l'étendue de l'Empire Achéménide et la façon dont il était réparti. En général l'infanterie Perse était bien formée et se battait avec une grande ténacité. Cependant même si c'était vrai, l'infanterie était faible au corps-à-corps ou en combat rapproché. Enfin, à l'exception des régiments d'élite, l'infanterie Perse n'était pas une force professionnelle permanente."
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Description
-msgid "+25% trade profit land routes."
-msgstr "+25% de profits commerciaux par voies terrestres."
+msgid "Higher income (+15%) from land trade routes for ally's traders."
+msgstr "Revenues augmentés (+15%) pour les marchands alliés sur les voies commerciales terrestres."
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Name
 msgid "Royal Road"
@@ -1729,11 +1748,11 @@ msgstr "Architecture persane"
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[1].History
 msgid ""
-"The Persians built the wonderful 1677 mile-long Royal Highway from Sardis to"
-" Susa; Darius the Great and Xerxes also built the magnificent Persepolis; "
-"Cyrus the Great greatly improved Ecbatana and virtually 'rebuilt' the old "
-"Elamite capital of Susa."
-msgstr "Les Perses ont construit la merveilleuse voie royale sur 2700 km de Sardes à Suse ; Darius le Grand et Xerxès ont aussi édifié la magnifique Persépolis; Cyrus le Grand a beaucoup amélioré Ecbatane et pratiquement \"reconstruit\" l'ancienne capitale élamite de Suse. "
+"The Persians built the wonderful 2700 kilometer-long Royal Highway from "
+"Sardis to Susa; Darius the Great and Xerxes also built the magnificent "
+"Persepolis; Cyrus the Great greatly improved Ecbatana and virtually "
+"'rebuilt' the old Elamite capital of Susa."
+msgstr "Les Perses ont construit la magnifique grande voie royale de 2700 kilomètres de long reliant Sardes à Suse; Darius le Grand et Xerxès ont aussi construit la magnifique Persépolis; Cyrus le Grand améliora grandement Ecbatane et  à pour ainsi dire reconstruit l'ancienne capitale Élamite de Suse. "
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[2].Description
 msgid "Reduces train time for Anusiya champion infantry by half."
@@ -1820,7 +1839,7 @@ msgid ""
 "Persepolis. Functioning as the empire's central audience hall, the palace is"
 " famous for the reliefs of the tribute-bearers and of the army, including "
 "the Immortals."
-msgstr "Le terme Apanada désigne un grand palais hypostyle que l'on trouve en Perse. L'exemple le plus connu, et de loin le plus grand, était la grande Apanada de Persépolis. Fonctionnant comme la grande salle centrale d'audience de l'empire, le palais est célèbre pour ses bas-reliefs représentant les délégations en charge de payer le tribut et l'armée, y compris les immortels."
+msgstr "Le terme Apanada désigne un grand palais hypostyle que l'on trouve en Perse. L'exemple le plus connu, et de loin le plus grand, était la grande Apanada de Persépolis. Fonctionnant comme la grande salle centrale d'audience de l'empire, le palais est célèbre pour ses bas-reliefs représentant les délégations en charge de payer le tribut et l'armée, y compris les Immortels."
 
 #: simulation/data/civs/pers.jsonHistory
 msgid ""
@@ -1848,17 +1867,16 @@ msgid "Mercenary Army"
 msgstr "Armée de mercenaires"
 
 #: simulation/data/civs/ptol.jsonCivBonuses[0].History
-#: simulation/data/civs/ptol.jsonStructures[1].History
 msgid ""
 "The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
 "foreign mercenaries for the bulk of its military force, mainly because the "
 "loyalty of native Egyptian units was often suspect. Indeed, during one "
 "native uprising, Upper Egypt was lost to the Ptolemies for decades. "
-"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"Mercenaries were often battle-hardened and their loyalty could be bought, "
 "sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
 " under the Ptolemies was so prosperous as to be the richest of Alexander's "
 "successor states."
-msgstr "La dynastie gréco-macédonienne des Ptolémées s'est appuyé sur un grand nombre de mercenaires grecs et étrangers pour l'essentiel de sa force militaire, principalement parce que la loyauté des unités égyptiennes autochtones était souvent soupçonner. En effet, au cours d'un soulèvement indigène, les Ptolémées ont perdu la Haute-Égypte pendant des décennies. Les mercenaires étaient souvent aguerris et leur fidélité peut être acheté, parfois bon marché, parfois non. Cela n'avait aucune importance, puisque l’Égypte sous les Ptolémées était si prospère qu'elle était le plus riche des États successeurs d'Alexandre."
+msgstr "La dynastie Gréco-Macédonienne des Ptolémée s'est appuyé sur un grand nombre de mercenaires grecs et étrangers pour constituer l'essentiel de sa force militaire, principalement parce que la loyauté des unités autochtones égyptiennes était souvent remise en cause. En effet, au cours d'un soulèvement autochtone, la Haute-Égypte fut perdu par les Ptolémée pour des décennies. Les mercenaires étaient souvent aguerris et leur fidélité pouvait être acheté, parfois pour un bon prix, et parfois non. Cela n'avait aucune importance, puisque l’Égypte sous les Ptolémée était si prospère qu'elle était le plus riche des États successeurs d'Alexandre."
 
 #: simulation/data/civs/ptol.jsonCivBonuses[1].Description
 msgid "The Ptolemaic Egyptians receive 3 additional farming technologies."
@@ -2035,6 +2053,18 @@ msgid ""
 "Trains all 'mercenary' units."
 msgstr "Doit être construit en territoire neutre. N'a pas d'effet d'augmentation de territoire. Entraîne toutes les unités \"mercenaires\"."
 
+#: simulation/data/civs/ptol.jsonStructures[1].History
+msgid ""
+"The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
+"foreign mercenaries for the bulk of its military force, mainly because the "
+"loyalty of native Egyptian units was often suspect. Indeed, during one "
+"native uprising, Upper Egypt was lost to the Ptolemies for decades. "
+"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
+" under the Ptolemies was so prosperous as to be the richest of Alexander's "
+"successor states."
+msgstr "La dynastie gréco-macédonienne des Ptolémées s'est appuyé sur un grand nombre de mercenaires grecs et étrangers pour l'essentiel de sa force militaire, principalement parce que la loyauté des unités égyptiennes autochtones était souvent soupçonner. En effet, au cours d'un soulèvement indigène, les Ptolémées ont perdu la Haute-Égypte pendant des décennies. Les mercenaires étaient souvent aguerris et leur fidélité peut être acheté, parfois bon marché, parfois non. Cela n'avait aucune importance, puisque l’Égypte sous les Ptolémées était si prospère qu'elle était le plus riche des États successeurs d'Alexandre."
+
 #: simulation/data/civs/ptol.jsonStructures[2].Name
 msgid "Lighthouse"
 msgstr "Phare"
@@ -2100,17 +2130,23 @@ msgid ""
 msgstr "La citoyenneté romaine était très prisée dans le monde antique. Les droits et privilèges accordés aux citoyens romains étaient refusés aux peuples conquis. On dit que blesser un citoyen romain était presque comme blesser Rome elle-même, et ferait s'abattre sur le coupable la puissance entière de Rome."
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Description
-msgid "Allied citizen-soldiers gain a +15% attack when in Roman territory."
-msgstr "Les citoyens-soldats alliés gagnent +15% d'attaque lorsqu'ils sont en territoire romain."
+msgid "-20% training time for allied infantry."
+msgstr "-20% de temps d'entrainement pour l’infanterie alliée."
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Name
-msgid "Socii"
-msgstr "Socii"
+msgid "Conscription"
+msgstr "Conscription"
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].History
 msgid ""
-"Being allied with Rome came with great benefits (as well as great peril)."
-msgstr "S'allier à Rome offrait de grands avantages (ainsi que de grands périls)."
+"Many Roman soldiers were conscripted into service. While volunteers were "
+"preferred, the Roman state did maintain an annual military draft. During an "
+"emergency the draft and the terms of service were enlarged. The importance "
+"of military service in Republican Rome was so great it was a prerequisite "
+"for a political career. Members of the Senate were called Conscript Fathers "
+"because of this, reflected in how the ordo equester was said to have been "
+"\"conscripted\" into the Senate."
+msgstr "Beaucoup de soldats romains étaient appelés à service. Alors que les volontaires étaient preferés, l'état romain entretenait une concription annuelle. Pendant d'une urgence, la conscription et les durées de service a été agrandi. L'importance de service militaire en Rome Républicaine était tellement important, qu'est a été un prérequise pour une carrière politique. Les membres du Sénat s'appelaient «patres conscripti» ou «pères conscrits» à cause de ce, ce qu'est reflète comme l'ordo equester, on dit qu'étaient «conscrits» dans le Sénat."
 
 #: simulation/data/civs/rome.jsonAINames[0]
 msgid "Lucius Junius Brutus"
@@ -2491,14 +2527,14 @@ msgstr "Seleukos A' Nikator"
 msgid ""
 "Antiochus inherited a troubled kingdom upon the beginning of his reign. From"
 " the verge of collapse he managed to weld back together the empire Seleukus "
-"I so hard to found. The rebellious eastern satraps of Bactria and Parthia "
-"were brought to heel , temporarily securing his eastern borders. He then "
-"turned his attention to mother Greece, attempting to fulfill the dreams of "
-"his fathers by invading Greece under the pretext of liberation. The Achaean "
-"League and the Kingdom of Pergamon banded together with the Romans to defeat"
-" him at the Battle of Magnesia, forever burying the dream of reuniting "
-"Alexander's empire."
-msgstr "Antiochos a hérité d'un royaume tourmenté au début de son règne. Alors au bord de l'effondrement, il est parvenu à ressouder l'empire que Séleucos I a eu tant de mal à établir. Les rebelles satrapes venant de l'Est, de Bactrie et de Parthie, ont été mis à genoux, assurant un temps les frontières orientales. Il s'est alors tourné vers la Grèce, s'efforçant de réaliser les rêves de ses pères en l'envahissant sous prétexte de la libérer. La ligue achéenne et le royaume de Pergame se sont associés avec les Romains pour le vaincre à la Bataille de Magnésie, enterrant à tout jamais le rêve de réunifier l'empire d'Alexandre."
+"I fought so hard to found. The rebellious eastern satraps of Bactria and "
+"Parthia were brought to heel , temporarily securing his eastern borders. He "
+"then turned his attention to mother Greece, attempting to fulfill the dreams"
+" of his fathers by invading Greece under the pretext of liberation. The "
+"Achaean League and the Kingdom of Pergamon banded together with the Romans "
+"to defeat him at the Battle of Magnesia, forever burying the dream of "
+"reuniting Alexander's empire."
+msgstr "Antiochus a hérité d'un royaume tourmenté au début de son règne. Alors au bord de l'effondrement, il est parvenu à ressouder l'empire que Séleucus Ier a eu tant de mal à établir. Les satrapes rebelles de l'Est de Bactrie et de Parthie ont été mis à genoux, assurant un temps les frontières orientales. Il s'est alors tourné vers la Grèce mère, s'efforçant de réaliser les rêves de ses pères en envahissant la Grèce sous le prétexte de la libérer. La ligue Achéenne et le royaume de Pergame se sont associés avec les Romains pour le vaincre à la Bataille de Magnésie, enterrant à tout jamais le rêve de réunification de l'empire d'Alexandre."
 
 #: simulation/data/civs/sele.jsonFactions[0].Heroes[1].Name
 msgid "Antiokhos G' Megas"
@@ -2594,8 +2630,10 @@ msgid ""
 msgstr "Sous la Constitution écrite par le mythique législateur Lycurgue, l'institution de l'agogé fut établie, qui obligeait les Spartiates à se former dès l'âge de 6 ans pour être des guerriers supérieurs dans la défense de l'État spartiate."
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Description
-msgid "Allies can train Spartiates."
-msgstr "Vos alliés peuvent entraîner des spartiates."
+msgid ""
+"Increases the health for citizen-soldier infantry spearmen by 10% for allies"
+" of Spartan players."
+msgstr "Augmente la santé des citoyens-soldats lanciers de 10% pour les alliés des joueurs jouant avec les Spartiates."
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Name
 msgid "Peloponnesian League"

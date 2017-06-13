@@ -4,6 +4,11 @@ Heal.prototype.Schema =
 	"<a:help>Controls the healing abilities of the unit.</a:help>" +
 	"<a:example>" +
 		"<Range>20</Range>" +
+		"<RangeOverlay>" +
+			"<LineTexture>heal_overlay_range.png</LineTexture>" +
+			"<LineTextureMask>heal_overlay_range_mask.png</LineTextureMask>" +
+			"<LineThickness>0.35</LineThickness>" +
+		"</RangeOverlay>" +
 		"<HP>5</HP>" +
 		"<Rate>2000</Rate>" +
 		"<UnhealableClasses datatype=\"tokens\">Cavalry</UnhealableClasses>" +
@@ -12,6 +17,15 @@ Heal.prototype.Schema =
 	"<element name='Range' a:help='Range (in metres) where healing is possible'>" +
 		"<ref name='nonNegativeDecimal'/>" +
 	"</element>" +
+	"<optional>" +
+		"<element name='RangeOverlay'>" +
+			"<interleave>" +
+				"<element name='LineTexture'><text/></element>" +
+				"<element name='LineTextureMask'><text/></element>" +
+				"<element name='LineThickness'><ref name='nonNegativeDecimal'/></element>" +
+			"</interleave>" +
+		"</element>" +
+	"</optional>" +
 	"<element name='HP' a:help='Hitpoints healed per Rate'>" +
 		"<ref name='nonNegativeDecimal'/>" +
 	"</element>" +
@@ -71,6 +85,21 @@ Heal.prototype.GetUnhealableClasses = function()
 Heal.prototype.GetHealableClasses = function()
 {
 	return this.template.HealableClasses._string || "";
+};
+
+Heal.prototype.GetLineTexture = function()
+{
+	return this.template.RangeOverlay ? this.template.RangeOverlay.LineTexture : "heal_overlay_range.png";
+};
+
+Heal.prototype.GetLineTextureMask = function()
+{
+	return this.template.RangeOverlay ? this.template.RangeOverlay.LineTextureMask : "heal_overlay_range_mask.png";
+};
+
+Heal.prototype.GetLineThickness = function()
+{
+	return this.template.RangeOverlay ? +this.template.RangeOverlay.LineThickness : 0.35;
 };
 
 /**

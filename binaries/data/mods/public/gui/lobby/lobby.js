@@ -9,16 +9,6 @@ const g_MapSizes = prepareForDropdown(g_Settings && g_Settings.MapSizes);
 const g_MapTypes = prepareForDropdown(g_Settings && g_Settings.MapTypes);
 
 /**
- * Mute clients who exceed the rate of 1 message per second for this time
- */
-const g_SpamBlockTimeframe = 5;
-
-/**
- * Mute spammers for this time.
- */
-const g_SpamBlockDuration = 30;
-
-/**
  * A symbol which is prepended to the username of moderators.
  */
 const g_ModeratorPrefix = "@";
@@ -27,6 +17,11 @@ const g_ModeratorPrefix = "@";
  * Current username. Cannot contain whitespace.
  */
 const g_Username = Engine.LobbyGetNick();
+
+/**
+ * Lobby server address to construct host JID.
+ */
+const g_LobbyServer = Engine.ConfigDB_GetValue("user", "lobby.server");
 
 /**
  * Current games will be listed in these colors.
@@ -94,13 +89,6 @@ var g_UserRating = "";
  * All games currently running.
  */
 var g_GameList = {};
-
-/**
- * Remembers how many messages were sent by each user since the last reset.
- *
- * For example { "username": [numMessagesSinceReset, lastReset, timeBlocked] }
- */
-var g_SpamMonitor = {};
 
 /**
  * Used to restore the selection after updating the playerlist.
@@ -362,6 +350,7 @@ function init(attribs)
 	updateSubject(Engine.LobbyGetRoomSubject());
 	updateLobbyColumns();
 
+	updateToggleBuddy();
 	Engine.GetGUIObjectByName("chatInput").tooltip = colorizeAutocompleteHotkey();
 }
 
@@ -417,7 +406,7 @@ function initGameFilters()
 				translateWithContext("gamelist filter", "> %(rating)s") :
 				translateWithContext("gamelist filter", "< %(rating)s"),
 			{ "rating": r.substr(1) })
-	})))
+	})));
 
 	let gameRatingFilter = Engine.GetGUIObjectByName("gameRatingFilter");
 	gameRatingFilter.list = [translateWithContext("map", "Any")].concat(gameRatingOptions.label);
@@ -432,7 +421,7 @@ function resetFilters()
 	Engine.GetGUIObjectByName("playersNumberFilter").selected = 0;
 	Engine.GetGUIObjectByName("mapTypeFilter").selected = g_MapTypes.Default;
 	Engine.GetGUIObjectByName("gameRatingFilter").selected = 0;
-	Engine.GetGUIObjectByName("showFullFilter").checked = false;
+	Engine.GetGUIObjectByName("filterOpenGames").checked = false;
 
 	applyFilters();
 }
@@ -455,7 +444,7 @@ function filterGame(game)
 	let playersNumberFilter = Engine.GetGUIObjectByName("playersNumberFilter");
 	let mapTypeFilter = Engine.GetGUIObjectByName("mapTypeFilter");
 	let gameRatingFilter = Engine.GetGUIObjectByName("gameRatingFilter");
-	let showFullFilter = Engine.GetGUIObjectByName("showFullFilter");
+	let filterOpenGames = Engine.GetGUIObjectByName("filterOpenGames");
 
 	// We assume index 0 means display all for any given filter.
 	if (mapSizeFilter.selected != 0 &&
@@ -470,7 +459,7 @@ function filterGame(game)
 	    game.mapType != mapTypeFilter.list_data[mapTypeFilter.selected])
 		return true;
 
-	if (!showFullFilter.checked && game.maxnbp <= game.nbp)
+	if (filterOpenGames.checked && (game.nbp >= game.maxnbp || game.state != "init"))
 		return true;
 
 	if (gameRatingFilter.selected > 0)
@@ -542,6 +531,19 @@ function updateSubject(newSubject)
 		logo.size = "50%-110 50%-50 50%+110 50%+50";
 	else
 		logo.size = "50%-110 40 50%+110 140";
+}
+
+/**
+ * Update the caption of the toggle buddy button.
+ */
+function updateToggleBuddy()
+{
+	let playerList = Engine.GetGUIObjectByName("playersBox");
+	let playerName = playerList.list[playerList.selected];
+
+	let toggleBuddyButton = Engine.GetGUIObjectByName("toggleBuddyButton");
+	toggleBuddyButton.caption = g_Buddies.indexOf(playerName) != -1 ? translate("Unmark as Buddy") : translate("Mark as Buddy");
+	toggleBuddyButton.enabled = playerName && playerName != g_Username;
 }
 
 /**
@@ -647,6 +649,8 @@ function toggleBuddy()
 	else
 		g_Buddies.push(name);
 
+	updateToggleBuddy();
+
 	// Don't save empty strings to the config file
 	let buddies = g_Buddies.filter(nick => nick).join(g_BuddyListDelimiter) || g_BuddyListDelimiter;
 	Engine.ConfigDB_CreateValue("user", "lobby.buddies", buddies);
@@ -657,7 +661,7 @@ function toggleBuddy()
 }
 
 /**
- * Select the game listing the selected player when toggling the full games filter.
+ * Select the game listing the selected player when toggling the open games filter.
  */
 function selectGameFromSelectedPlayername()
 {
@@ -701,7 +705,9 @@ function onPlayerListSelection()
 {
 	lookupSelectedUserProfile("playersBox");
 
-	let playerList = Engine.GetGUIObjectByName("playersBox")
+	updateToggleBuddy();
+
+	let playerList = Engine.GetGUIObjectByName("playersBox");
 	if (playerList.selected != -1)
 		selectGameFromPlayername(playerList.list[playerList.selected]);
 }
@@ -718,8 +724,8 @@ function setLeaderboardVisibility(visible)
 
 function setUserProfileVisibility(visible)
 {
-    Engine.GetGUIObjectByName("profileFetch").hidden = !visible;
-    Engine.GetGUIObjectByName("fade").hidden = !visible;
+	Engine.GetGUIObjectByName("profileFetch").hidden = !visible;
+	Engine.GetGUIObjectByName("fade").hidden = !visible;
 }
 
 /**
@@ -747,7 +753,7 @@ function lookupSelectedUserProfile(guiObjectName)
 	Engine.SendGetProfile(playerName);
 
 	Engine.GetGUIObjectByName("usernameText").caption = playerName;
-	Engine.GetGUIObjectByName("roleText").caption = g_RoleNames[Engine.LobbyGetPlayerRole(playerName)]
+	Engine.GetGUIObjectByName("roleText").caption = g_RoleNames[Engine.LobbyGetPlayerRole(playerName) || "participant"];
 	Engine.GetGUIObjectByName("rankText").caption = translate("N/A");
 	Engine.GetGUIObjectByName("highestRatingText").caption = translate("N/A");
 	Engine.GetGUIObjectByName("totalGamesText").caption = translate("N/A");
@@ -1052,7 +1058,20 @@ function joinSelectedGame()
 	if (!game)
 		return;
 
-	if (game.ip.split('.').length != 4)
+	let ip;
+	let port;
+	if (game.stunIP)
+	{
+		ip = game.stunIP;
+		port = game.stunPort;
+	}
+	else
+	{
+		ip = game.ip;
+		port = game.port;
+	}
+
+	if (ip.split('.').length != 4)
 	{
 		addChatMessage({
 			"from": "system",
@@ -1066,10 +1085,12 @@ function joinSelectedGame()
 
 	Engine.PushGuiPage("page_gamesetup_mp.xml", {
 		"multiplayerGameType": "join",
-		"ip": game.ip,
-		"port": game.port,
+		"ip": ip,
+		"port": port,
 		"name": g_Username,
-		"rating": g_UserRating
+		"rating": g_UserRating,
+		"useSTUN": !!game.stunIP,
+		"hostJID": game.hostUsername + "@" + g_LobbyServer + "/0ad"
 	});
 }
 
@@ -1091,7 +1112,6 @@ function hostGame()
 function onTick()
 {
 	updateTimers();
-	checkSpamMonitor();
 
 	while (true)
 	{
@@ -1129,7 +1149,7 @@ function submitChatInput()
 	if (!text.length)
 		return;
 
-	if (handleChatCommand(text) && !isSpam(text, g_Username))
+	if (handleChatCommand(text))
 		Engine.LobbySendMessage(text);
 
 	input.caption = "";
@@ -1193,14 +1213,6 @@ function addChatMessage(msg)
 		{
 			msg.text = msg.text.replace(g_Username, colorPlayerName(g_Username));
 			notifyUser(g_Username, msg.text);
-		}
-
-		// Run spam test if it's not a historical message
-		if (!msg.datetime)
-		{
-			updateSpamMonitor(msg.from);
-			if (isSpam(msg.text, msg.from))
-				return;
 		}
 	}
 
@@ -1302,7 +1314,7 @@ function ircFormat(msg)
 		if (msg.private)
 			senderString = sprintf(translateWithContext("lobby private message", "(%(private)s) <%(sender)s>"), {
 				"private": '[color="' + g_PrivateMessageColor + '"]' +
-							translate("Private")  + '[/color]',
+							translate("Private") + '[/color]',
 				"sender": coloredFrom
 			});
 		else
@@ -1353,92 +1365,9 @@ function ircFormat(msg)
  }
 
 /**
- * Update the spam monitor.
- *
- * @param {string} from - User to update.
- */
-function updateSpamMonitor(from)
-{
-	if (g_SpamMonitor[from])
-		++g_SpamMonitor[from].count;
-	else
-		g_SpamMonitor[from] = {
-			"count": 1,
-			"lastSend": Math.floor(Date.now() / 1000),
-			"lastBlock": 0
-		};
-}
-
-/**
- * Check if a message is spam.
- *
- * @param {string} text - Body of message.
- * @param {string} from - Sender of message.
- *
- * @returns {boolean} - True if message should be blocked.
- */
-function isSpam(text, from)
-{
-	// Integer time in seconds.
-	let time = Math.floor(Date.now() / 1000);
-
-	// Initialize if not already in the database.
-	if (!g_SpamMonitor[from])
-		g_SpamMonitor[from] = {
-			"count": 1,
-			"lastSend": time,
-			"lastBlock": 0
-		};
-
-	// Block blank lines.
-	if (!text.trim())
-		return true;
-
-	// Block users who are still within their spam block period.
-	if (g_SpamMonitor[from].lastBlock + g_SpamBlockDuration >= time)
-		return true;
-
-	// Block users who exceed the rate of 1 message per second for
-	// five seconds and are not already blocked.
-	if (g_SpamMonitor[from].count == g_SpamBlockTimeframe + 1)
-	{
-		g_SpamMonitor[from].lastBlock = time;
-
-		if (from == g_Username)
-			addChatMessage({
-				"from": "system",
-				"text": translate("Please do not spam. You have been blocked for thirty seconds.")
-			});
-
-		return true;
-	}
-
-	return false;
-}
-
-/**
- * Reset timer used to measure message send speed.
- * Clear message count every 5 seconds.
- */
-function checkSpamMonitor()
-{
-	let time = Math.floor(Date.now() / 1000);
-
-	for (let i in g_SpamMonitor)
-	{
-		// Reset the spam-status after being silent long enough
-		if (g_SpamMonitor[i].lastSend + g_SpamBlockTimeframe <= time)
-		{
-			g_SpamMonitor[i].count = 0;
-			g_SpamMonitor[i].lastSend = time;
-		}
-	}
-}
-
-/**
- *  Generate a (mostly) unique color for this player based on their name.
- *  @see http://stackoverflow.com/questions/3426404/create-a-hexadecimal-colour-based-on-a-string-with-jquery-javascript
- *  @param {string} playername
+ * Generate a (mostly) unique color for this player based on their name.
+ * @see http://stackoverflow.com/questions/3426404/create-a-hexadecimal-colour-based-on-a-string-with-jquery-javascript
+ * @param {string} playername
  */
 function getPlayerColor(playername)
 {
@@ -1461,8 +1390,8 @@ function getPlayerColor(playername)
 /**
  * Returns the given playername wrapped in an appropriate color-tag.
  *
- *  @param {string} playername
- *  @param {string} rating
+ * @param {string} playername
+ * @param {string} rating
  */
 function colorPlayerName(playername, rating)
 {

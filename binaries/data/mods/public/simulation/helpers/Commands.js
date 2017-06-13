@@ -172,10 +172,11 @@ var g_Commands = {
 
 	"attack": function(player, cmd, data)
 	{
-		if (g_DebugCommands && !(IsOwnedByEnemyOfPlayer(player, cmd.target) || IsOwnedByNeutralOfPlayer(player, cmd.target)))
-			warn("Invalid command: attack target is not owned by enemy of player "+player+": "+uneval(cmd));
-
 		let allowCapture = cmd.allowCapture || cmd.allowCapture == null;
+
+		if (g_DebugCommands && !allowCapture &&
+		   !(IsOwnedByEnemyOfPlayer(player, cmd.target) || IsOwnedByNeutralOfPlayer(player, cmd.target)))
+			warn("Invalid command: attack target is not owned by enemy of player "+player+": "+uneval(cmd));
 
 		GetFormationUnitAIs(data.entities, player).forEach(cmpUnitAI => {
 			cmpUnitAI.Attack(cmd.target, cmd.queued, allowCapture);
@@ -782,6 +783,20 @@ var g_Commands = {
 				"message": markForTranslation("There are no bribable units"),
 				"translateMessage": true
 			});
+	},
+
+	"diplomacy-request": function(player, cmd, data)
+	{
+		let cmpAIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_AIInterface);
+		if (cmpAIInterface)
+			cmpAIInterface.PushEvent("DiplomacyRequest", cmd);
+	},
+
+	"tribute-request": function(player, cmd, data)
+	{
+		let cmpAIInterface = Engine.QueryInterface(SYSTEM_ENTITY, IID_AIInterface);
+		if (cmpAIInterface)
+			cmpAIInterface.PushEvent("TributeRequest", cmd);
 	},
 
 	"dialog-answer": function(player, cmd, data)
@@ -1399,6 +1414,7 @@ function GetFormationUnitAIs(ents, player, formationTemplate)
 			return [];
 
 		RemoveFromFormation(ents);
+		cmpUnitAI.SetLastFormationTemplate("formations/null");
 
 		return [ cmpUnitAI ];
 	}
@@ -1424,7 +1440,10 @@ function GetFormationUnitAIs(ents, player, formationTemplate)
 		else
 		{
 			if (nullFormation)
+			{
+				RemoveFromFormation([ent]);
 				cmpUnitAI.SetLastFormationTemplate("formations/null");
+			}
 			nonformedUnitAIs.push(cmpUnitAI);
 		}
 	}

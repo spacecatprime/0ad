@@ -7,7 +7,7 @@
 # SecondCloud500 <eddieven2000@gmail.com>, 2014
 # Enrico Mungai <h3.mguy@gmail.com>, 2016
 # Fabio Pedretti <pedretti.fabio@gmail.com>, 2016
-# Fabrizio Morotti <famorot@tin.it>, 2016
+# Fabrizio Morotti <famorot@tin.it>, 2016-2017
 # francescogramazio <francescograma@gmail.com>, 2014
 # Martin Falanga <iblaim97@hotmail.it>, 2017
 # Me Lazzi, 2014-2017
@@ -18,9 +18,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 15:58+0000\n"
-"Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-05 18:48+0000\n"
+"Last-Translator: Fabrizio Morotti <famorot@tin.it>\n"
 "Language-Team: Italian (http://www.transifex.com/wildfire-games/0ad/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -34,7 +34,7 @@ msgid ""
 "health, 1 extra armor level of every type, 20% extra attack for melee units,"
 " 4m extra range and 5% better precision for ranged units, faster movement "
 "speeds and extra heal speed and range for healers."
-msgstr ""
+msgstr "Le unità promosse alla classe avanzata guadagnano molte qualità: 20% salute extra, 1 livello di armatura extra di ogni tipo, 20% attacco extra per le unità da mischia, 4m di portata extra e 5% di precisione in più per le unità a distanza, più velocità di movimento e velocità di rigenerazione e portata per i curatori."
 
 #: simulation/data/technologies/armor_cav_01.jsondescription
 #: simulation/data/technologies/armor_cav_chamfron.jsondescription
@@ -92,6 +92,7 @@ msgstr "Testiera"
 #: simulation/data/technologies/training_levy_infantry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_cavalry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonrequirementsTooltip
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_celt_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_iberian_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_italian_mercs.jsonrequirementsTooltip
@@ -704,8 +705,8 @@ msgid ""
 msgstr "Tecniche segrete di lavorazione dell'acciaio forgiano mirabili lame di spade. Non solo, ma la durezza stessa dell'acciaio è senza pari."
 
 #: simulation/data/technologies/attack_steel_working.jsontooltip
-msgid "+2 attack for all sword units."
-msgstr "+2 Attacco per tutte le unità con spada."
+msgid "+20% Hack attack for all sword units."
+msgstr "+20%  Attacco con fendente per tutte le unità con spada."
 
 #: simulation/data/technologies/attack_steel_working.jsongenericName
 msgid "Steel Working"
@@ -825,7 +826,7 @@ msgid ""
 "extra armor level of every type, 20% extra attack for melee units, extra "
 "range and better precision for ranged units, faster movement speeds and "
 "extra heal speed and range for healers."
-msgstr ""
+msgstr "Le unità allenate fino alla classe elite guadagnano molte qualità: 20% extra HP, 1 livello di armatura extra di ogni tipo, 20% attacco extra per le unità da mischia, portata extra e miglior precisione per le unità a distanza, più velocità di movimento e velocità di rigenerazione e portata per i curatori."
 
 #: simulation/data/technologies/gather_animals_stockbreeding.jsondescription
 msgid "Breeding livestock for food."
@@ -922,8 +923,8 @@ msgid "Gather Training"
 msgstr "Addestramento alla Raccolta"
 
 #: simulation/data/technologies/gather_fishing_net.jsondescription
-msgid "Using net improves the fishing productivity."
-msgstr "L'utilizzo della rete migliora la resa del pescato."
+msgid "Nets improve the fishing productivity."
+msgstr "Le reti migliorano la resa del pescato."
 
 #: simulation/data/technologies/gather_fishing_net.jsontooltip
 msgid ""
@@ -1050,8 +1051,8 @@ msgid "Wedge and Mallet"
 msgstr "Cunei e Magli"
 
 #: simulation/data/technologies/gather_wicker_baskets.jsondescription
-msgid "Baskets to carry foraged food stuffs."
-msgstr "Ceste per gli alimenti raccolti."
+msgid "Baskets for foraging."
+msgstr "Gerle per foraggi."
 
 #: simulation/data/technologies/gather_wicker_baskets.jsontooltip
 msgid "Equip your foragers with wicker baskets. +50% fruit foraging rate."
@@ -1156,11 +1157,10 @@ msgstr "Misteri Eleusini"
 
 #: simulation/data/technologies/health_females_01.jsondescription
 msgid ""
-"The Loom allowed the creation of finer clothing to clothe citizens in the "
-"settlement. Women of the household were taught from a young age how to weave"
-" on the loom, and subsequently spent a large  share of their lives working "
-"with it."
-msgstr "Il Telaio permise la creazione di capi di abbigliamento più belli per vestire gli abitanti dei villaggi. Le donne venivano addestrate in giovane età a tessere sul telaio, e successivamente, trascorrevano gran parte della loro vita lavorando con esso."
+"The loom allowed the creation of finer clothing for settlers. Women of the "
+"household were taught from a young age how to weave on the loom, and "
+"subsequently spent a large share of their lives working with it."
+msgstr "Il Telaio permise la creazione di capi di abbigliamento più belli per vestire gli abitanti dei villaggi. Le donne della famiglia venivano addestrate fin dalla giovane età a tessere sul telaio, e conseguentemente trascorrevano gran parte della loro vita lavorando con esso."
 
 #: simulation/data/technologies/health_females_01.jsontooltip
 msgid "Female Citizens +50% Health."
@@ -1622,8 +1622,8 @@ msgid "Make your units 50% more expensive to bribe."
 msgstr "Rende le tue unità del 50% più costose da corrompere."
 
 #: simulation/data/technologies/spy_counter.jsongenericName
-msgid "Counter Espionage"
-msgstr "Contro Spionaggio"
+msgid "Counterintelligence"
+msgstr "Controspionaggio"
 
 #: simulation/data/technologies/trade_commercial_treaty.jsondescription
 msgid "Improve the international trading profit."
@@ -1831,7 +1831,8 @@ msgid ""
 msgstr "Il primo obiettivo dei Mercanti era commerciare, ma anche raccogliere informazioni sui paesi attraversati."
 
 #: simulation/data/technologies/unlock_spies.jsontooltip
-msgid "Allows to bribe other players' units to share their vision."
+msgid ""
+"Allows bribing the units of other players in order to share their vision."
 msgstr "Permette di corrompere le unità di altri giocatori per condividere la loro visuale."
 
 #: simulation/data/technologies/unlock_spies.jsongenericName
@@ -1874,6 +1875,19 @@ msgstr "Fanteria Cittadina Avanzata"
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonspecificName.athen
 msgid "Zeugítai"
 msgstr "Zeugítai"
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsondescription
+msgid "Hire professional mercenaries to fight in your army."
+msgstr "Assolda mercenari professionisti per combattere nel tuo esercito."
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsontooltip
+msgid ""
+"Mercenaries are promoted to advanced rank but require +20% training time."
+msgstr "Mercenari vengono promossi al rango avanzato ma richiede +20% di tempo d'addestramento."
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsongenericName
+msgid "Expertise In War"
+msgstr "Esperienza in Guerra"
 
 #: simulation/data/technologies/upgrade_rank_elite_cavalry.jsontooltip
 msgid ""
@@ -2293,7 +2307,7 @@ msgid ""
 msgstr "Gli Spartani non ebbero il più grande esercito del mondo, ma il miglior esercito del mondo di quel tempo. Quello che non fecero grazie alla superiorità numerica, lo fecero con la qualità dell'addestramento militare. Si diceva che Sparta non avesse bisogno di forti mura a difesa della città, i suoi uomini erano le sue mura."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsontooltip
-msgid "Spartans have 10% less maximum population"
+msgid "Spartans have 10% less maximum population."
 msgstr "Gli spartani hanno il 10% di popolazione massima in meno"
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsongenericName
@@ -2391,8 +2405,8 @@ msgid ""
 msgstr "I mauritani costruirono le mura della città in legno, una risorsa naturale abbondante in India."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsontooltip
-msgid "Mauryan city walls have 20% less health and 20% less build time."
-msgstr "Le mura della città mauritane hanno il 20% di vita in meno ed il 20% di tempo di costruzione in meno."
+msgid "Mauryan city walls have -20% less health and -20% less build time."
+msgstr "Le mura della città Maurya hanno il 20% di robustezza in meno ed il 20% di tempo in meno per la costruzione."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsongenericName
 msgid "Wooden Walls"
@@ -2423,8 +2437,8 @@ msgid ""
 msgstr "L'addestramento della fanteria campione Anusiya è due volte più veloce, ma perde un po' di salute massima."
 
 #: simulation/data/technologies/persians/immortals.jsontooltip
-msgid "Anusiya Champion Infantry -50% train time, but also -20 health."
-msgstr "Fanteria Campione Anusiya tempo di addestramento -50%, ma anche -20 salute."
+msgid "Anusiya Champion Infantry -50% train time, but also -10% health."
+msgstr "Fanteria Campione Anusiya tempo di addestramento -50%, ma anche -10% salute."
 
 #: simulation/data/technologies/persians/immortals.jsongenericName
 msgid "Immortals"
@@ -2493,15 +2507,15 @@ msgstr "Coscrizione di Fanteria"
 
 #: simulation/data/technologies/persians/training_levy_cavalry.jsontooltip
 msgid ""
-"All cavalry -20% train time, but also -10 health. Unlocks Cavalry "
+"All cavalry -20% train time, but also -5% health. Unlocks Cavalry "
 "Conscription."
-msgstr "Tempo di addestramento di tutta la cavalleria ridotto di -20%, ma anche -10 di salute. Sblocca Coscrizione di Cavalleria."
+msgstr "Tempo di addestramento di tutta la cavalleria ridotto di -20%, ma anche -5% di salute. Sblocca Coscrizione di Cavalleria."
 
 #: simulation/data/technologies/persians/training_levy_infantry.jsontooltip
 msgid ""
-"All infantry -10% train time, but also -5 health. Unlocks Infantry "
+"All infantry -20% train time, but also -5% health. Unlocks Infantry "
 "Conscription."
-msgstr "Tutta la fanteria riduce il tempo di addestramento di -10%, ma anche -5 salute. Sblocca Coscrizione di Fanteria."
+msgstr "Tutta la fanteria riduce il tempo di addestramento di -20%, ma anche -5% salute. Sblocca Coscrizione di Fanteria."
 
 #: simulation/data/technologies/romans/decay_logistics.jsondescription
 msgid "The Romans were masters of the logistics of warfare."

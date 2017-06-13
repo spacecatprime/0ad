@@ -3,12 +3,6 @@ Engine.IncludeModule("common-api");
 var PETRA = (function() {
 var m = {};
 
-/**
- * "local" global variables for stuffs that will need a unique ID
- * Note that since order of loading is alphabetic, this means this file must go before any other file using them.
- */
-m.playerGlobals = [];
-
 m.PetraBot = function PetraBot(settings)
 {
 	API3.BaseAI.call(this, settings);
@@ -30,7 +24,7 @@ m.PetraBot = function PetraBot(settings)
 
 m.PetraBot.prototype = new API3.BaseAI();
 
-m.PetraBot.prototype.CustomInit = function(gameState, sharedScript)
+m.PetraBot.prototype.CustomInit = function(gameState)
 {
 	if (this.isDeserialized)
 	{

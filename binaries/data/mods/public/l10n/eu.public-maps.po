@@ -10,9 +10,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 15:43+0000\n"
-"Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
+"POT-Creation-Date: 2017-06-04 09:08+0200\n"
+"PO-Revision-Date: 2017-06-04 20:49+0000\n"
+"Last-Translator: Mielanjel Iraeta <pospolos@gmail.com>\n"
 "Language-Team: Basque (http://www.transifex.com/wildfire-games/0ad/language/eu/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -98,6 +98,18 @@ msgstr "Itxura eta tamaina ezberdinetako uharte labirintoa. Jokalariak ohikoa ba
 msgid "Archipelago"
 msgstr "Artxipelagoa"
 
+#: maps/random/arctic_summer.jsonsettings.Description
+msgid ""
+"Summer has arrived to the cold regions of the north and with it have many "
+"animals, profiting from its milder climate. Wolves, ever present, have shed "
+"their winter clothes; deer, hares and muskox populate the plains. The last "
+"traces of winter are rapidly disappearing, only to reappear very soon."
+msgstr "Udara iritsi da iparraldeko eskualde hotzetara eta berarekin animaliak klima gozoagoaz gozatzen dute. Otsoek, beti hor, neguko jantziak erantzi dituzte, oreinak, erbiak eta idiak nagusi dira lautadetan. Neguaren azken arrastoak arin desagertzen dira, oso azkar itzultzeko baino ez."
+
+#: maps/random/arctic_summer.jsonsettings.Name
+msgid "Arctic Summer"
+msgstr "Udara Artikoa"
+
 #: maps/random/ardennes_forest.jsonsettings.Description
 msgid ""
 "Each player starts deep in the forest.\n"
@@ -145,12 +157,24 @@ msgstr "Mapa esperimentala erliebea higadurak sorturik itxura errealagoa emateko
 msgid "Belgian Uplands"
 msgstr "Belgiar Goi-Lautadak"
 
+#: maps/random/botswanan_haven.jsonsettings.Description
+msgid ""
+"Botswanan Africa during the wet season, a land which was arid and "
+"inhospitable just weeks before has come to life totally transformed. Herds "
+"of zebras graze amid the tall, lush grasses in which lions lie waiting, "
+"while in the shallow pools lurk fearsome crocodiles."
+msgstr "Botswana, Afrika, Urtaro hezearen bitartean, asteak atzera erabat eraldatu zen lur elkor eta ezatsegina. Zebra taldeak goietan bazkatzen dira, belardi oparoak non lehoiak zain dauden, azaleko uretan krokodiloak ezkutatzen diren bitartean."
+
+#: maps/random/botswanan_haven.jsonsettings.Name
+msgid "Botswanan Haven"
+msgstr "Botswanako Aterpea"
+
 #: maps/random/caledonian_meadows.jsonsettings.Description
 msgid ""
 "Fertile lands surrounded by harsh terrain.\n"
-"Remains of recent snowfalls still haunt the forests, and torrential rivers from the snowmelt barely died away.\n"
+"Remains of recent snowfalls still haunt the forests, and torrential rivers from the snowmelt have barely died away.\n"
 "Aiming at a realistic terrain, this map might not always be balanced."
-msgstr "Lur eremu emankorrak lur malkartsuak inguraturik.\nNeguko azken malutak oraindik ere basoak estaltzen dituzte, ur garbiko errekastoak hotzaren garaiaren amaiera adierazten dutenak.\nEgia esateko, lurra ez da erabat ona."
+msgstr "Lur eremu emankorrak lur malkartsuak inguraturik.\nNeguko azken malutak oraindik ere basoak estaltzen dituzte, eta urtutako elur erreka biziak ez dira erabat desagertu.\nEgia esateko, lurra ez da erabat ona."
 
 #: maps/random/caledonian_meadows.jsonsettings.Name
 msgid "Caledonian Meadows"
@@ -224,11 +248,11 @@ msgid ""
 "amongst themselves, but also beat back these ruthless invaders. Ultimately, "
 "the Boii were defeated by the rising power of the Dacians, hence leading to "
 "the reemergence of the Geto-Dacian Confederation under King Burebista."
-msgstr ""
+msgstr "Danubio ibaiaren ertzean hasiko zarete Panoniako Boll Zelten zabaltze garaian. Tribu Zelta honek boterea egonkortzen saiatzen da bertakoak botaz. Zuen artean borrokatu beharko duzue inbasoreen kontra egiten duzuen bitartean. Azkenean Bollak garaituak izan ziren Dazioak aurrera egitean, Burebista erregearen babesean Geto-Dazio konfederazioaren birsortzea bultzatuz."
 
 #: maps/random/danubius.jsonsettings.Name
 msgid "Danubius"
-msgstr ""
+msgstr "Danubio"
 
 #: maps/random/deep_forest.jsonsettings.Description
 msgid "A deep dark forest in Germania."
@@ -257,6 +281,17 @@ msgstr "Jokalariak berdin has daitezke Frantzia Iparraldean edo Britania hegoald
 #: maps/random/english_channel.jsonsettings.Name
 msgid "English Channel"
 msgstr "Kanal Ingelesa"
+
+#: maps/random/extinct_volcano.jsonsettings.Description
+msgid ""
+"[color=\"red\"]IMPORTANT NOTE: AI PLAYERS DO NOT WORK WITH THIS MAP[/color]\n"
+"\n"
+"A once fertile valley... desolated by the eruption of the long-dormant volcano in the heart of the region. Following years of empty, scorched deadness, signs of life started reappearing and spreading. Now the land is half-way to the full lushness of its former era. Alas, it is not to be: following a long stretch of drought, interminable rains have set in in the higher regions to the north. Water levels are rising at drastic levels, slowly forcing players to seek the high ground of the lesser, extinct volcanoes or the now again dormant great cone."
+msgstr "[Color = \"red\"] OHAR GARRANTZITSUA: JOKALARIAK EZ DIRA MAPA HONEKIN JOLASTEN [/ color] \n\nBehin haran emankorra...eskualdeko geldirik dagoen sumendiaren azken erupzioak suntsitua. Urtetako hondatze huts eta bakartiaren ondoren, bizi arrastoak tarteka azaldu eta zabaldu ziren. Orain lurra aurreko garaiko oparotasunaren erdibidean da. Tamalez, ez du lehorte luze baten ondoren izan behar, amaigabeko euriteak iparraldeko eskualde garaienetan egonkortu dira. Ur maila neurri arriskutsuetara iristen ari da, jokalariak sumendi txiki eta hiletako lekurik garaienetara bultzatuz, edo orain geldirik dagoen konora."
+
+#: maps/random/extinct_volcano.jsonsettings.Name
+msgid "Extinct Volcano"
+msgstr "Sumendi Hila"
 
 #: maps/random/flood.jsonsettings.Description
 msgid ""
@@ -368,11 +403,11 @@ msgid ""
 "life-bringing rain which is already two months late. Due to the extended "
 "dryness and scorching heat, only the largest lake remains. The hardy trees "
 "which have survived the climate are spread out, yet not too scarce."
-msgstr ""
+msgstr "Monzoiaren garaiaren aurreko erdialdeko India; aspaldiko hilabeteetan agindutako euriaren zain dagoen lur idorra. Bero kolpe ugariak direla eta erdiko lakua baino ez da gelditzen, gelditzen diren zuhaitzak lurrean han-hemenka kizkurtzen dira, naiz gutxi izan ez."
 
 #: maps/random/india.jsonsettings.Name
 msgid "India"
-msgstr ""
+msgstr "India"
 
 #: maps/random/island_stronghold.jsonsettings.Description
 msgid ""
@@ -606,6 +641,19 @@ msgstr "Etsaiak banantzen dituen mendi garaiak.\n\nPirinioak gaur egungo Frantzi
 msgid "Pyrenean Sierra"
 msgstr "Pirinioko Mendilerroa"
 
+#: maps/random/ratumacos.jsonsettings.Description
+msgid ""
+"Players start on the banks of the River Sequana (Seine) in Northern Gaul "
+"near the settlement of Ratumacos. Destined to become one of the largest and "
+"most prosperous cities of Medieval Europe and one of the Anglo-Norman "
+"dynasty capitals under the new name of Rouen, Ratumacos is still a peaceful "
+"land - but not for long."
+msgstr "Iparraldeko Galian hasiko zarete Sequana (Sena) , Ratumacosen egoitzatik gertu. Europako Erdi Aroko hiririk zaratatsu eta aberatsena izatera deiturik eta dinastia anglonormandiar baten hiriburua, Rouen izen berriaren babesean, Ratumacos bakean bizi den lurra da- ez luzaro."
+
+#: maps/random/ratumacos.jsonsettings.Name
+msgid "Ratumacos"
+msgstr "Ratumacos"
+
 #: maps/random/red_sea.jsonsettings.Description
 msgid ""
 "Historically, the Red Sea was a sea of many nations. Ideally situated for "
@@ -627,6 +675,17 @@ msgstr "Hezegune baxu eta ibilerraza eraikitzeko toki gutxirekin. Europako Rhin 
 msgid "Rhine Marshlands"
 msgstr "Rhingo Padurak"
 
+#: maps/random/river_archipelago.jsonsettings.Description
+msgid ""
+"Narrow strips of lands are separated by waterways, leaving few and shallow "
+"landbridges between them. Tropical wetlands provide plenty of game, but "
+"beware of Mauryan tribesmen when exploring the outermost islands."
+msgstr "Lur eremu estuak erreka bideez aldendurik daude, lur gutxi utziz beraien artean. Tropikoko hezeguneek joko ugari eskaintzen dute, baino kontu izan Mauriar tribuetakoekin azken bazterretako uharteak ikuskatzera doazenean."
+
+#: maps/random/river_archipelago.jsonsettings.Name
+msgid "River Archipelago"
+msgstr "Ibai Artxipelagoa"
+
 #: maps/random/rivers.jsonsettings.Description
 msgid ""
 "Rivers flow between players and join each other in the center of the map."
@@ -635,18 +694,6 @@ msgstr "Errekak sortzen dira jokalarien artetik eta maparen erdian elkartzen dir
 #: maps/random/rivers.jsonsettings.Name
 msgid "Rivers"
 msgstr "Ibaiak"
-
-#: maps/random/rouen.jsonsettings.Description
-msgid ""
-"Players start on the banks of the River Sequana (Seine) in the north of Gaul"
-" in the place of the modern-day city of Rouen. Destined to become one of the"
-" largest and most prosperous cities of medieval Europe and one of the Anglo-"
-"Norman dynasty capitals, Rouen is still a peaceful land - but not for long."
-msgstr "Mendebaldeko Galian hasiko zarete Sequana —gaur egungo Sena— , gaur egun Rouen den tokian. Europako erdi aroko hiririk zaratatsu eta aberatsena izatera deiturik eta dinastia anglonormandiar baten hiriburua, Rouen bakean bizi da, ez luzaro."
-
-#: maps/random/rouen.jsonsettings.Name
-msgid "Rouen"
-msgstr "Rouen"
 
 #: maps/random/saharan_oases.jsonsettings.Description
 msgid "Each players starts near a lush oasis in a large, desolate desert."
@@ -779,6 +826,30 @@ msgstr "Ausazko mapetan paretak jartzeko eren erakustaldia. Mapa handiko mapetar
 msgid "Wall Demo"
 msgstr "Harresien Adibidea"
 
+#: maps/random/wild_lake.jsonsettings.Description
+msgid "A lake surrounded by hills."
+msgstr "Mendi tontorrak inguratutako lakua."
+
+#: maps/random/wild_lake.jsonsettings.Name
+msgid "Wild Lake"
+msgstr "Laku basatia"
+
+#: maps/random/extinct_volcano_triggers.js:65
+msgid "It keeps on raining, we will have to evacuate soon!"
+msgstr "Euria eten gabe, azkar alde egin beharko dugu!"
+
+#: maps/random/extinct_volcano_triggers.js:66
+msgid "The rivers are standing high, we need to find a safe place!"
+msgstr "Ibaiak gainezka daude, ziur egoteko lekua aurkitu behar dugu!"
+
+#: maps/random/extinct_volcano_triggers.js:67
+msgid "We have to find dry ground, our lands will drown soon!"
+msgstr "Lur lehorra aurkitu beharrean gaude, gure lurrak laster itoko dira!"
+
+#: maps/random/extinct_volcano_triggers.js:68
+msgid "The lakes start swallowing the land, we have to find shelter!"
+msgstr "Lakuak lurra jaten hasi dira, aterpea aurkitu beharrean gaude!"
+
 #: maps/random/survivalofthefittest_triggers.js:193
 #, javascript-format
 msgid "The first wave will start in %(time)s!"
@@ -860,7 +931,7 @@ msgstr "Udaberria da Arkadian, Grezia. Udaberriko euriek urte guztian zehar leho
 #: Oasis.xml:PlayerData[0].Name:27
 #: maps/scenarios/Flight_demo_2.xml:PlayerData[0].Name:27
 #: maps/scenarios/Gold_Rush.xml:PlayerData[0].Name:27
-#: maps/scenarios/Introductory Tutorial.xml:PlayerData[0].Name:39
+#: maps/scenarios/Introductory_Tutorial.xml:PlayerData[0].Name:39
 #: maps/scenarios/Laconia 01.xml:PlayerData[0].Name:27
 #: maps/scenarios/Migration.xml:PlayerData[0].Name:27
 #: maps/scenarios/Necropolis.xml:PlayerData[0].Name:39 maps/scenarios/Saharan
@@ -904,7 +975,7 @@ msgstr "Udaberria da Arkadian, Grezia. Udaberriko euriek urte guztian zehar leho
 #: maps/skirmishes/Neareastern Badlands (4).xml:PlayerData[0].Name:39
 #: maps/skirmishes/Nile River (4).xml:PlayerData[0].Name:39
 #: maps/skirmishes/Persian Highlands (4).xml:PlayerData[0].Name:39
-#: maps/skirmishes/Punbjab (2).xml:PlayerData[0].Name:40
+#: maps/skirmishes/Punjab (2).xml:PlayerData[0].Name:40
 #: maps/skirmishes/Saharan Oases (4).xml:PlayerData[0].Name:39
 #: maps/skirmishes/Sahel (4).xml:PlayerData[0].Name:39 maps/skirmishes/Savanna
 #: River.xml:PlayerData[0].Name:39 maps/skirmishes/Sicilia
@@ -928,7 +999,7 @@ msgstr "1. jokalaria"
 #: Oasis.xml:PlayerData[1].Name:27
 #: maps/scenarios/Flight_demo_2.xml:PlayerData[1].Name:27
 #: maps/scenarios/Gold_Rush.xml:PlayerData[1].Name:27
-#: maps/scenarios/Introductory Tutorial.xml:PlayerData[1].Name:39
+#: maps/scenarios/Introductory_Tutorial.xml:PlayerData[1].Name:39
 #: maps/scenarios/Laconia 01.xml:PlayerData[1].Name:27
 #: maps/scenarios/Migration.xml:PlayerData[1].Name:27
 #: maps/scenarios/Necropolis.xml:PlayerData[1].Name:39 maps/scenarios/Saharan
@@ -971,7 +1042,7 @@ msgstr "1. jokalaria"
 #: maps/skirmishes/Neareastern Badlands (4).xml:PlayerData[1].Name:39
 #: maps/skirmishes/Nile River (4).xml:PlayerData[1].Name:39
 #: maps/skirmishes/Persian Highlands (4).xml:PlayerData[1].Name:39
-#: maps/skirmishes/Punbjab (2).xml:PlayerData[1].Name:40
+#: maps/skirmishes/Punjab (2).xml:PlayerData[1].Name:40
 #: maps/skirmishes/Saharan Oases (4).xml:PlayerData[1].Name:39
 #: maps/skirmishes/Sahel (4).xml:PlayerData[1].Name:39 maps/skirmishes/Savanna
 #: River.xml:PlayerData[1].Name:39 maps/skirmishes/Sicilia
@@ -1167,8 +1238,8 @@ msgid "Xerxes I"
 msgstr "Xerxes I"
 
 #: maps/scenarios/Cinema_Demo.xml:PlayerData[2].Name:40
-msgid "Yuu"
-msgstr "Yuu"
+msgid "You"
+msgstr "Zu"
 
 #: maps/scenarios/Cinema_Demo.xml:Name:40
 msgid "Cinema Demo"
@@ -1363,11 +1434,11 @@ msgstr "Irudi batetik inportatutako mapa baten orografiaren adibidea. Oinarrizko
 msgid "Height Map Import Demo - Greece (small)"
 msgstr "Alturako mapen inportazioaren adibidea - Grezia (txikia)"
 
-#: maps/scenarios/Introductory Tutorial.xml:Description:39
+#: maps/scenarios/Introductory_Tutorial.xml:Description:39
 msgid "This is a basic tutorial to get you started playing 0 A.D."
 msgstr "0 A.D. jokatzen has zaitezen oinarrizko tutoretza bat."
 
-#: maps/scenarios/Introductory Tutorial.xml:Name:39
+#: maps/scenarios/Introductory_Tutorial.xml:Name:39
 msgid "Introductory Tutorial"
 msgstr "Oinarrizko Tutoretza"
 
@@ -2280,14 +2351,14 @@ msgstr "Sakonune lehor eta mineraletan aberats bat, lurraren erdian, mendi harri
 msgid "Persian Highlands (4)"
 msgstr "Pertsiar Goi-Lautada (4) "
 
-#: maps/skirmishes/Punbjab (2).xml:Description:40
+#: maps/skirmishes/Punjab (2).xml:Description:40
 msgid ""
 "Northwest India. Nearby rivers swell with monsoon rains, allowing for only a few treacherous crossings.\n"
 "\n"
 "The rivers are heavily forested, while grasslands carpet the surrounding countryside. Watch out for Tigers in the tall grass! Asian elephants are also a common sight."
 msgstr "Indiako ipar-mendebaldea. Montzoiak ekarri dituen urek errekak gainezka jarri dituzte, hala nolako pasabideak utziz.\n\nErrekak zuhaiztiz inguraturik daude eta inguruetako zelaietan belarra da nagusi alfonbra amaiezin bat zabalduz. Argi ibili belar luzeen atzean ezkutatzen diren tigreekin. Asiar elefanteak arruntak dira inguru hauetan."
 
-#: maps/skirmishes/Punbjab (2).xml:Name:40
+#: maps/skirmishes/Punjab (2).xml:Name:40
 msgid "Punjab (2)"
 msgstr "Punjab (2)"
 

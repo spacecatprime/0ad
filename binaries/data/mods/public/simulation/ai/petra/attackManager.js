@@ -244,21 +244,8 @@ m.AttackManager.prototype.update = function(gameState, queues, events)
 				break;
 			target = undefined;
 		}
-		if (target)
-		{
-			// prepare a raid against this target
-			let data = { "target": target };
-			let attackPlan = new m.AttackPlan(gameState, this.Config, this.totalNumber, "Raid", data);
-			if (!attackPlan.failed)
-			{
-				if (this.Config.debug > 1)
-					API3.warn("Headquarters: Raiding plan " + this.totalNumber);
-				this.totalNumber++;
-				attackPlan.init(gameState);
-				this.upcomingAttacks.Raid.push(attackPlan);
-			}
-			this.raidNumber++;
-		}
+		if (target) // prepare a raid against this target
+			this.raidTargetEntity(gameState, target);
 	}
 };
 
@@ -499,6 +486,83 @@ m.AttackManager.prototype.cancelAttacksAgainstPlayer = function(gameState, playe
 				this.startedAttacks[attackType].splice(i--, 1);
 			}
 		}
+};
+
+m.AttackManager.prototype.raidTargetEntity = function(gameState, ent)
+{
+	let data = { "target": ent };
+	let attackPlan = new m.AttackPlan(gameState, this.Config, this.totalNumber, "Raid", data);
+	if (!attackPlan.failed)
+	{
+		if (this.Config.debug > 1)
+			API3.warn("Headquarters: Raiding plan " + this.totalNumber);
+		this.totalNumber++;
+		attackPlan.init(gameState);
+		this.upcomingAttacks.Raid.push(attackPlan);
+	}
+	this.raidNumber++;
+};
+
+/**
+ * Switch defense armies into an attack one against the given target
+ * data.range: transform all defense armies inside range of the target into a new attack
+ * data.armyID: transform only the defense army ID into a new attack
+ * data.uniqueTarget: the attack will stop when the target is destroyed or captured
+ */
+m.AttackManager.prototype.switchDefenseToAttack = function(gameState, target, data)
+{
+	if (!target || !target.position())
+		return false;
+	if (!data.range && !data.armyID)
+	{
+		API3.warn(" attackManager.switchDefenseToAttack inconsistent data " + uneval(data));
+		return false;
+	}
+	let attackData = data.uniqueTarget ? { "uniqueTargetId": target.id() } : undefined;
+	let pos = target.position();
+	let attackType = "Attack";
+	let attackPlan = new m.AttackPlan(gameState, this.Config, this.totalNumber, attackType, attackData);
+	if (attackPlan.failed)
+		return false;
+	this.totalNumber++;
+	attackPlan.init(gameState);
+	this.startedAttacks[attackType].push(attackPlan);
+
+	for (let army of gameState.ai.HQ.defenseManager.armies)
+	{
+		if (data.range)
+		{
+			army.recalculatePosition(gameState);
+			if (API3.SquareVectorDistance(pos, army.foePosition) > data.range * data.range)
+				continue;
+		}
+		else if (army.ID != +data.armyID)
+			continue;
+
+		while (army.foeEntities.length > 0)
+			army.removeFoe(gameState, army.foeEntities[0]);
+		while (army.ownEntities.length > 0)
+		{
+			let unitId = army.ownEntities[0];
+			army.removeOwn(gameState, unitId);
+			let unit = gameState.getEntityById(unitId);
+			if (unit && attackPlan.isAvailableUnit(gameState, unit))
+			{
+				unit.setMetadata(PlayerID, "plan", attackPlan.name);
+				attackPlan.unitCollection.updateEnt(unit);
+			}
+		}
+	}
+	if (!attackPlan.unitCollection.hasEntities())
+	{
+		attackPlan.Abort(gameState);
+		return false;
+	}
+	attackPlan.targetPlayer = target.owner();
+	attackPlan.targetPos = pos;
+	attackPlan.target = target;
+	attackPlan.state = "arrived";
+	return true;
 };
 
 m.AttackManager.prototype.Serialize = function()

@@ -260,6 +260,18 @@ function getGameDescription(extended = false)
 				"label": translate("Relic Count"),
 				"value": g_GameAttributes.settings.RelicCount
 			});
+
+		if (g_VictoryConditions.Name[victoryIdx] == "regicide")
+			if (g_GameAttributes.settings.RegicideGarrison)
+				titles.push({
+					"label": translate("Hero Garrison"),
+					"value": translate("Heroes can be garrisoned.")
+				});
+			else
+				titles.push({
+					"label": translate("Exposed Heroes"),
+					"value": translate("Heroes cannot be garrisoned, and they are vulnerable to raids.")
+				});
 	}
 
 	if (g_GameAttributes.settings.RatingEnabled &&
@@ -299,8 +311,8 @@ function getGameDescription(extended = false)
 				g_GameAttributes.settings.Ceasefire == 0 ?
 					translate("disabled") :
 					sprintf(translatePlural(
-						"For the first minute, enemies will stay neutral.",
-						"For the first %(min)s minutes, enemies will stay neutral.",
+						"For the first minute, other players will stay neutral.",
+						"For the first %(min)s minutes, other players will stay neutral.",
 						g_GameAttributes.settings.Ceasefire),
 					{ "min": g_GameAttributes.settings.Ceasefire })
 		});
@@ -358,8 +370,10 @@ function getGameDescription(extended = false)
 		});
 
 		titles.push({
-			"label": translate("Disable Treasure"),
-			"value": g_GameAttributes.settings.DisableTreasure
+			"label": translate("Treasures"),
+			"value": g_GameAttributes.settings.DisableTreasures ?
+				translateWithContext("treasures", "Disabled") :
+				translateWithContext("treasures", "As defined by the map.")
 		});
 
 		titles.push({

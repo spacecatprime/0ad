@@ -23,8 +23,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 15:58+0000\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-04 15:57+0000\n"
 "Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Turkish (http://www.transifex.com/wildfire-games/0ad/language/tr/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgid ""
 "health, 1 extra armor level of every type, 20% extra attack for melee units,"
 " 4m extra range and 5% better precision for ranged units, faster movement "
 "speeds and extra heal speed and range for healers."
-msgstr ""
+msgstr "Gelişmiş sınıfa terfi eden birimler birçok nitelik kazanır: 20% ek sağlık, her tipte 1 ek zırh seviyesi, yakın dövüş birimleri için ek 20% saldırı, menzilli birimler için ek 4m menzil ve 5% daha fazla isabet, daha hızlı haraket ve şifacılar için  ek sağlık hızı ve menzili."
 
 #: simulation/data/technologies/armor_cav_01.jsondescription
 #: simulation/data/technologies/armor_cav_chamfron.jsondescription
@@ -97,6 +97,7 @@ msgstr "At başlığı"
 #: simulation/data/technologies/training_levy_infantry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_cavalry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonrequirementsTooltip
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_celt_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_iberian_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_italian_mercs.jsonrequirementsTooltip
@@ -709,8 +710,8 @@ msgid ""
 msgstr "Gizli çelik işleme teknikleri kılıç bıçaklarına ayırt edici ve güzel işaretler sağlamıştır. Üstelik çeliğin sertliği karşılaştırılamaz derecede iyidir."
 
 #: simulation/data/technologies/attack_steel_working.jsontooltip
-msgid "+2 attack for all sword units."
-msgstr "Tüm silahşörler için +2 saldırı"
+msgid "+20% Hack attack for all sword units."
+msgstr ""
 
 #: simulation/data/technologies/attack_steel_working.jsongenericName
 msgid "Steel Working"
@@ -927,8 +928,8 @@ msgid "Gather Training"
 msgstr "Toplama Eğitimi"
 
 #: simulation/data/technologies/gather_fishing_net.jsondescription
-msgid "Using net improves the fishing productivity."
-msgstr "Ağ kullanmak balıkçılık verimliliği artırır."
+msgid "Nets improve the fishing productivity."
+msgstr ""
 
 #: simulation/data/technologies/gather_fishing_net.jsontooltip
 msgid ""
@@ -1055,8 +1056,8 @@ msgid "Wedge and Mallet"
 msgstr "Çivi ve Çekiç"
 
 #: simulation/data/technologies/gather_wicker_baskets.jsondescription
-msgid "Baskets to carry foraged food stuffs."
-msgstr "Sepetler besinleri taşır."
+msgid "Baskets for foraging."
+msgstr ""
 
 #: simulation/data/technologies/gather_wicker_baskets.jsontooltip
 msgid "Equip your foragers with wicker baskets. +50% fruit foraging rate."
@@ -1161,11 +1162,10 @@ msgstr "Eleusis Gizemleri"
 
 #: simulation/data/technologies/health_females_01.jsondescription
 msgid ""
-"The Loom allowed the creation of finer clothing to clothe citizens in the "
-"settlement. Women of the household were taught from a young age how to weave"
-" on the loom, and subsequently spent a large  share of their lives working "
-"with it."
-msgstr "Dokuma tezgahı yerleşimdeki vatandaşlara daha iyi giysiler sağlamıştır. Kadınlara küçük yaştan itibaren dokuma tezgahının kullanımı öğretilirdi ve hayatlarının büyük bölümünü bu işle geçirirlerdi."
+"The loom allowed the creation of finer clothing for settlers. Women of the "
+"household were taught from a young age how to weave on the loom, and "
+"subsequently spent a large share of their lives working with it."
+msgstr ""
 
 #: simulation/data/technologies/health_females_01.jsontooltip
 msgid "Female Citizens +50% Health."
@@ -1627,8 +1627,8 @@ msgid "Make your units 50% more expensive to bribe."
 msgstr "Birimlerinizin rüşvet kabul etme maliyetini %50 daha fazla arttırın."
 
 #: simulation/data/technologies/spy_counter.jsongenericName
-msgid "Counter Espionage"
-msgstr "Karşı Casusluk"
+msgid "Counterintelligence"
+msgstr ""
 
 #: simulation/data/technologies/trade_commercial_treaty.jsondescription
 msgid "Improve the international trading profit."
@@ -1836,8 +1836,9 @@ msgid ""
 msgstr "Tüccarların ilk hedefi ticaret, ancak onlar da geçtikleri ülkeler hakkında bilgi topladılar."
 
 #: simulation/data/technologies/unlock_spies.jsontooltip
-msgid "Allows to bribe other players' units to share their vision."
-msgstr "Diğer oyuncuların birimlerinin vizyonlarını paylaşmasına rüşvete izin verir."
+msgid ""
+"Allows bribing the units of other players in order to share their vision."
+msgstr ""
 
 #: simulation/data/technologies/unlock_spies.jsongenericName
 msgid "Espionage"
@@ -1879,6 +1880,19 @@ msgstr "Gelişmiş Vatandaş-Piyade"
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonspecificName.athen
 msgid "Zeugítai"
 msgstr "Zeugítai"
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsondescription
+msgid "Hire professional mercenaries to fight in your army."
+msgstr ""
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsontooltip
+msgid ""
+"Mercenaries are promoted to advanced rank but require +20% training time."
+msgstr ""
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsongenericName
+msgid "Expertise In War"
+msgstr ""
 
 #: simulation/data/technologies/upgrade_rank_elite_cavalry.jsontooltip
 msgid ""
@@ -2298,8 +2312,8 @@ msgid ""
 msgstr "Spartalılar dünyanın en büyük ordusuna sahip değillerdi, ama kendi zamanlarının en iyi ordusuna sahiptiler. Sayı dezavantajını nitelik ile kapattılar. Denir ki Spartalı erkekler duvar gibi oldukları için Sparta güçlü şehir duvarlarına ihtiyaç duymamıştır."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsontooltip
-msgid "Spartans have 10% less maximum population"
-msgstr "Spartalılar maksimum nüfus limitinden %10 daha az nüfusa sahip olurlar."
+msgid "Spartans have 10% less maximum population."
+msgstr ""
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsongenericName
 msgid "Underdogs"
@@ -2396,8 +2410,8 @@ msgid ""
 msgstr "Mauryalılar şehir duvarlarını Hindistan'da çok bulunan bir kaynak olan ahşaptan inşa ederlerdi."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsontooltip
-msgid "Mauryan city walls have 20% less health and 20% less build time."
-msgstr "Mauryan şehir surlarının %20 daha az sağlığı ve %20 daha az inşa süresi vardır."
+msgid "Mauryan city walls have -20% less health and -20% less build time."
+msgstr ""
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsongenericName
 msgid "Wooden Walls"
@@ -2428,8 +2442,8 @@ msgid ""
 msgstr "Anusiya mükemmel piyade eğitimi iki kat daha hızlıdır, ama en fazla sağlıktan biraz eksiltir."
 
 #: simulation/data/technologies/persians/immortals.jsontooltip
-msgid "Anusiya Champion Infantry -50% train time, but also -20 health."
-msgstr "Anusiya Şampiyon Piyadesine -50% yetiştirme süresi, ancak -20 can."
+msgid "Anusiya Champion Infantry -50% train time, but also -10% health."
+msgstr ""
 
 #: simulation/data/technologies/persians/immortals.jsongenericName
 msgid "Immortals"
@@ -2498,15 +2512,15 @@ msgstr "Piyade Askere Çağırma"
 
 #: simulation/data/technologies/persians/training_levy_cavalry.jsontooltip
 msgid ""
-"All cavalry -20% train time, but also -10 health. Unlocks Cavalry "
+"All cavalry -20% train time, but also -5% health. Unlocks Cavalry "
 "Conscription."
-msgstr "Tüm süvariler %-20 eğitim süresine,bunun yanında -10 sağlığa neden olur. Süvari Zorunlu askerlik Kilidi aç."
+msgstr ""
 
 #: simulation/data/technologies/persians/training_levy_infantry.jsontooltip
 msgid ""
-"All infantry -10% train time, but also -5 health. Unlocks Infantry "
+"All infantry -20% train time, but also -5% health. Unlocks Infantry "
 "Conscription."
-msgstr "Tüm piyadeler %-10 eğitim süresine,bunun yanında -5 sağlığa neden olur. Piyade Zorunlu askerlik Kilidi aç."
+msgstr ""
 
 #: simulation/data/technologies/romans/decay_logistics.jsondescription
 msgid "The Romans were masters of the logistics of warfare."

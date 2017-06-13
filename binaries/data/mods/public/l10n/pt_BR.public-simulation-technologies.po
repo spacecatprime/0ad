@@ -21,13 +21,14 @@
 # Rafael Monteiro <rafaelimabsb2@hotmail.com>, 2016
 # Raphael Mendonça, 2014
 # magalidade <tazer.extreme@gmail.com>, 2014
+# Victor Gregório <vt_marv@hotmail.com>, 2017
 # Washington Ramon Santos nascimento <washington_ramon123@hotmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 15:58+0000\n"
-"Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-10 16:49+0000\n"
+"Last-Translator: borg 2k <estevanborg@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/wildfire-games/0ad/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -41,7 +42,7 @@ msgid ""
 "health, 1 extra armor level of every type, 20% extra attack for melee units,"
 " 4m extra range and 5% better precision for ranged units, faster movement "
 "speeds and extra heal speed and range for healers."
-msgstr ""
+msgstr "As unidades promovidas para a classe avançada ganham atributos: 20% de saúde extra, +1 de armadura extra de cada tipo, 20% de ataque extra para unidades de combate corpo a corpo, 4m de alcance extra, 5% de precisão para unidades à distância, velocidades de movimento mais rápidas, velocidade de cura aumentada e alcance para curandeiros."
 
 #: simulation/data/technologies/armor_cav_01.jsondescription
 #: simulation/data/technologies/armor_cav_chamfron.jsondescription
@@ -99,6 +100,7 @@ msgstr "Barda"
 #: simulation/data/technologies/training_levy_infantry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_cavalry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonrequirementsTooltip
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_celt_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_iberian_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_italian_mercs.jsonrequirementsTooltip
@@ -241,17 +243,17 @@ msgstr "Lorica Ferrea"
 #: simulation/data/technologies/armor_infantry_01.jsondescription
 #: simulation/data/technologies/armor_infantry_hack_01.jsondescription
 msgid "Quilted linen or leather body armor for infantrymen."
-msgstr "Linho acolchoado ou armadura de corpo de couro para infantaria."
+msgstr "Armadura para o corpo de couro ou linho acolchoado para a infantaria."
 
 #: simulation/data/technologies/armor_infantry_01.jsontooltip
 #: simulation/data/technologies/armor_infantry_02.jsontooltip
 msgid "All Infantry +1 Hack and Pierce Armor Level."
-msgstr "Toda a infantaria +1 de Corte e de Perfurar Armadura."
+msgstr "Toda a infantaria ganha +1 de todo tipo de armadura."
 
 #: simulation/data/technologies/armor_infantry_01.jsongenericName
 #: simulation/data/technologies/armor_infantry_hack_01.jsongenericName
 msgid "Quilted Body Armor"
-msgstr "Armadura de Corpo Acolchoada"
+msgstr "Armadura para o corpo acolchoada"
 
 #: simulation/data/technologies/armor_infantry_01.jsonspecificName.maur
 #: simulation/data/technologies/armor_infantry_01.jsonspecificName.spart
@@ -281,12 +283,12 @@ msgstr "Espola"
 #: simulation/data/technologies/armor_infantry_02.jsondescription
 #: simulation/data/technologies/armor_infantry_hack_02.jsondescription
 msgid "Laminated linen body armor for infantrymen."
-msgstr "Armadura de corpo de linho laminado para infantaria."
+msgstr "Armadura para o corpo de linho laminado para infantaria."
 
 #: simulation/data/technologies/armor_infantry_02.jsongenericName
 #: simulation/data/technologies/armor_infantry_hack_02.jsongenericName
 msgid "Laminated Linen Body Armor"
-msgstr "Armadura de Corpo de Linho Laminado"
+msgstr "Armadura para o corpo de linho laminado"
 
 #: simulation/data/technologies/armor_infantry_02.jsonspecificName.ptol
 #: simulation/data/technologies/armor_infantry_02.jsonspecificName.spart
@@ -311,15 +313,15 @@ msgstr "Linothorakes"
 #: simulation/data/technologies/armor_infantry_hack_02.jsontooltip
 #: simulation/data/technologies/armor_infantry_hack_03.jsontooltip
 msgid "All Infantry +1 Hack Armor Level."
-msgstr "Toda a Infantaria +1 Nível de Armadura de Corte."
+msgstr "Toda a Infantaria +1 de armadura contra cortes."
 
 #: simulation/data/technologies/armor_infantry_hack_03.jsondescription
 msgid "Body armor reinforced with bronze scales."
-msgstr "Armadura de corpo reforçada com escamas de bronze."
+msgstr "Armadura para o corpo reforçada com escamas de bronze."
 
 #: simulation/data/technologies/armor_infantry_hack_03.jsongenericName
 msgid "Scale Body Armor"
-msgstr "Armadura de Corpo de Escamas"
+msgstr "Armadura para o corpo de escamas"
 
 #: simulation/data/technologies/armor_infantry_hack_03.jsonspecificName.rome
 msgid "Lorica Squamata"
@@ -330,15 +332,15 @@ msgid ""
 "Body armor fashioned completely of bronze. Only the best soldiers were "
 "equipped with such body armor, as it was very expensive and time-consuming "
 "to fabricate."
-msgstr "Armadura de corpo feita completamente de bronze. Somente os melhores soldados eram equipados com esta armadura de corpo, porque era muito cara e levava muito tempo para construir."
+msgstr "Armadura para o corpo feita completamente de bronze. Somente os melhores soldados eram equipados com esta armadura de corpo, porque era muito cara e levava muito tempo para construir."
 
 #: simulation/data/technologies/armor_infantry_hack_04.jsontooltip
 msgid "Champions +2 Hack Armor Levels, but also +10 Metal Cost."
-msgstr "Campeões tem +2 níveis de Armadura de Corte, mas custam +10 de metal."
+msgstr "Campeões tem +2 de Armadura contra cortes, mas custam +10 de metal."
 
 #: simulation/data/technologies/armor_infantry_hack_04.jsongenericName
 msgid "Bronze Cuirass Body Armor"
-msgstr "Armadura de Corpo Peitoral de Bronze"
+msgstr "Armadura para o peitoral de Bronze"
 
 #: simulation/data/technologies/armor_infantry_hack_04.jsonspecificName.rome
 msgid "Lorica Musculata"
@@ -350,7 +352,7 @@ msgstr "Construção em camadas de madeira para grandes escudos."
 
 #: simulation/data/technologies/armor_infantryspearmen_pierce_01.jsontooltip
 msgid "Infantry Spearmen +2 Pierce Armor Levels."
-msgstr "Lanceiros de Infantaria +2 níveis de Perfurar Armadura."
+msgstr "Infantária lanceira tem +2 de armadura contra perfuração."
 
 #: simulation/data/technologies/armor_infantryspearmen_pierce_01.jsongenericName
 msgid "Plywood Shield Construction"
@@ -372,7 +374,7 @@ msgstr "Os melhores escudos tem reforços ou nos cantos (Scutum romano) ou em to
 
 #: simulation/data/technologies/armor_infantryspearmen_pierce_02.jsontooltip
 msgid "Infantry Spearmen +1 Pierce Armor Levels."
-msgstr "Lanceiros de Infantaria +1 nivel de Perfurar Armadura."
+msgstr "Infantaria lanceira tem +1 de armadura contra perfuração."
 
 #: simulation/data/technologies/armor_infantryspearmen_pierce_02.jsongenericName
 msgid "Reinforced Shield"
@@ -392,7 +394,7 @@ msgstr "Uma camada de bronze aplicada sobre a parte exterior dos escudos."
 
 #: simulation/data/technologies/armor_infantryspearmen_pierce_03.jsontooltip
 msgid "Infantry Spearmen +1 Pierce Armor Level."
-msgstr "Lanceiros de Infantaria +1 nivel de Perfurar Armadura."
+msgstr "Infantaria lanceira tem +1 de armadura contra perfuração."
 
 #: simulation/data/technologies/armor_infantryspearmen_pierce_03.jsongenericName
 msgid "Bronze Shield Facing"
@@ -417,7 +419,7 @@ msgstr "Somente os soldados mais promissores tinham seus escudos adornados com p
 
 #: simulation/data/technologies/armor_infantryspearmen_pierce_04.jsontooltip
 msgid "Champions +2 Pierce Armor Levels, but also +10 Metal Cost."
-msgstr "Campeões tem +2 níveis de Perfurar Armadura, mas custam +10 de metal."
+msgstr "Campeões tem +2 de armadura contra perfuração, mas custam +10 de metal."
 
 #: simulation/data/technologies/armor_infantryspearmen_pierce_04.jsongenericName
 msgid "Silver Shields"
@@ -437,7 +439,7 @@ msgstr "Revestimento de Chumbo protege o casco dos barcos."
 
 #: simulation/data/technologies/armor_ship_hullsheathing.jsontooltip
 msgid "Lead sheathing protects ship hulls. +2 levels to all ship armor types."
-msgstr "Revestimento de Chumbo protege o casco dos navios. +2 níveis para todos os tipos de armadura de navios."
+msgstr "Revestimento de chumbo protege o casco dos navios. +2 de cada tipo de armadura para embarcações."
 
 #: simulation/data/technologies/armor_ship_hullsheathing.jsongenericName
 msgid "Lead hull sheathing"
@@ -451,7 +453,7 @@ msgstr "A hypozomata reforça a estrutura das embarcações."
 msgid ""
 "The hypozomata braces the ship's structure. +2 levels to all ship armor "
 "types."
-msgstr "A hypozomata reforça a estrutura das embarcações. As armaduras das embarcações aumentam em +2."
+msgstr "A hypozomata reforça a estrutura dos navios. +2 de cada tipo de armadura para embarcações."
 
 #: simulation/data/technologies/armor_ship_hypozomata.jsongenericName
 msgid "Hypozomata undergirding"
@@ -711,8 +713,8 @@ msgid ""
 msgstr "Técnicas secretas de trabalho em aço fornecem distintas e bonitas marcas às lâminas de espadas. Não apenas isso, mas a durabilidade do aço é incomparável."
 
 #: simulation/data/technologies/attack_steel_working.jsontooltip
-msgid "+2 attack for all sword units."
-msgstr "+2 de ataque para todas unidades com espada."
+msgid "+20% Hack attack for all sword units."
+msgstr "+20% hack ataque para todas unidades de espada."
 
 #: simulation/data/technologies/attack_steel_working.jsongenericName
 msgid "Steel Working"
@@ -748,7 +750,7 @@ msgstr "Reforce as fundações para se precaver de um ataque."
 
 #: simulation/data/technologies/attack_tower_defense.jsontooltip
 msgid "Increases armor level of the defense tower by 2 levels."
-msgstr "Aumenta a armadura da torre de defesa em 2 níveis"
+msgstr "Aumenta a armadura da torre de defesa em 2 níveis."
 
 #: simulation/data/technologies/attack_tower_defense.jsongenericName
 msgid "Sturdy Foundations"
@@ -808,7 +810,7 @@ msgstr "Usar entulho reduz o custo e tempo de construção de muralhas."
 
 #: simulation/data/technologies/buildtime_walls_rubble.jsontooltip
 msgid "City walls -20% build time, but -1 crush armor level."
-msgstr "Muralhas ganham -20% de tempo de construção, mas têm -1 nível de armadura de Esmagamento."
+msgstr "Muralhas tem -20% de tempo de construção, mas têm -1 de armadura de contra esmagamento."
 
 #: simulation/data/technologies/buildtime_walls_rubble.jsongenericName
 msgid "Rubble Materials"
@@ -832,7 +834,7 @@ msgid ""
 "extra armor level of every type, 20% extra attack for melee units, extra "
 "range and better precision for ranged units, faster movement speeds and "
 "extra heal speed and range for healers."
-msgstr ""
+msgstr "As unidades treinadas para a classe de elite ganham atributos: +20% de saúde, +1 de armadura de cada tipo, +20% de ataque para unidades de combate corpo a corpo e alcance e precisão para unidades a distância, velocidades de movimento, velocidade de cura e alcance para curandeiros."
 
 #: simulation/data/technologies/gather_animals_stockbreeding.jsondescription
 msgid "Breeding livestock for food."
@@ -929,8 +931,8 @@ msgid "Gather Training"
 msgstr "Treinamento de coletas"
 
 #: simulation/data/technologies/gather_fishing_net.jsondescription
-msgid "Using net improves the fishing productivity."
-msgstr "Usar rede aumenta a produção de peixes."
+msgid "Nets improve the fishing productivity."
+msgstr "As redes melhoram a produtividade da pesca."
 
 #: simulation/data/technologies/gather_fishing_net.jsontooltip
 msgid ""
@@ -1057,8 +1059,8 @@ msgid "Wedge and Mallet"
 msgstr "Cunha e Malho"
 
 #: simulation/data/technologies/gather_wicker_baskets.jsondescription
-msgid "Baskets to carry foraged food stuffs."
-msgstr "Cestos para carregar alimentos coletados"
+msgid "Baskets for foraging."
+msgstr "Cestas para forragear."
 
 #: simulation/data/technologies/gather_wicker_baskets.jsontooltip
 msgid "Equip your foragers with wicker baskets. +50% fruit foraging rate."
@@ -1163,11 +1165,10 @@ msgstr "Mistérios de Elêusis"
 
 #: simulation/data/technologies/health_females_01.jsondescription
 msgid ""
-"The Loom allowed the creation of finer clothing to clothe citizens in the "
-"settlement. Women of the household were taught from a young age how to weave"
-" on the loom, and subsequently spent a large  share of their lives working "
-"with it."
-msgstr "O tear permitiu a criação de melhores roupas para vestir os cidadãos no assentamento. As mulheres da casa foram ensinadas desde novas a como tecer no tear e posteriormente passaram uma grande parte de suas vidas trabalhando com ele."
+"The loom allowed the creation of finer clothing for settlers. Women of the "
+"household were taught from a young age how to weave on the loom, and "
+"subsequently spent a large share of their lives working with it."
+msgstr "O tear permitiu a criação de roupas mais finas para colonos. As mulheres da família foram ensinadas desde uma idade jovem a tecer no tear e, posteriormente, gastaram uma grande parte de suas vidas trabalhando com ele."
 
 #: simulation/data/technologies/health_females_01.jsontooltip
 msgid "Female Citizens +50% Health."
@@ -1195,7 +1196,7 @@ msgstr "Usando alvenaria geométrica aumenta a robustez das muralhas defensivas.
 
 #: simulation/data/technologies/health_walls_geometric_masonry.jsontooltip
 msgid "City walls +2 crush armor levels, but +10% build time."
-msgstr "Muros da cidade +2 níveis de armadura de esmagamento, mas +10% tempo de construção."
+msgstr "Muros da cidade ganham +2 de armadura contra esmagamento, mas +10% no tempo de construção."
 
 #: simulation/data/technologies/health_walls_geometric_masonry.jsongenericName
 msgid "Geometric Masonry"
@@ -1279,7 +1280,7 @@ msgstr "Luta de Lanças contra Escaramuça"
 #: simulation/data/technologies/pair_inf_armor_03.jsongenericName
 #: simulation/data/technologies/pair_inf_armor_04.jsongenericName
 msgid "Infantry Hack Armor vs. Spearmen Pierce Armor"
-msgstr "Armadura para infantaria vs. armadura para lanceiros"
+msgstr "Armadura contra cortes da infantaria vs. armadura contra perfuração de lanceiros."
 
 #: simulation/data/technologies/pair_levy_01.jsongenericName
 msgid "Levy Infantry vs. Levy Cavalry"
@@ -1529,11 +1530,11 @@ msgstr "Amentum"
 
 #: simulation/data/technologies/siege_armor.jsondescription
 msgid "Increased armor on siege weapons"
-msgstr "Armadura reforçada em armas de cerco"
+msgstr "Armadura reforçada para armas de cerco"
 
 #: simulation/data/technologies/siege_armor.jsontooltip
 msgid "All Siege weapons +2 Hack armor levels."
-msgstr "Todas as armas de cerco ganham +2 de armadura de Corte."
+msgstr "Todas as armas de cerco ganham +2 de armadura contra corte."
 
 #: simulation/data/technologies/siege_armor.jsongenericName
 msgid "Armor plating"
@@ -1629,8 +1630,8 @@ msgid "Make your units 50% more expensive to bribe."
 msgstr "Torne suas unidades 50% mais caras para subornar."
 
 #: simulation/data/technologies/spy_counter.jsongenericName
-msgid "Counter Espionage"
-msgstr "Contra Espionagem"
+msgid "Counterintelligence"
+msgstr "Contra-inteligência\n"
 
 #: simulation/data/technologies/trade_commercial_treaty.jsondescription
 msgid "Improve the international trading profit."
@@ -1650,7 +1651,7 @@ msgstr "Melhora os recursos de defesa dos comerciantes."
 
 #: simulation/data/technologies/trade_convoys_armor.jsontooltip
 msgid "Traders +2 Hack and Pierce armor levels."
-msgstr "+2 níveis de armadura de Corte e de Penetração para comerciantes."
+msgstr "+2 de armadura contra corte e perfuração para comerciantes."
 
 #: simulation/data/technologies/trade_convoys_armor.jsongenericName
 #: simulation/data/technologies/trade_convoys_speed.jsongenericName
@@ -1838,8 +1839,9 @@ msgid ""
 msgstr "Primeiro objetivo dos comerciantes era de negociação, mas eles também recolhiam informações sobre os países que eles cruzavam."
 
 #: simulation/data/technologies/unlock_spies.jsontooltip
-msgid "Allows to bribe other players' units to share their vision."
-msgstr "Permite subornar unidades de outros jogadores para compartilhar sua visão."
+msgid ""
+"Allows bribing the units of other players in order to share their vision."
+msgstr "Permite subornar as unidades de outros jogadores para compartilhar sua visão."
 
 #: simulation/data/technologies/unlock_spies.jsongenericName
 msgid "Espionage"
@@ -1881,6 +1883,19 @@ msgstr "Cidadão-infantaria Avançada"
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonspecificName.athen
 msgid "Zeugítai"
 msgstr "Zeugítai"
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsondescription
+msgid "Hire professional mercenaries to fight in your army."
+msgstr "Contrate mercenários profissionais para lutar no seu exército."
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsontooltip
+msgid ""
+"Mercenaries are promoted to advanced rank but require +20% training time."
+msgstr "Mercenários são promovidos para rank avançado, mas requer +20% de tempo de treinamento."
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsongenericName
+msgid "Expertise In War"
+msgstr "Experiência em guerra"
 
 #: simulation/data/technologies/upgrade_rank_elite_cavalry.jsontooltip
 msgid ""
@@ -2089,7 +2104,7 @@ msgstr "Arquitetos Navais Fenícios"
 #: simulation/data/technologies/carthaginians/traintime_celt_mercs.jsondescription
 #: simulation/data/technologies/carthaginians/traintime_celt_mercs_2.jsondescription
 msgid "Celtic mercenaries have their train time decreased."
-msgstr "Mercadores Celtas têm seu tempo de treinamento diminuído."
+msgstr "Mercadores celtas têm seu tempo de treinamento diminuído."
 
 #: simulation/data/technologies/carthaginians/traintime_celt_mercs.jsontooltip
 msgid ""
@@ -2126,7 +2141,7 @@ msgstr "Aliança Ibérica"
 #: simulation/data/technologies/carthaginians/traintime_iberian_mercs_2.jsontooltip
 msgid ""
 "Subjugate Hispania to reduce recruit time -20% for Iberian mercenaries."
-msgstr "Subjugar a Hispânia para reduzir o tempo de recruta -20% para mercenários ibéricos."
+msgstr "Subjugar a Hispânia para reduzir o tempo de recrutamento em -20% para mercenários ibéricos."
 
 #: simulation/data/technologies/carthaginians/traintime_iberian_mercs_2.jsongenericName
 msgid "Iberian Hegemony"
@@ -2141,7 +2156,7 @@ msgstr "Mercenários italianos têm seu tempo de treino diminuído."
 msgid ""
 "Ally with Italiote towns to reduce recruit time -20% for Italian "
 "mercenaries."
-msgstr "Alie-se com Italiotas para reduzir o tempo de recrutamento de mercenários italianos em -20%."
+msgstr "Alie-se com Italiotas para reduzir o tempo de recrutamento em -20% para mercenários italianos."
 
 #: simulation/data/technologies/carthaginians/traintime_italian_mercs.jsongenericName
 msgid "Italiote Alliance"
@@ -2151,7 +2166,7 @@ msgstr "Aliança Italiota"
 msgid ""
 "Subjugate Italiote towns to reduce recruit time -20% for Italian "
 "mercenaries."
-msgstr "Subjugue cidades italiotas para reduzir em -20% os mercenários italianos."
+msgstr "Subjugue cidades italiotas para reduzir o tempo de recrutamento em -20% para mercenários italianos."
 
 #: simulation/data/technologies/carthaginians/traintime_italian_mercs_2.jsongenericName
 msgid "Italiote Hegemony"
@@ -2300,8 +2315,8 @@ msgid ""
 msgstr "Os Espartanos não tinham o maior exército do mundo, mas tinham o melhor exército de seu tempo. O que não tinham em quantidade, tinham em qualidade. É dito que Esparta não precisava de fortes muralhas, pois seus homens eram sua muralha."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsontooltip
-msgid "Spartans have 10% less maximum population"
-msgstr "Espartanos têm um limite de população máxima 10% menor."
+msgid "Spartans have 10% less maximum population."
+msgstr "Os espartanos têm -10% de população máxima."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsongenericName
 msgid "Underdogs"
@@ -2398,8 +2413,8 @@ msgid ""
 msgstr "Os Maurianos construíram os muros das suas cidades com madeira, um recurso natural abundante na Índia."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsontooltip
-msgid "Mauryan city walls have 20% less health and 20% less build time."
-msgstr "Muralhas Maurianas têm 20% menos vida e levam 20% menos tempo para serem construídas."
+msgid "Mauryan city walls have -20% less health and -20% less build time."
+msgstr "Os muros da cidade de Mauryan têm -20% menos saúde mas também -20% menos tempo de construção."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsongenericName
 msgid "Wooden Walls"
@@ -2430,8 +2445,8 @@ msgid ""
 msgstr "O recrutamento da infantaria de elite Anasuia é duas vezes mais rápido mas diminui a capacidade máxima de vida."
 
 #: simulation/data/technologies/persians/immortals.jsontooltip
-msgid "Anusiya Champion Infantry -50% train time, but also -20 health."
-msgstr "Leva 50% menos tempo para treinar a infantaria de elite Anasuia, mas também tem saúde mais fraca em -20."
+msgid "Anusiya Champion Infantry -50% train time, but also -10% health."
+msgstr "Anusiya, Campeão de Infantaria tem -50% tempo de treinamento mas também -10% de saúde."
 
 #: simulation/data/technologies/persians/immortals.jsongenericName
 msgid "Immortals"
@@ -2500,15 +2515,15 @@ msgstr "Recrutamento de Infantaria"
 
 #: simulation/data/technologies/persians/training_levy_cavalry.jsontooltip
 msgid ""
-"All cavalry -20% train time, but also -10 health. Unlocks Cavalry "
+"All cavalry -20% train time, but also -5% health. Unlocks Cavalry "
 "Conscription."
-msgstr "Toda cavalaria tem -20% de tempo para treinar, mas também -10 saúde. Desbloqueia o recrutamento de cavalaria."
+msgstr "Toda cavalaria tem -20% no tempo de treinamento, mas também -5% de saúde. Desbloqueia Recrutamento de Cavalaria."
 
 #: simulation/data/technologies/persians/training_levy_infantry.jsontooltip
 msgid ""
-"All infantry -10% train time, but also -5 health. Unlocks Infantry "
+"All infantry -20% train time, but also -5% health. Unlocks Infantry "
 "Conscription."
-msgstr "Toda infantaria -10% tempo de treino, mas também -5 saúde. Permite Recrutamento de Infantaria."
+msgstr "Toda infantaria tem -20% no tempo de treinamento, mas também -5% de saúde. Desbloqueia Recrutamento de Infantaria."
 
 #: simulation/data/technologies/romans/decay_logistics.jsondescription
 msgid "The Romans were masters of the logistics of warfare."
@@ -2580,7 +2595,7 @@ msgid ""
 "The now-extinct Nisian breed of horse was one of the largest and robust "
 "horses of ancient times. They were highly sought after by the Seleucids and "
 "Persians as both rider and mount gained heavier armor as time progressed."
-msgstr "Nisian agora extinta raça de cavalo foi um dos maiores e robustos cavalos dos tempos antigos. Eles eram muito procurados pelos selêucidas e persas como piloto e monte ganharam mais pesada armadura, enquanto o tempo progrediu."
+msgstr "Nisian agora extinta raça de cavalo foi um dos maiores e robustos cavalos dos tempos antigos. Eles eram muito procurados pelos selêucidas e persas para montaria ganharam a mais pesada armadura, enquanto o tempo progrediu."
 
 #: simulation/data/technologies/successors/special_war_horses.jsontooltip
 msgid "All cavalry +20% health."
@@ -2628,7 +2643,7 @@ msgstr "Os escudos de prata, ou Argyraspidai, era o braço de elite da infantari
 msgid ""
 "Upgrade Shield Bearer Champion Infantry to Silver Shields, with greater "
 "health and armor."
-msgstr "Evoluir Infantaria Escudeira Campeã para Escudos Prateados, com maior saúde e armadura."
+msgstr "Evoluir a infantaria escudeira campeã para escudos prateados, com maior saúde e armadura."
 
 #: simulation/data/technologies/successors/upgrade_mace_silvershields.jsongenericName
 msgid "Silver Shields Regiment"

@@ -266,6 +266,7 @@ m.DefenseManager.prototype.checkEnemyArmies = function(gameState)
 
 		if (army.getState() === 0)
 		{
+			this.switchToAttack(gameState, army);
 			army.clear(gameState);
 			this.armies.splice(i--,1);
 			continue;
@@ -347,6 +348,7 @@ m.DefenseManager.prototype.checkEnemyArmies = function(gameState)
 		if (stillDangerous)
 			continue;
 
+		this.switchToAttack(gameState, army);
 		army.clear(gameState);
 		this.armies.splice(i--,1);
 	}
@@ -465,6 +467,16 @@ m.DefenseManager.prototype.checkEvents = function(gameState, events)
 	for (let army of this.armies)
 		army.checkEvents(gameState, events);
 
+	for (let evt of events.OwnershipChanged)   // capture events
+	{
+		if (gameState.isPlayerMutualAlly(evt.from) && evt.to > 0)
+		{
+			let ent = gameState.getEntityById(evt.entity);
+			if (ent && ent.hasClass("CivCentre")) // one of our cc has been captured
+				gameState.ai.HQ.attackManager.switchDefenseToAttack(gameState, ent, { "range": 150 });
+		}
+	}
+
 	for (let evt of events.Attacked)
 	{
 		let target = gameState.getEntityById(evt.target);
@@ -472,9 +484,11 @@ m.DefenseManager.prototype.checkEvents = function(gameState, events)
 			continue;
 
 		let attacker = gameState.getEntityById(evt.attacker);
-		if (attacker && gameState.isEntityOwn(attacker) && gameState.isEntityEnemy(target) && !attacker.hasClass("Ship"))
+		if (attacker && gameState.isEntityOwn(attacker) && gameState.isEntityEnemy(target) && !attacker.hasClass("Ship") &&
+		   (!target.hasClass("Structure") || target.attackRange("Ranged")))
 		{
 			// If enemies are in range of one of our defensive structures, garrison it for arrow multiplier
+			// (enemy non-defensive structure are not considered to stay in sync with garrisonManager)
 			if (attacker.position() && attacker.isGarrisonHolder() && attacker.getArrowMultiplier())
 				this.garrisonUnitsInside(gameState, attacker, {"attacker": target});
 		}
@@ -566,18 +580,18 @@ m.DefenseManager.prototype.garrisonUnitsInside = function(gameState, target, dat
 	let minGarrison = data.min ? data.min : target.garrisonMax();
 	let typeGarrison = data.type ? data.type : "protection";
 	if (gameState.ai.HQ.garrisonManager.numberOfGarrisonedUnits(target) >= minGarrison)
-		return;
+		return false;
 	if (target.hitpoints() < target.garrisonEjectHealth() * target.maxHitpoints())
-		return;
+		return false;
 	if (data.attacker)
 	{
 		let attackTypes = target.attackTypes();
 		if (!attackTypes || attackTypes.indexOf("Ranged") === -1)
-			return;
+			return false;
 		let dist = API3.SquareVectorDistance(data.attacker.position(), target.position());
 		let range = target.attackRange("Ranged").max;
 		if (dist >= range*range)
-			return;
+			return false;
 	}
 	let index = gameState.ai.accessibility.getAccessValue(target.position());
 	let garrisonManager = gameState.ai.HQ.garrisonManager;
@@ -592,6 +606,7 @@ m.DefenseManager.prototype.garrisonUnitsInside = function(gameState, target, dat
 		else
 			allowMelee = true;
 	}
+	let ret = false;
 	for (let ent of units.values())
 	{
 		if (garrisonManager.numberOfGarrisonedUnits(target) >= minGarrison)
@@ -623,7 +638,9 @@ m.DefenseManager.prototype.garrisonUnitsInside = function(gameState, target, dat
 		if (army)
 			army.removeOwn(gameState, ent.id());
 		garrisonManager.garrison(gameState, ent, target, typeGarrison);
+		ret = true;
 	}
+	return ret;
 };
 
 /** garrison a attacked siege ranged unit inside the nearest fortress */
@@ -650,6 +667,7 @@ m.DefenseManager.prototype.garrisonSiegeUnit = function(gameState, unit)
 	});
 	if (nearest)
 		garrisonManager.garrison(gameState, unit, nearest, "protection");
+	return nearest !== undefined;
 };
 
 /**
@@ -683,17 +701,18 @@ m.DefenseManager.prototype.garrisonAttackedUnit = function(gameState, unit, emer
 		nearest = ent;
 	}
 	if (!nearest)
-		return;
+		return false;
 
 	if (!emergency)
 	{
 		garrisonManager.garrison(gameState, unit, nearest, "protection");
-		return;
+		return true;
 	}
 	if (garrisonManager.numberOfGarrisonedUnits(nearest) >= nearest.garrisonMax()) // make room for this ent
 		nearest.unload(nearest.garrisoned()[0]);
 
 	garrisonManager.garrison(gameState, unit, nearest, nearest.buffHeal() ? "protection" : "emergency");
+	return true;
 };
 
 /**
@@ -706,6 +725,36 @@ m.DefenseManager.prototype.GetCooperationLevel = function(ent)
 	if (this.attackedAllies[ally] && this.attackedAllies[ally] > 1)
 		cooperation += 0.2 * (this.attackedAllies[ally] - 1);
 	return cooperation;
+};
+
+/**
+ * Switch a defense army into an attack if needed
+ */
+m.DefenseManager.prototype.switchToAttack = function(gameState, army)
+{
+	if (!army)
+		return;
+	for (let targetId of this.targetList)
+	{
+		let target = gameState.getEntityById(targetId);
+		if (!target || !target.position() || !gameState.isPlayerEnemy(target.owner()))
+			continue;
+		let targetAccess = m.getLandAccess(gameState, target);
+		let targetPos = target.position();
+		for (let entId of army.ownEntities)
+		{
+			let ent = gameState.getEntityById(entId);
+			if (!ent)
+				continue;
+			let pos = ent.position();
+			if (!pos || gameState.ai.accessibility.getAccessValue(pos) !== targetAccess)
+				continue;
+			if (API3.SquareVectorDistance(targetPos, pos) > 14400)
+				continue;
+			gameState.ai.HQ.attackManager.switchDefenseToAttack(gameState, target, { "armyID": army.ID, "uniqueTarget": true });
+			return;
+		}
+	}
 };
 
 m.DefenseManager.prototype.Serialize = function()

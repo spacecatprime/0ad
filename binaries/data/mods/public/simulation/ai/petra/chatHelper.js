@@ -76,7 +76,7 @@ m.answerDiplomacyRequestMessages = {
 			markForTranslation("I will accept your offer to become allies, %(_player_)s. We will both benefit from this partnership."),
 			markForTranslation("An alliance between us is a good idea, %(_player_)s."),
 			markForTranslation("Let both of our people prosper from a peaceful association, %(_player_)s."),
-			markForTranslation("We have found common ground, %(_player)s. I accept the alliance."),
+			markForTranslation("We have found common ground, %(_player_)s. I accept the alliance."),
 			markForTranslation("%(_player_)s, consider us allies from now on.")
 		],
 		"acceptWithTribute": [
@@ -110,6 +110,28 @@ m.answerDiplomacyRequestMessages = {
 			markForTranslation("%(_player_)s, I will not accept your neutrality request unless you tribute me %(_amount_)s %(_resource_)s soon."),
 			markForTranslation("%(_player_)s, if you do not send me part of the %(_amount_)s %(_resource_)s tribute soon, I will break off our negotiations.")
 		]		
+	}
+};
+
+m.sendDiplomacyRequestMessages = {
+	"ally": {
+		"sendRequest": [
+			markForTranslation("%(_player_)s, it would help both of our civilizations if we formed an alliance. If you become allies with me, I will respond in kind.")
+		],
+		"requestExpired": [
+			markForTranslation("%(_player_)s, my offer for an alliance has expired."),
+			markForTranslation("%(_player_)s, I have rescinded my previous offer for an alliance between us."),
+		]
+	},
+	"neutral": {
+		"sendRequest": [
+			markForTranslation("%(_player_)s, I would like to request a neutrality pact between our civilizations. If you become neutral with me, I will respond in kind."),
+			markForTranslation("%(_player_)s, it would be both to our benefit if we negotiated a neutrality pact. I will become neutral with you if you do the same.")
+		],
+		"requestExpired": [
+			markForTranslation("%(_player_)s, I have decided to revoke my offer for a neutrality pact."),
+			markForTranslation("%(_player_)s, as you have failed to respond to my request for peace between us, I have abrogated my offer."),
+		]
 	}
 };
 
@@ -201,6 +223,18 @@ m.chatAnswerRequestDiplomacy = function(gameState, player, requestType, response
 		"parameters": requiredTribute ?
 			{ "_amount_": requiredTribute.wanted, "_resource_": requiredTribute.type, "_player_": player } :
 			{ "_player_": player }
+	});
+};
+
+m.chatNewRequestDiplomacy = function(gameState, player, requestType, status)
+{
+	Engine.PostCommand(PlayerID, {
+		"type": "aichat",
+		"message": "/msg " + gameState.sharedScript.playersData[player].name + " " +
+			pickRandom(this.sendDiplomacyRequestMessages[requestType][status]),
+		"translateMessage": true,
+		"translateParameters": ["_player_"],
+		"parameters": { "_player_": player }
 	});
 };
 

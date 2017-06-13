@@ -12,8 +12,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 15:58+0000\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-04 15:57+0000\n"
 "Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Ukrainian (http://www.transifex.com/wildfire-games/0ad/language/uk/)\n"
 "MIME-Version: 1.0\n"
@@ -28,7 +28,7 @@ msgid ""
 "health, 1 extra armor level of every type, 20% extra attack for melee units,"
 " 4m extra range and 5% better precision for ranged units, faster movement "
 "speeds and extra heal speed and range for healers."
-msgstr ""
+msgstr "Юніти підвищені до покращеного класу отримують додаткові: 20% до здоров'я, 1 до кожного типу броні, 20% до атаки у юнітів ближнього бою, 4 м до радіусу дії та 5% до влучності юнітів дальнього бою, збільшення швидкості пересування і швидкості зцілення цілителями та їх радіусу дії. "
 
 #: simulation/data/technologies/armor_cav_01.jsondescription
 #: simulation/data/technologies/armor_cav_chamfron.jsondescription
@@ -86,6 +86,7 @@ msgstr "Шамфрон"
 #: simulation/data/technologies/training_levy_infantry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_cavalry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonrequirementsTooltip
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_celt_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_iberian_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_italian_mercs.jsonrequirementsTooltip
@@ -698,8 +699,8 @@ msgid ""
 msgstr "Секрети ковальської обробки надають лезам мечів характерні й гарні узори. Але не лише їх - твердість такої сталі немає рівних собі."
 
 #: simulation/data/technologies/attack_steel_working.jsontooltip
-msgid "+2 attack for all sword units."
-msgstr "+2 атаки для всіх одиниць з мечем"
+msgid "+20% Hack attack for all sword units."
+msgstr ""
 
 #: simulation/data/technologies/attack_steel_working.jsongenericName
 msgid "Steel Working"
@@ -819,7 +820,7 @@ msgid ""
 "extra armor level of every type, 20% extra attack for melee units, extra "
 "range and better precision for ranged units, faster movement speeds and "
 "extra heal speed and range for healers."
-msgstr ""
+msgstr "Юніти, які підвищились до класу елітних, отримують додаткові: 20% здоров'я, 1 рівень захисту будь-якого типу, 20% до атаки ближнього та дальнього бою, кращу швидкість пересування та радіус дії цілителів."
 
 #: simulation/data/technologies/gather_animals_stockbreeding.jsondescription
 msgid "Breeding livestock for food."
@@ -916,8 +917,8 @@ msgid "Gather Training"
 msgstr "Навчання збору урожаю"
 
 #: simulation/data/technologies/gather_fishing_net.jsondescription
-msgid "Using net improves the fishing productivity."
-msgstr "Використовування сітей збільшує ефективність риболовлі."
+msgid "Nets improve the fishing productivity."
+msgstr ""
 
 #: simulation/data/technologies/gather_fishing_net.jsontooltip
 msgid ""
@@ -1044,8 +1045,8 @@ msgid "Wedge and Mallet"
 msgstr "Молоток та зубило"
 
 #: simulation/data/technologies/gather_wicker_baskets.jsondescription
-msgid "Baskets to carry foraged food stuffs."
-msgstr "Кошики для збору їжі."
+msgid "Baskets for foraging."
+msgstr ""
 
 #: simulation/data/technologies/gather_wicker_baskets.jsontooltip
 msgid "Equip your foragers with wicker baskets. +50% fruit foraging rate."
@@ -1150,11 +1151,10 @@ msgstr "Елевсійські містерії."
 
 #: simulation/data/technologies/health_females_01.jsondescription
 msgid ""
-"The Loom allowed the creation of finer clothing to clothe citizens in the "
-"settlement. Women of the household were taught from a young age how to weave"
-" on the loom, and subsequently spent a large  share of their lives working "
-"with it."
-msgstr "Ткацький верстат дозволив створювати якісніший одяг для городян. Жінки з дитинства навчались поводитись із ткацьким верстатом, щоб потім провести більшу частину життя працюючи за ним."
+"The loom allowed the creation of finer clothing for settlers. Women of the "
+"household were taught from a young age how to weave on the loom, and "
+"subsequently spent a large share of their lives working with it."
+msgstr ""
 
 #: simulation/data/technologies/health_females_01.jsontooltip
 msgid "Female Citizens +50% Health."
@@ -1616,8 +1616,8 @@ msgid "Make your units 50% more expensive to bribe."
 msgstr "Вартість підкупу Ваших юнітів збільшується на 50%."
 
 #: simulation/data/technologies/spy_counter.jsongenericName
-msgid "Counter Espionage"
-msgstr "Контррозвідка"
+msgid "Counterintelligence"
+msgstr ""
 
 #: simulation/data/technologies/trade_commercial_treaty.jsondescription
 msgid "Improve the international trading profit."
@@ -1825,8 +1825,9 @@ msgid ""
 msgstr "Першочерговим завданням купців була торгівля, але вони також збирали інформацію про ті країни, які перетинали."
 
 #: simulation/data/technologies/unlock_spies.jsontooltip
-msgid "Allows to bribe other players' units to share their vision."
-msgstr "Дозволяє робити підкуп юнітів інших гравців, щоб бачити те, що бачать вони."
+msgid ""
+"Allows bribing the units of other players in order to share their vision."
+msgstr ""
 
 #: simulation/data/technologies/unlock_spies.jsongenericName
 msgid "Espionage"
@@ -1868,6 +1869,19 @@ msgstr "Поліпшений городянин-піхотинець"
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonspecificName.athen
 msgid "Zeugítai"
 msgstr "Зевгітай"
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsondescription
+msgid "Hire professional mercenaries to fight in your army."
+msgstr ""
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsontooltip
+msgid ""
+"Mercenaries are promoted to advanced rank but require +20% training time."
+msgstr ""
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsongenericName
+msgid "Expertise In War"
+msgstr ""
 
 #: simulation/data/technologies/upgrade_rank_elite_cavalry.jsontooltip
 msgid ""
@@ -2287,8 +2301,8 @@ msgid ""
 msgstr "У спартанців не було найбільшої армії в світі, але у них була найкраща армія у тогочасному світі. Нестачу кількості вони поповнювали якістю. Казали що Спарті не потрібні стіни тому, що стінами були їх чоловіки."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsontooltip
-msgid "Spartans have 10% less maximum population"
-msgstr "У спартанців кількість населення менша на 10%."
+msgid "Spartans have 10% less maximum population."
+msgstr ""
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsongenericName
 msgid "Underdogs"
@@ -2385,8 +2399,8 @@ msgid ""
 msgstr "Маурії будували стіни з дерева, як найдоступнішого матеріалу в Індії."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsontooltip
-msgid "Mauryan city walls have 20% less health and 20% less build time."
-msgstr "Міські стіни у Мауріїв мають на 20% менше міцності та зводять на 20% швидше."
+msgid "Mauryan city walls have -20% less health and -20% less build time."
+msgstr ""
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsongenericName
 msgid "Wooden Walls"
@@ -2417,8 +2431,8 @@ msgid ""
 msgstr "Анузійська елітна піхота тренується вдвічі швидше, але втрачає при цьому частинку максимального здоров'я."
 
 #: simulation/data/technologies/persians/immortals.jsontooltip
-msgid "Anusiya Champion Infantry -50% train time, but also -20 health."
-msgstr "Анузійська елітна піхота, -50% від часу тренування, але також -20 здоров'я."
+msgid "Anusiya Champion Infantry -50% train time, but also -10% health."
+msgstr "Анузійська елітна піхота, -50% від часу тренування, але також -10% здоров'я."
 
 #: simulation/data/technologies/persians/immortals.jsongenericName
 msgid "Immortals"
@@ -2487,15 +2501,15 @@ msgstr "Призов піхоти"
 
 #: simulation/data/technologies/persians/training_levy_cavalry.jsontooltip
 msgid ""
-"All cavalry -20% train time, but also -10 health. Unlocks Cavalry "
+"All cavalry -20% train time, but also -5% health. Unlocks Cavalry "
 "Conscription."
-msgstr "Час підготовки всієї кінноти знижується на -20%, однак також на -10 зменшується здоров'я. Доступно при відкритті \"Призов кінноти\"."
+msgstr "Час підготовки всієї кінноти знижується на -20%, однак також на -5% зменшується здоров'я. Доступно при відкритті \"Призов кінноти\"."
 
 #: simulation/data/technologies/persians/training_levy_infantry.jsontooltip
 msgid ""
-"All infantry -10% train time, but also -5 health. Unlocks Infantry "
+"All infantry -20% train time, but also -5% health. Unlocks Infantry "
 "Conscription."
-msgstr "Час підготовки всієї піхоти знижується на -10%, однак також на -5 зменшується здоров'я. Доступно при відкритті \"Призов піхоти\"."
+msgstr "Час підготовки всієї піхоти знижується на -10%, однак також на -5% зменшується здоров'я. Доступно при відкритті \"Призов піхоти\"."
 
 #: simulation/data/technologies/romans/decay_logistics.jsondescription
 msgid "The Romans were masters of the logistics of warfare."

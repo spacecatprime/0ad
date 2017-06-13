@@ -99,6 +99,11 @@ var g_Players = [];
 var lastTickTime = new Date();
 
 /**
+ * Recalculate which units have their status bars shown with this frequency in milliseconds.
+ */
+const g_StatusBarUpdate = 200;
+
+/**
  * Not constant as we add "gaia".
  */
 var g_CivData = {};
@@ -408,11 +413,11 @@ function updateHotkeyTooltips()
 		translate("Find idle worker");
 
 	Engine.GetGUIObjectByName("tradeHelp").tooltip = colorizeHotkey(
-		translate("Select one type of goods you want to modify by clicking on it (Pressing %(hotkey)s while selecting will also bring its share to 100%%) and then use the arrows of the other types to modify their shares."),
+		translate("Select one type of goods you want to modify by clicking on it, and then use the arrows of the other types to modify their shares. You can also press %(hotkey)s while selecting one type of goods to bring its share to 100%%."),
 		"session.fulltradeswap");
 
 	Engine.GetGUIObjectByName("barterHelp").tooltip = sprintf(
-		translate("Start by selecting the resource from the upper row that you wish to sell. Upon each press on one of the lower buttons, %(quantity)s of the upper resource will be sold for the displayed quantity of the lower. Press and hold %(hotkey)s to temporarily multiply all quantities by %(multiplier)s."), {
+		translate("Start by selecting the resource you wish to sell from the upper row. For each time the lower buttons are pressed, %(quantity)s of the upper resource will be sold for the displayed quantity of the lower. Press and hold %(hotkey)s to temporarily multiply the traded amount by %(multiplier)s."), {
 			"quantity": g_BarterResourceSellQuantity,
 			"hotkey": colorizeHotkey("%(hotkey)s", "session.massbarter"),
 			"multiplier": g_BarterMultiplier
@@ -666,6 +671,11 @@ function leaveGame(willRejoin)
 
 	Engine.EndGame();
 
+	// After the replay file was closed in EndGame
+	// Done here to keep EndGame small
+	if (!g_IsReplay)
+		Engine.AddReplayToCache(replayDirectory);
+
 	if (g_IsController && Engine.HasXmppClient())
 		Engine.SendUnregisterGame();
 
@@ -722,7 +732,7 @@ function onTick()
 		return;
 
 	let now = new Date();
-	let tickLength = new Date() - lastTickTime;
+	let tickLength = now - lastTickTime;
 	lastTickTime = now;
 
 	handleNetMessages();
@@ -739,13 +749,15 @@ function onTick()
 		if (Engine.GetPlayerID() != -1)
 			Engine.GuiInterfaceCall("DisplayRallyPoint", { "entities": g_Selection.toList() });
 	}
+	else if (g_ShowAllStatusBars && now % g_StatusBarUpdate <= tickLength)
+		recalculateStatusBarDisplay();
 
 	updateTimers();
 
 	updateMenuPosition(tickLength);
 
 	// When training is blocked, flash population (alternates color every 500msec)
-	Engine.GetGUIObjectByName("resourcePop").textcolor = g_IsTrainingBlocked && Date.now() % 1000 < 500 ? g_PopulationAlertColor : g_DefaultPopulationColor;
+	Engine.GetGUIObjectByName("resourcePop").textcolor = g_IsTrainingBlocked && now % 1000 < 500 ? g_PopulationAlertColor : g_DefaultPopulationColor;
 
 	Engine.GuiInterfaceCall("ClearRenamedEntities");
 }
@@ -792,10 +804,11 @@ function onSimulationUpdate()
 	handleNotifications();
 	updateGUIObjects();
 
-	Engine.GuiInterfaceCall("EnableVisualRangeOverlayType", {
-		"type": "Aura",
-		"enabled": Engine.ConfigDB_GetValue("user", "gui.session.aurarange") == "true"
-	});
+	for (let type of ["Aura", "Heal"])
+		Engine.GuiInterfaceCall("EnableVisualRangeOverlayType", {
+			"type": type,
+			"enabled": Engine.ConfigDB_GetValue("user", "gui.session." + type.toLowerCase() + "range") == "true"
+		});
 
 	if (g_ConfirmExit)
 		confirmExit();
@@ -828,7 +841,7 @@ function confirmExit()
 		g_ConfirmExit == "won" ?
 			translate("VICTORIOUS!") :
 			translate("DEFEATED!"),
-		askExit ? [translate("No"), translate("Yes")] : [translate("Ok")],
+		askExit ? [translate("No"), translate("Yes")] : [translate("OK")],
 		askExit ? [resumeGame, leaveGame] : [resumeGame]
 	);
 
@@ -1260,7 +1273,7 @@ function recalculateStatusBarDisplay(remove = false)
  * Toggles the display of range overlays of selected entities for the given range type.
  * @param {string} type - for example "Aura"
  */
-function toggleRangeOverlay(type, currentValue)
+function toggleRangeOverlay(type)
 {
 	let configString = "gui.session." + type.toLowerCase() + "range";
 	let enabled = Engine.ConfigDB_GetValue("user", configString) != "true";

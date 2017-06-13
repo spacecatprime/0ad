@@ -219,6 +219,16 @@ var g_ServerName;
 var g_ServerPort;
 
 /**
+ * IP address and port of the STUN endpoint.
+ */
+var g_StunEndpoint;
+
+/**
+ * Current username. Cannot contain whitespace.
+ */
+var g_Username = Engine.LobbyGetNick();
+
+/**
  * States whether the GUI is currently updated in response to network messages instead of user input
  * and therefore shouldn't send further messages to the network.
  */
@@ -296,6 +306,16 @@ var g_MapData = {};
 var g_LoadingState = 0;
 
 /**
+ * Send the current gamesettings to the lobby bot if the settings didn't change for this number of seconds.
+ */
+var g_GameStanzaTimeout = 2;
+
+/**
+ * Index of the GUI timer.
+ */
+var g_GameStanzaTimer = undefined;
+
+/**
  * Only send a lobby update if something actually changed.
  */
 var g_LastGameStanza;
@@ -340,6 +360,7 @@ var g_OptionOrderGUI = {
 			"ceasefire",
 		],
 		"Checkbox": [
+			"regicideGarrison",
 			"exploreMap",
 			"revealMap",
 			"disableTreasures",
@@ -680,6 +701,18 @@ var g_PlayerDropdowns = {
  * Contains the logic of all boolean gamesettings.
  */
 var g_Checkboxes = {
+	"regicideGarrison": {
+		"title": () => translate("Hero Garrison"),
+		"tooltip": () => translate("Toggle whether heroes can be garrisoned."),
+		"default": () => false,
+		"defined": () => g_GameAttributes.settings.RegicideGarrison !== undefined,
+		"get": () => g_GameAttributes.settings.RegicideGarrison,
+		"set": checked => {
+			g_GameAttributes.settings.RegicideGarrison = checked;
+		},
+		"hidden": () => g_GameAttributes.settings.GameType != "regicide",
+		"enabled": () => g_GameAttributes.mapType != "scenario",
+	},
 	"revealMap": {
 		"title": () =>
 			// Translation: Make sure to differentiate between the revealed map and explored map options!
@@ -735,7 +768,7 @@ var g_Checkboxes = {
 		},
 		"enabled": () => g_GameAttributes.mapType != "scenario",
 	},
-	"lockTeams":  {
+	"lockTeams": {
 		"title": () => translate("Teams Locked"),
 		"tooltip": () => translate("Toggle locked teams."),
 		"default": () => Engine.HasXmppClient(),
@@ -749,7 +782,7 @@ var g_Checkboxes = {
 			g_GameAttributes.mapType != "scenario" &&
 			!g_GameAttributes.settings.RatingEnabled,
 	},
-	"lastManStanding":  {
+	"lastManStanding": {
 		"title": () => translate("Last Man Standing"),
 		"tooltip": () => translate("Toggle whether the last remaining player or the last remaining set of allies wins."),
 		"default": () => false,
@@ -762,7 +795,7 @@ var g_Checkboxes = {
 			g_GameAttributes.mapType != "scenario" &&
 			!g_GameAttributes.settings.LockTeams,
 	},
-	"enableCheats":  {
+	"enableCheats": {
 		"title": () => translate("Cheats"),
 		"tooltip": () => translate("Toggle the usability of cheats."),
 		"default": () => !g_IsNetworked,
@@ -866,7 +899,7 @@ var g_PlayerMiscControls = {
 				name =
 					'[color="' +
 					g_ReadyData[assignedGUID ? g_PlayerAssignments[assignedGUID].status : 2].color +
-					'"]' +  name + '[/color]';
+					'"]' + name + '[/color]';
 
 			return name;
 		},
@@ -904,9 +937,10 @@ function init(attribs)
 
 	g_IsNetworked = attribs.type != "offline";
 	g_IsController = attribs.type != "client";
-	g_IsTutorial = attribs.tutorial &&  attribs.tutorial == true;
+	g_IsTutorial = attribs.tutorial && attribs.tutorial == true;
 	g_ServerName = attribs.serverName;
 	g_ServerPort = attribs.serverPort;
+	g_StunEndpoint = attribs.stunEndpoint;
 
 	if (!g_IsNetworked)
 		g_PlayerAssignments = {
@@ -939,7 +973,7 @@ function initDefaults()
 	for (let i in g_DefaultPlayerData)
 	{
 		g_DefaultPlayerData[i].Civ = "random";
-		g_DefaultPlayerData[i].Teams = -1;
+		g_DefaultPlayerData[i].Team = -1;
 	}
 }
 
@@ -990,6 +1024,7 @@ function initGUIObjects()
 
 	loadPersistMatchSettings();
 	updateGameAttributes();
+	sendRegisterGameStanzaImmediate();
 
 	if (g_IsTutorial)
 	{
@@ -1184,6 +1219,7 @@ function handleGamestartMessage(message)
 	// Immediately inform the lobby server instead of waiting for the load to finish
 	if (g_IsController && Engine.HasXmppClient())
 	{
+		sendRegisterGameStanzaImmediate();
 		let clients = formatClientsForStanza();
 		Engine.SendChangeStateGame(clients.connectedPlayers, clients.list);
 	}
@@ -1225,39 +1261,64 @@ function handleGamesetupMessage(message)
  */
 function handlePlayerAssignmentMessage(message)
 {
+	let playerChange = false;
+
 	for (let guid in message.newAssignments)
 		if (!g_PlayerAssignments[guid])
+		{
 			onClientJoin(guid, message.newAssignments);
+			playerChange = true;
+		}
 
 	for (let guid in g_PlayerAssignments)
 		if (!message.newAssignments[guid])
+		{
 			onClientLeave(guid);
+			playerChange = true;
+		}
 
 	g_PlayerAssignments = message.newAssignments;
 
 	sanitizePlayerData(g_GameAttributes.settings.PlayerData);
 	updateGUIObjects();
-	sendRegisterGameStanza();
+
+	if (playerChange)
+		sendRegisterGameStanzaImmediate();
+	else
+		sendRegisterGameStanza();
 }
 
 function onClientJoin(newGUID, newAssignments)
 {
+	let playername = newAssignments[newGUID].name;
+
 	addChatMessage({
 		"type": "connect",
 		"guid": newGUID,
-		"username": newAssignments[newGUID].name
+		"username": playername
 	});
+
+	let isRejoiningPlayer = newAssignments[newGUID].player != -1;
+
+	// Assign the client (or only buddies if prefered) to an unused playerslot and rejoining players to their old slot
+	if (!isRejoiningPlayer && playername != newAssignments[Engine.GetPlayerGUID()].name)
+	{
+		let assignOption = Engine.ConfigDB_GetValue("user", "gui.gamesetup.assignplayers");
+		if (assignOption == "disabled" ||
+		    assignOption == "buddies" && g_Buddies.indexOf(splitRatingFromNick(playername)[0]) == -1)
+			return;
+	}
 
 	let freeSlot = g_GameAttributes.settings.PlayerData.findIndex((v,i) =>
 		Object.keys(g_PlayerAssignments).every(guid => g_PlayerAssignments[guid].player != i+1)
 	);
 
 	// Client is not and cannot become assigned as player
-	if (newAssignments[newGUID].player == -1 && freeSlot == -1)
+	if (!isRejoiningPlayer && freeSlot == -1)
 		return;
 
 	// Assign the joining client to the free slot
-	if (g_IsController && newAssignments[newGUID].player == -1)
+	if (g_IsController && !isRejoiningPlayer)
 		Engine.AssignNetworkPlayer(freeSlot + 1, newGUID);
 
 	resetReadyData();
@@ -1568,6 +1629,7 @@ function selectMap(name)
 	{
 		delete g_GameAttributes.settings.VictoryDuration;
 		delete g_GameAttributes.settings.LastManStanding;
+		delete g_GameAttributes.settings.RegicideGarrison;
 	}
 
 	if (mapSettings.PlayerData)
@@ -1781,6 +1843,7 @@ function launchGame()
 
 function launchTutorial()
 {
+	g_GameAttributes.mapType = "scenario";
 	selectMap("maps/tutorials/starting_economy_walkthrough");
 	launchGame();
 }
@@ -1794,6 +1857,7 @@ function updateGUIObjects()
 {
 	g_IsInGuiUpdate = true;
 
+	reloadMapList();
 	updatePlayerAssignmentChoices();
 
 	// Hide exceeding dropdowns and checkboxes
@@ -1973,11 +2037,13 @@ function swapPlayers(guid, newSlot)
 		g_GameAttributes.settings.PlayerData[playerID - 1].AI = g_GameAttributes.settings.PlayerData[newSlot].AI;
 		g_GameAttributes.settings.PlayerData[playerID - 1].AIDiff = g_GameAttributes.settings.PlayerData[newSlot].AIDiff;
 
-		// Swap civilizations if they aren't fixed
+		// Swap civilizations and colors if they aren't fixed
 		if (g_GameAttributes.mapType != "scenario")
 		{
 			[g_GameAttributes.settings.PlayerData[playerID - 1].Civ, g_GameAttributes.settings.PlayerData[newSlot].Civ] =
 				[g_GameAttributes.settings.PlayerData[newSlot].Civ, g_GameAttributes.settings.PlayerData[playerID - 1].Civ];
+			[g_GameAttributes.settings.PlayerData[playerID - 1].Color, g_GameAttributes.settings.PlayerData[newSlot].Color] =
+				[g_GameAttributes.settings.PlayerData[newSlot].Color, g_GameAttributes.settings.PlayerData[playerID - 1].Color];
 		}
 	}
 
@@ -2159,26 +2225,35 @@ function formatClientsForStanza()
 }
 
 /**
- * Send the relevant gamesettings to the lobbybot.
+ * Send the relevant gamesettings to the lobbybot immediately.
  */
-function sendRegisterGameStanza()
+function sendRegisterGameStanzaImmediate()
 {
 	if (!g_IsController || !Engine.HasXmppClient())
 		return;
+
+	if (g_GameStanzaTimer != undefined)
+	{
+		clearTimeout(g_GameStanzaTimer);
+		g_GameStanzaTimer = undefined;
+	}
 
 	let clients = formatClientsForStanza();
 
 	let stanza = {
 		"name": g_ServerName,
 		"port": g_ServerPort,
+		"hostUsername": g_Username,
 		"mapName": g_GameAttributes.map,
 		"niceMapName": getMapDisplayName(g_GameAttributes.map),
 		"mapSize": g_GameAttributes.mapType == "random" ? g_GameAttributes.settings.Size : "Default",
 		"mapType": g_GameAttributes.mapType,
-		"victoryCondition": g_VictoryConditions.Title[g_VictoryConditions.Name.indexOf(g_GameAttributes.settings.GameType)],
+		"victoryCondition": g_GameAttributes.settings.GameType,
 		"nbp": clients.connectedPlayers,
 		"maxnbp": g_GameAttributes.settings.PlayerData.length,
 		"players": clients.list,
+		"stunIP": g_StunEndpoint ? g_StunEndpoint.ip : "",
+		"stunPort": g_StunEndpoint ? g_StunEndpoint.port : "",
 	};
 
 	// Only send the stanza if the relevant settings actually changed
@@ -2187,6 +2262,20 @@ function sendRegisterGameStanza()
 
 	g_LastGameStanza = stanza;
 	Engine.SendRegisterGame(stanza);
+}
+
+/**
+ * Send the relevant gamesettings to the lobbybot in a deferred manner.
+ */
+function sendRegisterGameStanza()
+{
+	if (!g_IsController || !Engine.HasXmppClient())
+		return;
+
+	if (g_GameStanzaTimer != undefined)
+		clearTimeout(g_GameStanzaTimer);
+
+	g_GameStanzaTimer = setTimeout(sendRegisterGameStanzaImmediate, g_GameStanzaTimeout * 1000);
 }
 
 function updateAutocompleteEntries()

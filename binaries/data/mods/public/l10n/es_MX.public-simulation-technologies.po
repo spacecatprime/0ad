@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 15:58+0000\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-04 15:57+0000\n"
 "Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Spanish (Mexico) (http://www.transifex.com/wildfire-games/0ad/language/es_MX/)\n"
 "MIME-Version: 1.0\n"
@@ -84,6 +84,7 @@ msgstr "Protector de Antebrazo"
 #: simulation/data/technologies/training_levy_infantry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_cavalry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonrequirementsTooltip
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_celt_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_iberian_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_italian_mercs.jsonrequirementsTooltip
@@ -696,8 +697,8 @@ msgid ""
 msgstr "Los secretos de las técnicas para trabajar con el acero les dio a los filos de las espadas una hermosa marca distintiva. No sólo eso, también la dureza del acero no tiene comparación."
 
 #: simulation/data/technologies/attack_steel_working.jsontooltip
-msgid "+2 attack for all sword units."
-msgstr "+2 ataque para todas las unidades de espadas."
+msgid "+20% Hack attack for all sword units."
+msgstr ""
 
 #: simulation/data/technologies/attack_steel_working.jsongenericName
 msgid "Steel Working"
@@ -914,7 +915,7 @@ msgid "Gather Training"
 msgstr "Entrenamiento de recolección"
 
 #: simulation/data/technologies/gather_fishing_net.jsondescription
-msgid "Using net improves the fishing productivity."
+msgid "Nets improve the fishing productivity."
 msgstr ""
 
 #: simulation/data/technologies/gather_fishing_net.jsontooltip
@@ -1042,8 +1043,8 @@ msgid "Wedge and Mallet"
 msgstr "Cuña y Mazo"
 
 #: simulation/data/technologies/gather_wicker_baskets.jsondescription
-msgid "Baskets to carry foraged food stuffs."
-msgstr "Cesta para llevar productos de alimentación."
+msgid "Baskets for foraging."
+msgstr ""
 
 #: simulation/data/technologies/gather_wicker_baskets.jsontooltip
 msgid "Equip your foragers with wicker baskets. +50% fruit foraging rate."
@@ -1148,11 +1149,10 @@ msgstr "Misterios eleusinos"
 
 #: simulation/data/technologies/health_females_01.jsondescription
 msgid ""
-"The Loom allowed the creation of finer clothing to clothe citizens in the "
-"settlement. Women of the household were taught from a young age how to weave"
-" on the loom, and subsequently spent a large  share of their lives working "
-"with it."
-msgstr "El telar permitió la creación de ropa más fina con la que vestir en los asentamientos. Las mujeres de la casa eran instruidas desde una edad temprana en cómo tejer con el telar, por lo que pasaban gran parte de sus vidas trabajando con él."
+"The loom allowed the creation of finer clothing for settlers. Women of the "
+"household were taught from a young age how to weave on the loom, and "
+"subsequently spent a large share of their lives working with it."
+msgstr ""
 
 #: simulation/data/technologies/health_females_01.jsontooltip
 msgid "Female Citizens +50% Health."
@@ -1614,7 +1614,7 @@ msgid "Make your units 50% more expensive to bribe."
 msgstr ""
 
 #: simulation/data/technologies/spy_counter.jsongenericName
-msgid "Counter Espionage"
+msgid "Counterintelligence"
 msgstr ""
 
 #: simulation/data/technologies/trade_commercial_treaty.jsondescription
@@ -1823,7 +1823,8 @@ msgid ""
 msgstr ""
 
 #: simulation/data/technologies/unlock_spies.jsontooltip
-msgid "Allows to bribe other players' units to share their vision."
+msgid ""
+"Allows bribing the units of other players in order to share their vision."
 msgstr ""
 
 #: simulation/data/technologies/unlock_spies.jsongenericName
@@ -1866,6 +1867,19 @@ msgstr "Ciudadanos-soldado avanzados"
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonspecificName.athen
 msgid "Zeugítai"
 msgstr "Zeugítai"
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsondescription
+msgid "Hire professional mercenaries to fight in your army."
+msgstr ""
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsontooltip
+msgid ""
+"Mercenaries are promoted to advanced rank but require +20% training time."
+msgstr ""
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsongenericName
+msgid "Expertise In War"
+msgstr ""
 
 #: simulation/data/technologies/upgrade_rank_elite_cavalry.jsontooltip
 msgid ""
@@ -2285,7 +2299,7 @@ msgid ""
 msgstr "Los espartanos no contaban con el ejército más grande del mundo, pero contaban con el mejor ejército de su época. Lo que no tenían de cantidad lo compensaban con su calidad. Antiguamente se decía que Esparta no necesitaba grandes y protectoras murallas, ya que sus hombres eran sus muros."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsontooltip
-msgid "Spartans have 10% less maximum population"
+msgid "Spartans have 10% less maximum population."
 msgstr ""
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsongenericName
@@ -2383,7 +2397,7 @@ msgid ""
 msgstr ""
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsontooltip
-msgid "Mauryan city walls have 20% less health and 20% less build time."
+msgid "Mauryan city walls have -20% less health and -20% less build time."
 msgstr ""
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsongenericName
@@ -2415,8 +2429,8 @@ msgid ""
 msgstr "Los campeones de infantería Anusiya se reclutan el doble de rápido, pero pierden un poco de salud máxima."
 
 #: simulation/data/technologies/persians/immortals.jsontooltip
-msgid "Anusiya Champion Infantry -50% train time, but also -20 health."
-msgstr "Infantería Campeona Anusiya -50% en tiempo de reclutamiento, pero también -20 de salud."
+msgid "Anusiya Champion Infantry -50% train time, but also -10% health."
+msgstr ""
 
 #: simulation/data/technologies/persians/immortals.jsongenericName
 msgid "Immortals"
@@ -2485,15 +2499,15 @@ msgstr "Reclutamiento de infantería"
 
 #: simulation/data/technologies/persians/training_levy_cavalry.jsontooltip
 msgid ""
-"All cavalry -20% train time, but also -10 health. Unlocks Cavalry "
+"All cavalry -20% train time, but also -5% health. Unlocks Cavalry "
 "Conscription."
-msgstr "La caballería reduce un -20% su tiempo de reclutamiento, pero pierde -10 puntos de salud. Desbloquea el reclutamiento forzoso de caballería."
+msgstr ""
 
 #: simulation/data/technologies/persians/training_levy_infantry.jsontooltip
 msgid ""
-"All infantry -10% train time, but also -5 health. Unlocks Infantry "
+"All infantry -20% train time, but also -5% health. Unlocks Infantry "
 "Conscription."
-msgstr "La infantería reduce un -10% su tiempo de reclutamiento, pero pierde -5 puntos de salud. Desbloquea el reclutamiento forzoso de infantería."
+msgstr ""
 
 #: simulation/data/technologies/romans/decay_logistics.jsondescription
 msgid "The Romans were masters of the logistics of warfare."

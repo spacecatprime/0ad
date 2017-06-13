@@ -4,12 +4,13 @@
 # 
 # Translators:
 # Amin Behshad, 2015-2016
+# Etienne Beguin <eti.beguin@gmail.com>, 2017
 # mohammad khodadadi <asmanp2012@gmail.com>, 2017
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 15:27+0000\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-04 15:25+0000\n"
 "Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Persian (http://www.transifex.com/wildfire-games/0ad/language/fa/)\n"
 "MIME-Version: 1.0\n"
@@ -120,7 +121,7 @@ msgstr "گنجینه‌ای که به سرعت قابل دست یابیست."
 msgid "Structure"
 msgstr "ساختمان"
 
-#: simulation/templates/template_unit.xml:40
+#: simulation/templates/template_unit.xml:41
 msgid "Unit"
 msgstr "واحد"
 
@@ -309,15 +310,15 @@ msgid "African Bush Elephant"
 msgstr "فیل آفریقایی"
 
 #: simulation/templates/gaia/fauna_elephant_african_infant.xml:4
-msgid "African Elephant (Infant)"
-msgstr "بچه فیل آفریقایی"
+msgid "African Elephant Calf"
+msgstr ""
 
 #: simulation/templates/gaia/fauna_elephant_asian.xml:11
 msgid "Asian Elephant"
 msgstr "فیل آسیایی"
 
 #: simulation/templates/gaia/fauna_elephant_asian_infant.xml:4
-msgid "Asian Elephant (Infant)"
+msgid "Asian Elephant Calf"
 msgstr ""
 
 #: simulation/templates/gaia/fauna_elephant_north_african.xml:11
@@ -341,6 +342,14 @@ msgstr "ماهی تیلاپیلا"
 #: simulation/templates/gaia/fauna_fish_tilapia.xml:6
 msgid "Collect food from this bountiful riparian resource."
 msgstr "ازاین منبع پربرکت رودخانه‌ای غذا بدست آورید."
+
+#: simulation/templates/gaia/fauna_fox_arctic.xml:4
+msgid "Arctic Fox"
+msgstr "روباه قطبی"
+
+#: simulation/templates/gaia/fauna_fox_red.xml:4
+msgid "Red Fox"
+msgstr "روباه سرخ"
 
 #: simulation/templates/gaia/fauna_gazelle.xml:9
 msgid "Gazelle"
@@ -555,8 +564,8 @@ msgid "Poplar Tree"
 msgstr "درخت صنوبر"
 
 #: simulation/templates/gaia/flora_tree_poplar_lombardy.xml:4
-msgid "Lombardy Poplar Tree"
-msgstr "درخت سپیدار لمباردی"
+msgid "Black Poplar Tree"
+msgstr ""
 
 #: simulation/templates/gaia/flora_tree_senegal_date_palm.xml:4
 msgid "Senegal Date Palm"
@@ -995,7 +1004,7 @@ msgstr ""
 
 #: simulation/templates/other/catafalque/mace_catafalque.xml:8
 msgid "Philip V"
-msgstr ""
+msgstr "فیلیپ پنجم"
 
 #: simulation/templates/other/catafalque/mace_catafalque.xml:9
 msgid ""
@@ -1039,11 +1048,6 @@ msgid ""
 "Changes in a 5-pop house for civilisations with those houses, is deleted for"
 " other civs"
 msgstr "تغییرات در خانه‌های با ظرفیت ۵ نفر، برای سایر شهروندان خراب میشوند"
-
-#: simulation/templates/special/marker_object_sound.xml:15
-#: simulation/templates/special/marker_object_sound.xml:16
-msgid "Marker"
-msgstr "نشانگر"
 
 #: simulation/templates/special/player.xml:57
 msgid "Player"

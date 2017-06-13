@@ -17,8 +17,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 15:43+0000\n"
+"POT-Creation-Date: 2017-06-04 09:08+0200\n"
+"PO-Revision-Date: 2017-06-04 15:08+0000\n"
 "Last-Translator: Adrián Chaves Fernández <adriyetichaves@gmail.com>\n"
 "Language-Team: Slovak (http://www.transifex.com/wildfire-games/0ad/language/sk/)\n"
 "MIME-Version: 1.0\n"
@@ -105,6 +105,18 @@ msgstr "Bludisko ostrovov rôznych veľkostí a tvarov. Hráči začínajú s v�
 msgid "Archipelago"
 msgstr "Súostrovie"
 
+#: maps/random/arctic_summer.jsonsettings.Description
+msgid ""
+"Summer has arrived to the cold regions of the north and with it have many "
+"animals, profiting from its milder climate. Wolves, ever present, have shed "
+"their winter clothes; deer, hares and muskox populate the plains. The last "
+"traces of winter are rapidly disappearing, only to reappear very soon."
+msgstr ""
+
+#: maps/random/arctic_summer.jsonsettings.Name
+msgid "Arctic Summer"
+msgstr ""
+
 #: maps/random/ardennes_forest.jsonsettings.Description
 msgid ""
 "Each player starts deep in the forest.\n"
@@ -152,12 +164,24 @@ msgstr "Experimentálna mapa, ktorej výšková mapa sa generuje eróziou, aby v
 msgid "Belgian Uplands"
 msgstr "Belgická pahorkatina"
 
+#: maps/random/botswanan_haven.jsonsettings.Description
+msgid ""
+"Botswanan Africa during the wet season, a land which was arid and "
+"inhospitable just weeks before has come to life totally transformed. Herds "
+"of zebras graze amid the tall, lush grasses in which lions lie waiting, "
+"while in the shallow pools lurk fearsome crocodiles."
+msgstr ""
+
+#: maps/random/botswanan_haven.jsonsettings.Name
+msgid "Botswanan Haven"
+msgstr ""
+
 #: maps/random/caledonian_meadows.jsonsettings.Description
 msgid ""
 "Fertile lands surrounded by harsh terrain.\n"
-"Remains of recent snowfalls still haunt the forests, and torrential rivers from the snowmelt barely died away.\n"
+"Remains of recent snowfalls still haunt the forests, and torrential rivers from the snowmelt have barely died away.\n"
 "Aiming at a realistic terrain, this map might not always be balanced."
-msgstr "Úrodný kraj obklopený drsným terénom.\nZvyšky snehových metelíc ešte mátajú v lesoch, a záplavové rieky z odmäku ešte celkom neopadli.\nTáto mapa sa zameriava na realistickú krajinu, preto môže byť miestami nevyvážená."
+msgstr ""
 
 #: maps/random/caledonian_meadows.jsonsettings.Name
 msgid "Caledonian Meadows"
@@ -264,6 +288,17 @@ msgstr "Hráči začínajú buď v severnom Francúzsku, alebo južnej Británii
 #: maps/random/english_channel.jsonsettings.Name
 msgid "English Channel"
 msgstr "Lamanšský prieliv"
+
+#: maps/random/extinct_volcano.jsonsettings.Description
+msgid ""
+"[color=\"red\"]IMPORTANT NOTE: AI PLAYERS DO NOT WORK WITH THIS MAP[/color]\n"
+"\n"
+"A once fertile valley... desolated by the eruption of the long-dormant volcano in the heart of the region. Following years of empty, scorched deadness, signs of life started reappearing and spreading. Now the land is half-way to the full lushness of its former era. Alas, it is not to be: following a long stretch of drought, interminable rains have set in in the higher regions to the north. Water levels are rising at drastic levels, slowly forcing players to seek the high ground of the lesser, extinct volcanoes or the now again dormant great cone."
+msgstr ""
+
+#: maps/random/extinct_volcano.jsonsettings.Name
+msgid "Extinct Volcano"
+msgstr ""
 
 #: maps/random/flood.jsonsettings.Description
 msgid ""
@@ -613,6 +648,19 @@ msgstr "Nepriateľov od seba oddeľujú vysoké hory.\n\nPyreneje sú veľké po
 msgid "Pyrenean Sierra"
 msgstr "Pyrenejské pohorie"
 
+#: maps/random/ratumacos.jsonsettings.Description
+msgid ""
+"Players start on the banks of the River Sequana (Seine) in Northern Gaul "
+"near the settlement of Ratumacos. Destined to become one of the largest and "
+"most prosperous cities of Medieval Europe and one of the Anglo-Norman "
+"dynasty capitals under the new name of Rouen, Ratumacos is still a peaceful "
+"land - but not for long."
+msgstr ""
+
+#: maps/random/ratumacos.jsonsettings.Name
+msgid "Ratumacos"
+msgstr ""
+
 #: maps/random/red_sea.jsonsettings.Description
 msgid ""
 "Historically, the Red Sea was a sea of many nations. Ideally situated for "
@@ -634,6 +682,17 @@ msgstr "Plytké, priechodné mokriny, ktoré poskytujú málo miesta na stavbu. 
 msgid "Rhine Marshlands"
 msgstr "Rýnske močariny"
 
+#: maps/random/river_archipelago.jsonsettings.Description
+msgid ""
+"Narrow strips of lands are separated by waterways, leaving few and shallow "
+"landbridges between them. Tropical wetlands provide plenty of game, but "
+"beware of Mauryan tribesmen when exploring the outermost islands."
+msgstr ""
+
+#: maps/random/river_archipelago.jsonsettings.Name
+msgid "River Archipelago"
+msgstr ""
+
 #: maps/random/rivers.jsonsettings.Description
 msgid ""
 "Rivers flow between players and join each other in the center of the map."
@@ -642,18 +701,6 @@ msgstr "Medzi hráčmi tečú rieky, ktoré sa spájajú v strede mapy."
 #: maps/random/rivers.jsonsettings.Name
 msgid "Rivers"
 msgstr "Rieky"
-
-#: maps/random/rouen.jsonsettings.Description
-msgid ""
-"Players start on the banks of the River Sequana (Seine) in the north of Gaul"
-" in the place of the modern-day city of Rouen. Destined to become one of the"
-" largest and most prosperous cities of medieval Europe and one of the Anglo-"
-"Norman dynasty capitals, Rouen is still a peaceful land - but not for long."
-msgstr "Hráči začínajú na brehoch rieky Sequana (Séna) na severe Gálie, v miestach dnešného mesta Rouen. Jeho údelom je stať sa jedným z najväčších a najprosperujúcejších miest stredovekej Európy a jedným z hlavných miest Anglo-Normanskej dynastie. Rouen je ešte stále pokojnou krajinou, no už nie nadlho."
-
-#: maps/random/rouen.jsonsettings.Name
-msgid "Rouen"
-msgstr "Rouen"
 
 #: maps/random/saharan_oases.jsonsettings.Description
 msgid "Each players starts near a lush oasis in a large, desolate desert."
@@ -786,6 +833,30 @@ msgstr "Ukážka kódu/metód umiestňovania múrov v náhodných mapách. Odpor
 msgid "Wall Demo"
 msgstr "Ukážka múrov"
 
+#: maps/random/wild_lake.jsonsettings.Description
+msgid "A lake surrounded by hills."
+msgstr ""
+
+#: maps/random/wild_lake.jsonsettings.Name
+msgid "Wild Lake"
+msgstr ""
+
+#: maps/random/extinct_volcano_triggers.js:65
+msgid "It keeps on raining, we will have to evacuate soon!"
+msgstr ""
+
+#: maps/random/extinct_volcano_triggers.js:66
+msgid "The rivers are standing high, we need to find a safe place!"
+msgstr ""
+
+#: maps/random/extinct_volcano_triggers.js:67
+msgid "We have to find dry ground, our lands will drown soon!"
+msgstr ""
+
+#: maps/random/extinct_volcano_triggers.js:68
+msgid "The lakes start swallowing the land, we have to find shelter!"
+msgstr ""
+
 #: maps/random/survivalofthefittest_triggers.js:193
 #, javascript-format
 msgid "The first wave will start in %(time)s!"
@@ -867,7 +938,7 @@ msgstr "Nastala jar v Arkádii, Grécku. Jarné dažde naplnili korytá potokov,
 #: Oasis.xml:PlayerData[0].Name:27
 #: maps/scenarios/Flight_demo_2.xml:PlayerData[0].Name:27
 #: maps/scenarios/Gold_Rush.xml:PlayerData[0].Name:27
-#: maps/scenarios/Introductory Tutorial.xml:PlayerData[0].Name:39
+#: maps/scenarios/Introductory_Tutorial.xml:PlayerData[0].Name:39
 #: maps/scenarios/Laconia 01.xml:PlayerData[0].Name:27
 #: maps/scenarios/Migration.xml:PlayerData[0].Name:27
 #: maps/scenarios/Necropolis.xml:PlayerData[0].Name:39 maps/scenarios/Saharan
@@ -911,7 +982,7 @@ msgstr "Nastala jar v Arkádii, Grécku. Jarné dažde naplnili korytá potokov,
 #: maps/skirmishes/Neareastern Badlands (4).xml:PlayerData[0].Name:39
 #: maps/skirmishes/Nile River (4).xml:PlayerData[0].Name:39
 #: maps/skirmishes/Persian Highlands (4).xml:PlayerData[0].Name:39
-#: maps/skirmishes/Punbjab (2).xml:PlayerData[0].Name:40
+#: maps/skirmishes/Punjab (2).xml:PlayerData[0].Name:40
 #: maps/skirmishes/Saharan Oases (4).xml:PlayerData[0].Name:39
 #: maps/skirmishes/Sahel (4).xml:PlayerData[0].Name:39 maps/skirmishes/Savanna
 #: River.xml:PlayerData[0].Name:39 maps/skirmishes/Sicilia
@@ -935,7 +1006,7 @@ msgstr "Hráč 1"
 #: Oasis.xml:PlayerData[1].Name:27
 #: maps/scenarios/Flight_demo_2.xml:PlayerData[1].Name:27
 #: maps/scenarios/Gold_Rush.xml:PlayerData[1].Name:27
-#: maps/scenarios/Introductory Tutorial.xml:PlayerData[1].Name:39
+#: maps/scenarios/Introductory_Tutorial.xml:PlayerData[1].Name:39
 #: maps/scenarios/Laconia 01.xml:PlayerData[1].Name:27
 #: maps/scenarios/Migration.xml:PlayerData[1].Name:27
 #: maps/scenarios/Necropolis.xml:PlayerData[1].Name:39 maps/scenarios/Saharan
@@ -978,7 +1049,7 @@ msgstr "Hráč 1"
 #: maps/skirmishes/Neareastern Badlands (4).xml:PlayerData[1].Name:39
 #: maps/skirmishes/Nile River (4).xml:PlayerData[1].Name:39
 #: maps/skirmishes/Persian Highlands (4).xml:PlayerData[1].Name:39
-#: maps/skirmishes/Punbjab (2).xml:PlayerData[1].Name:40
+#: maps/skirmishes/Punjab (2).xml:PlayerData[1].Name:40
 #: maps/skirmishes/Saharan Oases (4).xml:PlayerData[1].Name:39
 #: maps/skirmishes/Sahel (4).xml:PlayerData[1].Name:39 maps/skirmishes/Savanna
 #: River.xml:PlayerData[1].Name:39 maps/skirmishes/Sicilia
@@ -1174,7 +1245,7 @@ msgid "Xerxes I"
 msgstr ""
 
 #: maps/scenarios/Cinema_Demo.xml:PlayerData[2].Name:40
-msgid "Yuu"
+msgid "You"
 msgstr ""
 
 #: maps/scenarios/Cinema_Demo.xml:Name:40
@@ -1370,11 +1441,11 @@ msgstr "Príklad na import výškovej mapy. Išlo o obrázok vo formáte PNG v o
 msgid "Height Map Import Demo - Greece (small)"
 msgstr "Ukážka importu výškovej mapy - Grécko (malé)"
 
-#: maps/scenarios/Introductory Tutorial.xml:Description:39
+#: maps/scenarios/Introductory_Tutorial.xml:Description:39
 msgid "This is a basic tutorial to get you started playing 0 A.D."
 msgstr "Základný tutoriál, ktorý vám vysvetlí, ako začať hrať 0 A.D."
 
-#: maps/scenarios/Introductory Tutorial.xml:Name:39
+#: maps/scenarios/Introductory_Tutorial.xml:Name:39
 msgid "Introductory Tutorial"
 msgstr "Úvodný tutoriál"
 
@@ -2287,14 +2358,14 @@ msgstr "Vyschnutá kotlina v strede mapy, bohatá na nerasty a obklopená skalna
 msgid "Persian Highlands (4)"
 msgstr "Perzské vysočiny (4)"
 
-#: maps/skirmishes/Punbjab (2).xml:Description:40
+#: maps/skirmishes/Punjab (2).xml:Description:40
 msgid ""
 "Northwest India. Nearby rivers swell with monsoon rains, allowing for only a few treacherous crossings.\n"
 "\n"
 "The rivers are heavily forested, while grasslands carpet the surrounding countryside. Watch out for Tigers in the tall grass! Asian elephants are also a common sight."
 msgstr "Severozápadná India. Monzúnové dažde rozvodnili blízke rieky, čo spôsobilo, že ostalo len niekoľko zradných priechodov.\n\nTieto rieky sú husto zalesnené, kým okolitú krajinu pokrývajú lúčiny. Dávajte si pozor na tigrov vo vysokej tráve! Bežným zjavom sú aj slony ázijské."
 
-#: maps/skirmishes/Punbjab (2).xml:Name:40
+#: maps/skirmishes/Punjab (2).xml:Name:40
 msgid "Punjab (2)"
 msgstr "Pandžáb (2)"
 

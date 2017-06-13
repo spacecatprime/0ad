@@ -91,7 +91,6 @@
 
 		<object name="leftButtonPanel" size="20 100%-105 20% 100%-20">
 			<object name="toggleBuddyButton" type="button" style="ModernButtonRed" size="0 100%-85 100% 100%-60">
-				<translatableAttribute id="caption" comment="Toggle Buddy">Toggle Buddy</translatableAttribute>
 				<action on="Press">
 					toggleBuddy();
 				</action>
@@ -259,9 +258,9 @@
 				</object>
 
 				<object type="text" size="22 0 52%-10 100%" text_align="left" textcolor="white">
-					<translatableAttribute id="caption">Show full games</translatableAttribute>
+					<translatableAttribute id="caption">Show only open games</translatableAttribute>
 				</object>
-				<object name="showFullFilter"
+				<object name="filterOpenGames"
 					type="checkbox"
 					checked="false"
 					style="ModernTickBox"

@@ -151,6 +151,12 @@ StatisticsTracker.prototype.Init = function()
 		this.entity, IID_StatisticsTracker, "UpdateSequences", 0, g_UpdateSequenceInterval);
 };
 
+StatisticsTracker.prototype.OnGlobalInitGame = function()
+{
+	this.sequences = clone(this.GetStatistics());
+	this.sequences.time = [];
+};
+
 /**
  * Returns a subset of statistics that will be added to the simulation state,
  * thus called each turn. Basic statistics should not contain data that would
@@ -205,15 +211,29 @@ StatisticsTracker.prototype.GetStatistics = function()
 
 StatisticsTracker.prototype.GetSequences = function()
 {
-	if (!this.sequences)
-		return {};
-
 	let ret = clone(this.sequences);
 	let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
 
 	ret.time.push(cmpTimer.GetTime() / 1000);
 	this.PushValue(this.GetStatistics(), ret);
 	return ret;
+};
+
+/**
+ * Used to print statistics for non-visual autostart games.
+ * @return The player's statistics as a JSON string beautified with some indentations.
+ */
+StatisticsTracker.prototype.GetStatisticsJSON = function()
+{
+	let cmpPlayer = Engine.QueryInterface(this.entity, IID_Player);
+
+	let playerStatistics = {
+		"playerID": cmpPlayer.GetPlayerID(),
+		"playerState": cmpPlayer.GetState(),
+		"statistics": this.GetStatistics()
+	};
+
+	return JSON.stringify(playerStatistics, null, "\t");
 };
 
 /**
@@ -546,15 +566,6 @@ StatisticsTracker.prototype.PushValue = function(fromData, toData)
 StatisticsTracker.prototype.UpdateSequences = function()
 {
 	let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
-
-	// Don't do this on Init, because GetStatistics doesn't work in this state of the game
-	// This is because the simulation hasn't totally started/initialized and we query some simulation values
-	if (!this.sequences)
-	{
-		this.sequences = clone(this.GetStatistics());
-		this.sequences.time = [];
-	}
-
 	this.sequences.time.push(cmpTimer.GetTime() / 1000);
 	this.PushValue(this.GetStatistics(), this.sequences);
 };

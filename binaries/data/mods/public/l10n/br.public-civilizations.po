@@ -14,9 +14,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2016-11-28 09:00+0100\n"
-"PO-Revision-Date: 2017-04-24 10:25+0000\n"
-"Last-Translator: ernest olory <ernestolory@hotmail.fr>\n"
+"POT-Creation-Date: 2017-06-05 09:01+0200\n"
+"PO-Revision-Date: 2017-06-07 13:05+0000\n"
+"Last-Translator: Irriep Nala Novram <allannkorh@yahoo.fr>\n"
 "Language-Team: Breton (http://www.transifex.com/wildfire-games/0ad/language/br/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -191,13 +191,14 @@ msgstr "Ar stummadur e falañs hengounel a zo bet diorroet tro-dro d'an VIIIvet 
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[0].History
 msgid ""
-"The general whom persuaded the Athenians to invest their income from silver "
+"The general who persuaded the Athenians to invest their income from silver "
 "mines in a war navy of 200 Triremes. A key figure during the Persian Wars, "
 "he commanded the victorious Athenian navy at the decisive battle of Salamis "
 "in 479 B.C. Later, he pursued an active policy against the Persians in the "
-"Aegean, thereby laying the foundations of future Athenian power. Ostracised "
-"by the Athenians, he was forced to flee to the protection of the Persians."
-msgstr "Ar jeneral a gendrec'has an Ateniz da bostañ o gopr o tont eus ar vengleuzioù arc'hant e-barzh ul lestraz a 200 lestr-terroeñvek. Un alc'hwez a zen e-pad ar vrezelioù Persian, gourc'hemenn a reas al lestraz Atenian a c'hounezas an emgann Salamin e 479 k. JK. Diwezhatoc'h e kasas ur politikerezh oberiant en enep d'ar Bersianed war ar mor Ejean dre-se e tiazezas ar galloud Atenian a oa da zont.  Ostrakaet gant an Ateniz, rediet e oa da vont en arlu hag e kavas repu gant ar Bersianed."
+"Aegean, thereby laying the foundations of future Athenian power. However, he"
+" was eventually ostracised by the Athenians and forced to flee to the "
+"protection of the Persians."
+msgstr ""
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[1].History
 msgid "Pericles was the foremost Athenian politician of the 5th Century B.C."
@@ -315,17 +316,14 @@ msgid "Celtic religion and druidry inspired their warlike mindset. "
 msgstr "Ar relijion hag an drouizelezh o deus awenet o foellouriezh brezel."
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Description
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
-msgid "Bonus to tech speed."
-msgstr "Bonuz d'an tek tizh."
+msgid "-20% resources cost for allies healers."
+msgstr "-20% a vammennoù koust evit pareerien gevredet."
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Name
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
-msgid "Druides"
+msgid "Druids"
 msgstr "Drouized"
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].History
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
 msgid ""
 "The Druids of the Celts maintained an organized religion that advanced the "
 "technology of their people even during wartime."
@@ -563,8 +561,8 @@ msgid ""
 msgstr "Ne oa ket heñvel al Ledenez Iberian ouzh Afrika an Hanternoz hag a oa anavezet evel bezañ bro ar c'hezeg ha gouest da broduiñ betek 100,000 jav nevez bep bloaz. Bez e oa ivez 'ti' olifanted ar c'hoadeier eus Afrika an Hanternoz."
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Description
-msgid "+33% trade profit international routes."
-msgstr "+33% a c'hounid-kenwerzh evit an hentoù etrebroadel."
+msgid "10% bonus of trade profit for allies' international routes."
+msgstr ""
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Name
 msgid "Trademasters"
@@ -769,15 +767,29 @@ msgstr "Kartago, ur gêr-stad e Tunizia a-vremañ, a oa bet un nerzh dibar e Kor
 msgid "Gauls"
 msgstr "Galianed"
 
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
+msgid "-10% research time for technologies of allies."
+msgstr ""
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
+msgid "Druidic Wisdom"
+msgstr "Furnez an drouized"
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
+msgid ""
+"The Druids of the Gauls maintained an organized religion that advanced the "
+"technology of their people even during wartime."
+msgstr ""
+
 #: simulation/data/civs/gaul.jsonAINames[0]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].Name
-msgid "Britomartos"
-msgstr "Britomartos"
+msgid "Viridomarus"
+msgstr "Viridomarus"
 
 #: simulation/data/civs/gaul.jsonAINames[1]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].Name
-msgid "Brennos"
-msgstr "Brennos"
+msgid "Brennus"
+msgstr "Brennus"
 
 #: simulation/data/civs/gaul.jsonAINames[2]
 msgid "Cativolcus"
@@ -789,8 +801,8 @@ msgstr "Cingetorix"
 
 #: simulation/data/civs/gaul.jsonAINames[4]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].Name
-msgid "Uerkingetorix"
-msgstr "Uerkingetorix"
+msgid "Vercingetorix"
+msgstr "Versinjetorix"
 
 #: simulation/data/civs/gaul.jsonAINames[5]
 msgid "Divico"
@@ -805,8 +817,8 @@ msgid "Liscus"
 msgstr "Liscus"
 
 #: simulation/data/civs/gaul.jsonAINames[8]
-msgid "Valetiacos"
-msgstr "Valetiacos"
+msgid "Valetiacus"
+msgstr "Valetiacus"
 
 #: simulation/data/civs/gaul.jsonAINames[9]
 msgid "Viridovix"
@@ -818,14 +830,17 @@ msgid ""
 msgstr "Ur c'hementad termenet a vetal ha boued a zeu eus pep savadur distrujet pe paket."
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].Name
-msgid "Uae Uictos"
-msgstr " Uae Uictos"
+msgid "Vae Victis"
+msgstr "Vae Victis"
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].History
 msgid ""
-"Means Woe to the Defeated. It was the words that the Gallic Leader, Brennos,"
-" spoke at the Capitol at Rome after they took their plunder."
-msgstr "Talvezout a ra mallozh d'ar re drec'het. Ar gerioù a oa bet lavaret gant Brennos, al levier Galian, e Roma er C'hapitol goude m'o defe kemeret o freizh."
+"Woe to the Defeated! The Gallic chieftain Brennus seized Rome (with the "
+"exception of a garrison on Capitoline Hill). When Camillus besieged him with"
+" a relief force from Veii, he negotiated his surrender for 1000 pounds of "
+"gold, and adding the weight of his sword on the scale when the Romans "
+"complained that he used false weights he uttered those famous words."
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[1].Description
 msgid "Gallic druids gain a small melee attack."
@@ -844,21 +859,21 @@ msgstr "Ar Garnuted a oa drouized Aulerkia. Stourm a raent pa oa ret,  hag e voe
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].History
 msgid ""
-"When celt armies met the enemy, before the battle would start, the celt "
+"When Celtic armies met the enemy, before the battle would start, the Celtic "
 "leader would go to the first line and challenge the bravest of the enemy "
 "warriors to a single combat. The story of how Marcus Claudius Marcellus "
 "killed a Gallic leader at Clastidium (222 B.C.) is typical of such "
-"encounters. Advancing with a smallish army, Marcellus met a combined force "
-"of Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with"
-" the usual rush and terrifying cries, and their king, Britomartos, picking "
+"encounters. Advancing with a small army, Marcellus met a combined force of "
+"Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with "
+"the usual rush and terrifying cries, and their king, Viridomarus, picking "
 "out Marcellus by means of his badges of rank, made for him, shouting a "
-"challenge and brandishing his spear. Britomartos was an outstanding figure "
+"challenge and brandishing his spear. Viridomarus was an outstanding figure "
 "not only for his size but also for his adornments; for he was resplendent in"
 " bright colors and his armor shone with gold and silver. This armor, thought"
 " Marcellus, would be a fitting offering to the gods. He charged the Gaul, "
 "pierced his bright breastplate and cast him to the ground. It was an easy "
-"task to kill Britomartos and strip him of his armor."
-msgstr "Pa geje an armeoù keltiek an enebour, a-raok na grogfe an emgann, mont a rae al levier keltiek d'al linenn gentañ hag e atahine ar soudard enebour kalonekañ evit ur gann diouti e-unan. An istor a gont penaos e lazhas Markus Klaodius Marselus al levier Galian e Klastidiom (222 a-raok J.-K.) a zo ar skouer eus ar sortoù emgann. En ur vont war-raok gant un arme bihan e kejas Marselus ouzh nerzhioù kenstrollet ar C'halianed Insubriat hag ar C'hesated e Klastidiom. An arme Galian az ae war-raok gant ar youc'hadennoù spontus boaz, hag o roue, Britomartos, a anavezas Marselus a drugarez d'e arouezioù a c'hrad-uhel hag e renk uhel, az eas davetañ hag e c'houlennas digantañ kaout un difi gantañ ha da zispakañ e c'hoaf. Un dudenn dispar a oa Britomartos neket hepken evit e vent met ivez evit e berzhioù mat; evitañ da vezañ flamm-flim e livioù skedus hag e pare en e houarnwisk en aour hag en arc'hant. Soñjal a reas Markus e vije an houarnwisk-mañ ur prof a zere evit an Doueed. Fardiñ a reas war ar Galian, toullañ a reas e betral lugernus hag e kasas anezhañ d'an douar. Un taolad labour aes a oa evit lazhañ Britomartos ha diwiskañ anezhañ diouzh e houarnwisk."
+"task to kill Viridomarus and strip him of his armor."
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].History
 msgid ""
@@ -869,19 +884,19 @@ msgid ""
 "that Britons had conquered Rome, the greatest civilization in the world, "
 "long before Rome conquered the Britons. We know from many ancient sources "
 "which predate Geoffrey that Rome was indeed sacked, but in 387 not 390, and "
-"that the raid was led by a man named Brennos (which was latinized to "
-"Brennus), but he and his invading horde were Gallic Senones, not British. In"
-" this episode several features of Geoffrey's editing method can be seen: he "
-"modified the historical Brennus/Brennos, created the brother Belinus, "
-"borrowed the Gallic invasion, but omitted the parts where the Celts seemed "
-"weak or foolish. His technique is both additive and subtractive. Like the "
-"tale of Trojan origin, the story of the sack of Rome is not pure "
-"fabrication; it is a creative rearrangement of the available facts, with "
-"details added as necessary. By virtue of their historical association, Beli "
-"and Bran are often muddled with the earlier brothers Belinus and Brennus "
-"(the sons of Dunvallo Molmutius) who contended for power in northern Britain"
-" in around 390 B.C., and were regarded as gods in old Celtic tradition."
-msgstr "Brennus zo an anv roet gant an Istorourien Roman da levier brudet ar C'halianed a bakas Roma da vare Kamilhus. Hervez Geoffrey eus a vMonmouth, ar beleg en doa skrivet “Istor Roueed Preden” o doa aloubet Brennus hag e vreur Belinus Galia ha preizhet Roma e 390 a-raok J.-K. 'o prouiñ' e oa bet aloubet Roma gant ar Vretoned, ar sevenadurezh vrasañ er bed, pell a-raok ma vefe aloubet ar Vritoned gant Roma. Gouzout a reomp diwar meur a vammenn gozh a oa a-raok Geoffrey e oa bet preizhet Roma evit gwir met e 387 ha n'eo ket 390, hag e oa renet ar reud gant un den anvet Brennos (a oa bet latinekaet e Brennus) nemet e oa anezhañ hag e lu aloubiñ Galian Senoned ha ne oant ket Bretoned. Er pennad-mañ e c'hall bezañ gwelet meur a zezverk e-barzh an hentenn embann eus Geoffrey: kemmet en doa ar Brennus/Brennos istorel, krouet ar breudeur Belinus, amprestet an aloubadeg Galian met ankouaet en doa al lodennoù e-lec'h ma seblante ar Gelted dinerzh pe diskiant. Sammadel ha lamadel eo e deknik war ar memes tro. Evel orin kontadenn Troian, n'eo ket istor preizh Roma da vat faltazius; nemet ez eo un adkempennadur-krouerus eus ar fedoù a zo anezho, gant munudoù ouzhpennet ma vez ezhomm. Dre o c'henstroll istorel e vez Beli ha Bran kemmesket alies gant ar vreudeur diaraok Belinus ha Brennus (mibien Dunvallo Molmutius) o doa breutaet an eil ouzh egile ar galloud e Breizh-Veur an Hanternoz war-dro 390 a-raok J.-K. hag e voent gwelet evel Doueed en hengoun keltiek kozh."
+"that the raid was led by a man named Brennus, but he and his invading horde "
+"were Gallic Senones, not British. In this episode several features of "
+"Geoffrey's editing method can be seen: he modified the historical Brennus, "
+"created the brother Belinus, borrowed the Gallic invasion, but omitted the "
+"parts where the Celts seemed weak or foolish. His technique is both additive"
+" and subtractive. Like the tale of Trojan origin, the story of the sack of "
+"Rome is not pure fabrication; it is a creative rearrangement of the "
+"available facts, with details added as necessary. By virtue of their "
+"historical association, Beli and Bran are often muddled with the earlier "
+"brothers Belinus and Brennus (the sons of Dunvallo Molmutius) who contended "
+"for power in northern Britain in around 390 B.C., and were regarded as gods "
+"in old Celtic tradition."
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].History
 msgid ""
@@ -1161,8 +1176,8 @@ msgid ""
 msgstr "Ar Greked o deus graet kalz a berzh en ur Hellenaat meur a estren. E-pad an Oadvezh Hellenistek, ar grekeg a oa \"lingua franca\" an hen-bed, komzet e oa kalz etre Bro-Spagn ha Bro-India."
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Description
-msgid "+15% tribute and trade bonus on metal."
-msgstr "+15% a druaj hag a vonuz kenwerzhel war ar metal."
+msgid "+20% sell prices at market."
+msgstr "+20% a brizioù gwerzh er marc'had."
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Name
 msgid "Standardized Currency"
@@ -1422,12 +1437,12 @@ msgid ""
 msgstr "Unan eus pevar varna (renkadoù sokial) an Hindouegezh eo ar Kshatriya, pe Kashtriya, a dalvez kement ha \"brezelour\". En hengoun eo ar Kshatriya ar renkad brezelourien a ren war ar sistem sokial vedik-hindou, evel m'eo diskouezet er Vedaioù hag e Lezennoù Manu."
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Description
-msgid "Allied Temple techs -50% cost and research time."
-msgstr "-50% a goust hag a amzer enklask evit teknologiezhioù an Templ Kevredet."
+msgid "Allied temples and temple technologies -50% cost and research time."
+msgstr ""
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Name
-msgid "Evangelism."
-msgstr "Avielouriezh."
+msgid "Ashoka's Religious Support"
+msgstr ""
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].History
 msgid ""
@@ -1600,8 +1615,8 @@ msgid ""
 msgstr "Ar Bersianed a c'halle sevel un niver bras a droadeien e-pad un amzer-vrezel abalamour d'ar ment bras a oa gant an Impalaeriezh Akaemeninat ha dre an doare e oa bet rannet. Dre vras e oa gourdonet mat an droadegiezh Bers ha stourm a rae gant birvidigezh-vras. Koulskoude daoust ma oa gwir, gwan e oa an droadegiezh en emgannoù a-dost. Ma, nemet rejimantoù ar rejimantoù gwellañ, ne oa ket an droadegiezh Pers un nerzh micherel brudet."
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Description
-msgid "+25% trade profit land routes."
-msgstr "+25% a c'hounid-kenwerzh evit an hentoù-douar."
+msgid "Higher income (+15%) from land trade routes for ally's traders."
+msgstr "Korvoder uheloc'h (+15%) eus hentoù kenwerzh an douar evit ar varc'hadourien gevredet."
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Name
 msgid "Royal Road"
@@ -1696,11 +1711,11 @@ msgstr "Savouriezh Persian"
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[1].History
 msgid ""
-"The Persians built the wonderful 1677 mile-long Royal Highway from Sardis to"
-" Susa; Darius the Great and Xerxes also built the magnificent Persepolis; "
-"Cyrus the Great greatly improved Ecbatana and virtually 'rebuilt' the old "
-"Elamite capital of Susa."
-msgstr "Ar Bersianed o doa savet an Hent Bras Roueel marvailhus 1677 mile-hed eus Sardiz betek Susa; Dariuz ar Bras ha Gzerses o doa savet an hollgaer a bPersepolis; Siruz ar Bras en doa gwellaet mat Ekbatana hag adsavet en doa kêrbenn gozh Elamiat eus a Susa."
+"The Persians built the wonderful 2700 kilometer-long Royal Highway from "
+"Sardis to Susa; Darius the Great and Xerxes also built the magnificent "
+"Persepolis; Cyrus the Great greatly improved Ecbatana and virtually "
+"'rebuilt' the old Elamite capital of Susa."
+msgstr ""
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[2].Description
 msgid "Reduces train time for Anusiya champion infantry by half."
@@ -1815,17 +1830,16 @@ msgid "Mercenary Army"
 msgstr "Arme a c'hoprsoudarded"
 
 #: simulation/data/civs/ptol.jsonCivBonuses[0].History
-#: simulation/data/civs/ptol.jsonStructures[1].History
 msgid ""
 "The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
 "foreign mercenaries for the bulk of its military force, mainly because the "
 "loyalty of native Egyptian units was often suspect. Indeed, during one "
 "native uprising, Upper Egypt was lost to the Ptolemies for decades. "
-"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"Mercenaries were often battle-hardened and their loyalty could be bought, "
 "sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
 " under the Ptolemies was so prosperous as to be the richest of Alexander's "
 "successor states."
-msgstr "Ar riez Greko-Makedonian eus ar bPtolemed a gonte war un niver bras a c'hoprsoudarded Gresian hag estren evit al lodenn vrasañ diouzh e nerzhioù milourel, dreist-holl peogwir e veze fall lealded an unanennoù Ejipsian engenidik alies. Evit gwir, da vare un emsavadeg gant ar re enginidik, Ejipt-Uhel a oa kollet evit ar re bPtoleme evit dek-vloaziadoù. Ar c'hoprsoudarded a oa gourdonet diouzh ar brezel alies hag o lealded a c'hall bezañ prenet, gwechoù 'zo marc'had-mat a-walc'h, a-wechoù ket. Un hanter netra e oa, abaoe ma oa Egipt dindan ar re bPtoleme ken bleunius ha ma oa ar stad pinvidikañ diskennad da Aleksandr."
+msgstr ""
 
 #: simulation/data/civs/ptol.jsonCivBonuses[1].Description
 msgid "The Ptolemaic Egyptians receive 3 additional farming technologies."
@@ -2002,6 +2016,18 @@ msgid ""
 "Trains all 'mercenary' units."
 msgstr "Da vezañ savet war un tiriad neptuek. Na lak ket da greskiñ an tiriadoù. Stummañ a ra an holl goprsoudarded."
 
+#: simulation/data/civs/ptol.jsonStructures[1].History
+msgid ""
+"The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
+"foreign mercenaries for the bulk of its military force, mainly because the "
+"loyalty of native Egyptian units was often suspect. Indeed, during one "
+"native uprising, Upper Egypt was lost to the Ptolemies for decades. "
+"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
+" under the Ptolemies was so prosperous as to be the richest of Alexander's "
+"successor states."
+msgstr "Ar riez Greko-Makedonian eus ar bPtolemed a gonte war un niver bras a c'hoprsoudarded Gresian hag estren evit al lodenn vrasañ diouzh e nerzhioù milourel, dreist-holl peogwir e veze fall lealded an unanennoù Ejipsian engenidik alies. Evit gwir, da vare un emsavadeg gant ar re enginidik, Ejipt-Uhel a oa kollet evit ar re bPtoleme evit dek-vloaziadoù. Ar c'hoprsoudarded a oa gourdonet diouzh ar brezel alies hag o lealded a c'hall bezañ prenet, gwechoù 'zo marc'had-mat a-walc'h, a-wechoù ket. Un hanter netra e oa, abaoe ma oa Egipt dindan ar re bPtoleme ken bleunius ha ma oa ar stad pinvidikañ diskennad da Aleksandr."
+
 #: simulation/data/civs/ptol.jsonStructures[2].Name
 msgid "Lighthouse"
 msgstr "Tour-Tan"
@@ -2067,17 +2093,23 @@ msgid ""
 msgstr "Ar geodedelezh Roman a oa priziet kenañ en Henamzer. Ar gwirioù diazez hag ar brientoù a veze profet d'ar geodedourien Roman a veze nac'het d'ar pobloù aloubet. Lavaret e oa neuze ober droug d'ur c'heodedour Roman a oa ober droug da Roma hec'h-unan, hag-holl galloud Roma da gouezhañ war an hini kablus."
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Description
-msgid "Allied citizen-soldiers gain a +15% attack when in Roman territory."
-msgstr "Ar soudarded-keodedel kevredet ganeoc'h a c'hounez +15% a dagusted pa vezont en un tiriad Roman."
+msgid "-20% training time for allied infantry."
+msgstr "-20% eus amzer ar stummañ evit an droadegiezh gevredet."
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Name
-msgid "Socii"
-msgstr "Socii"
+msgid "Conscription"
+msgstr "Enrolladur"
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].History
 msgid ""
-"Being allied with Rome came with great benefits (as well as great peril)."
-msgstr "Bezañ kevredet gant Roma a ro ur bern gounidoù (met ivez ur bern pirilhoù)."
+"Many Roman soldiers were conscripted into service. While volunteers were "
+"preferred, the Roman state did maintain an annual military draft. During an "
+"emergency the draft and the terms of service were enlarged. The importance "
+"of military service in Republican Rome was so great it was a prerequisite "
+"for a political career. Members of the Senate were called Conscript Fathers "
+"because of this, reflected in how the ordo equester was said to have been "
+"\"conscripted\" into the Senate."
+msgstr "Kalz a soudarded Roman a oa bet enrollet er servij. Tra ma veze gwelloc'h ar re youlek e veze miret evit gwir an enrolladur milourel dre vloaz gant ar stad Roman. Pa veze difrae e veze ledanet termenoù ar servij hag an enrolladur. Pouez ar servij milourel er Republik Roman a oa kement bras hag e oa ur rakrekis evit ober e dreuz er politikerezh. Graet e voe izili ar Sened anezho Tadoù an Enrolladur abalamour d'an dra-mañ, diskouezet e penaos e oa bet lavaret e oa bet an urzh marc'heger \"enrollet\" er Sened.   "
 
 #: simulation/data/civs/rome.jsonAINames[0]
 msgid "Lucius Junius Brutus"
@@ -2458,14 +2490,14 @@ msgstr "Seleukos A' Nikator"
 msgid ""
 "Antiochus inherited a troubled kingdom upon the beginning of his reign. From"
 " the verge of collapse he managed to weld back together the empire Seleukus "
-"I so hard to found. The rebellious eastern satraps of Bactria and Parthia "
-"were brought to heel , temporarily securing his eastern borders. He then "
-"turned his attention to mother Greece, attempting to fulfill the dreams of "
-"his fathers by invading Greece under the pretext of liberation. The Achaean "
-"League and the Kingdom of Pergamon banded together with the Romans to defeat"
-" him at the Battle of Magnesia, forever burying the dream of reuniting "
-"Alexander's empire."
-msgstr "Antiokuz en doa bet da hêrezh ur rouantelezh trubuilhet pa groge e ren dezhañ. War ribl ar gouezhadenn e teuas a-benn da adunvaniñ impalaeriezh Seleukuz Iañ ken start da gavout. Emsavadegoù satrap reter Baktria ha Partia a oa bet kaset da vezañ en e harz e-pad ur pennad o wareziñ e harzoù reter. Troet en doa neuze e evezh ouzh  Gres mamm, o klask seveniñ huñvreoù e zadoù en ur aloubiñ Gres dindan abeg an dieubidigezh. Kevre Akaean ha Rouantelezh Pergamon a oa bet unanet asambles gant ar Romaned evit trec'hiñ anezhañ e Brezel Magnezia, o veziañ huñvre adunvaniñ impalaeriezh Aleksandr da viken."
+"I fought so hard to found. The rebellious eastern satraps of Bactria and "
+"Parthia were brought to heel , temporarily securing his eastern borders. He "
+"then turned his attention to mother Greece, attempting to fulfill the dreams"
+" of his fathers by invading Greece under the pretext of liberation. The "
+"Achaean League and the Kingdom of Pergamon banded together with the Romans "
+"to defeat him at the Battle of Magnesia, forever burying the dream of "
+"reuniting Alexander's empire."
+msgstr ""
 
 #: simulation/data/civs/sele.jsonFactions[0].Heroes[1].Name
 msgid "Antiokhos G' Megas"
@@ -2480,7 +2512,7 @@ msgid ""
 "conquest of Egypt (twice), which was halted by the threat of Roman "
 "intervention, and the beginning of the Jewish revolt of the Maccabees. He "
 "died of sudden illness while fighting off a Parthian invasion from the East."
-msgstr ""
+msgstr "Antiokuz IV Epifanez a oa mab Antiokuz III ar Bras ha breur Seleukus IV Filopator. E penn kentañ e veze graet anezhañ Mithridates warlec'h en doa asantet bezañ graet Antiokuz pe diouzhtu ma vefe kemeret an tron gantañ pe goude marv e vreur koshañ Antiokuz. Darvoudoù pouezus tra ma rene a enkloz aloubadeg-tost Egipt (div wech) a oa bet harzet gant trouz brezel an emelladenn Roman ha krog emsavadeg yuzev ar Vakabied. Mervel a reas eus ur c'hleñved trumm keit ha ma oa o stourm a-enep d'un aloubadeg Partiek eus ar Reter."
 
 #: simulation/data/civs/sele.jsonFactions[0].Heroes[2].Name
 msgid "Antiokhos D' Epiphanes"
@@ -2519,7 +2551,7 @@ msgid ""
 "manpower for the imperial Seleucid army. A side effect of this system was "
 "that it drained the Greek homeland of military-aged men, a contributing "
 "factor to Greece's eventual conquest by Rome."
-msgstr ""
+msgstr "Ar roueed Seleukid o doa pedet Gresianed, Makedonied, Galated (Galliaoù), Kreted ha Trasied e memes doare evit en em staliañ e tiriadoù ledan an impalaeriezh. En em staliañ a rejont e trevadennoù milourel a vez graet anezho klerukioù (klêroukia). Dindan an emglev-mañ e voe roet d'an drevadennerien un tamm douar pe ur c'hleros hag en eskemm e veze goulennet diganto servijañ en arme bras roueel pa vezent galvet evit ar servij. Pezh en doa krouet ur renkad etre-uhel a drevadenner milourel a zlee o bara ha madoù d'ar roueed Sirian ha skoazellañ a rejont da greskiñ koskor laosk an arme impalaerel Seleukid."
 
 #: simulation/data/civs/sele.jsonHistory
 msgid ""
@@ -2542,7 +2574,7 @@ msgid ""
 "and run away before a single shield clashed. 'Othismos' refers to the point "
 "in a phalanx battle where both sides try to shove each other out of "
 "formation, attempting to breaking up the enemy lines and routing them."
-msgstr ""
+msgstr "Ar Spartaned a oa mistri diarvar war ar falañj vilourel. Ar Spartaned a veze kement doujet evit o c'henurzh ha ma lakfe an armeoù enebour da dec'hel kuit ha da baouezañ a-raok ma vefe ur stourm a skoedoù. 'Otismos' a ra dave d'ar poent en un emgann falañs e-lec'h ma klask daou du bountañ an eil d'egile e-maez eus stummadur, o klask lakaat al linennoù enebour da zispenn ha da drec'hiñ anezho."
 
 #: simulation/data/civs/spart.jsonCivBonuses[1].Description
 msgid ""
@@ -2561,8 +2593,10 @@ msgid ""
 msgstr "Dindan ar Vonreizh a skrivas al lezennour mojennel Lycurgus, diazezet e oa saverezh an Agoge, a lakae ar Spartaned da vezañ stummet adalek o 6vet bloavezh da vezañ brezelourien hep o far da zifenn ar Stad Spartanel."
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Description
-msgid "Allies can train Spartiates."
-msgstr "Ar re gevredet ganeoc'h a c'hall stummañ Spartaned."
+msgid ""
+"Increases the health for citizen-soldier infantry spearmen by 10% for allies"
+" of Spartan players."
+msgstr ""
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Name
 msgid "Peloponnesian League"

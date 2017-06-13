@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D. — Empires Ascendant\n"
-"POT-Creation-Date: 2017-05-19 09:05+0200\n"
-"PO-Revision-Date: 2017-05-19 09:05+0200\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-04 09:07+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -116,11 +116,7 @@ msgid "Delian League"
 msgstr ""
 
 #: simulation/data/auras/teambonuses/athen_player_teambonus.json:auraDescription
-msgid ""
-"Shortly after the great naval victories at Salamis and Mycale, the Greek "
-"city-states instituted the so-called Delian League in 478 BC, whose purpose "
-"was to push the Persians out of the Aegean region. The allied states "
-"contributed ships and money, while the Athenians offered their entire navy."
+msgid "Ships construct 25% faster."
 msgstr ""
 
 #: simulation/data/auras/teambonuses/brit_player_teambonus.json:auraName
@@ -155,6 +151,14 @@ msgstr ""
 msgid ""
 "Reduces the cost for citizen-soldier skirmishers with 20% for allies of "
 "Iberian players"
+msgstr ""
+
+#: simulation/data/auras/teambonuses/mace_player_teambonus.json:auraName
+msgid "Standardized Currency"
+msgstr ""
+
+#: simulation/data/auras/teambonuses/mace_player_teambonus.json:auraDescription
+msgid "+20% sell prices at market."
 msgstr ""
 
 #: simulation/data/auras/teambonuses/maur_player_teambonus.json:auraName
@@ -283,7 +287,7 @@ msgid ""
 "Warring with the Romans, Ambiorix realized the futility of open warfare and "
 "instead resorted to ambush tactics. The Gauls quickly learned where and when "
 "to execute surprise attacks.\n"
-"Soldiers require 25% less XP to promote and gain a 5% attack bonus."
+"Soldiers require 25% less experience to promote and gain a 5% attack bonus."
 msgstr ""
 
 #: simulation/data/auras/units/catafalques/gaul_catafalque_2.json:auraName
@@ -371,7 +375,7 @@ msgstr ""
 
 #: simulation/data/auras/units/catafalques/ptol_catafalque.json:auraDescription
 msgid ""
-"Continuing his predecessors' work on the Great Library at Alexandria, he "
+"Continuing his predecessors' work on the Great Library of Alexandria, he "
 "seized every book brought to the city, thus leaving to his people a vast "
 "amount of hoarded wisdom.\n"
 "-10% resource cost for all technologies."
@@ -467,7 +471,7 @@ msgid "Formation Reforms"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/athen_hero_iphicrates_1.json:auraDescription
-msgid "All soldiers in his formation +15% speed and +1 armor."
+msgid "All soldiers in his formation +15% speed and +3 armor."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/athen_hero_iphicrates_2.json:auraName
@@ -491,7 +495,7 @@ msgid "Temple to Athena"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/athen_hero_pericles_2.json:auraDescription
-msgid "Temples are 50 stone cheaper during his lifetime."
+msgid "-25% stone cost and +2 garrisoned heal rate for temples."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/athen_hero_themistocles_1.json:auraName
@@ -499,7 +503,9 @@ msgid "Naval Commander"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/athen_hero_themistocles_1.json:auraDescription
-msgid "When garrisoned in a ship, his ship is +50% faster."
+msgid ""
+"When garrisoned in a ship, the ship is +50% faster and trains batches of "
+"units faster."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/athen_hero_themistocles_2.json:auraName
@@ -507,7 +513,7 @@ msgid "Naval Architect"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/athen_hero_themistocles_2.json:auraDescription
-msgid "-20% build time for ships during his lifespan."
+msgid "-20% build time and -50% metal cost for ships during his lifespan."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/brit_hero_boudicca.json:auraName
@@ -515,7 +521,7 @@ msgid "Champion Army"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/brit_hero_boudicca.json:auraDescription
-msgid "+20% attack, +2 capture and +25% speed for champion units."
+msgid "+20% attack, +2 capture and +10% speed for champion units."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/brit_hero_caratacos.json:auraName
@@ -523,8 +529,7 @@ msgid "Guerrilla Chief"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/brit_hero_caratacos.json:auraDescription
-#: simulation/data/auras/units/heroes/cart_hero_hamilcar.json:auraDescription
-msgid "All soldiers and siege engines +15% speed."
+msgid "All soldiers and siege engines +15% speed and +1 armor."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/brit_hero_cunobelin.json:auraName
@@ -532,11 +537,16 @@ msgid "Britannorum Rex"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/brit_hero_cunobelin.json:auraDescription
-msgid "+1 HP per second healing rate."
+#: simulation/data/auras/units/heroes/maur_hero_chanakya_2.json:auraDescription
+msgid "+0.8 HP per second healing rate."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/cart_hero_hamilcar.json:auraName
 msgid "Lightning General"
+msgstr ""
+
+#: simulation/data/auras/units/heroes/cart_hero_hamilcar.json:auraDescription
+msgid "All soldiers and siege engines +15% speed."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/cart_hero_hannibal.json:auraName
@@ -552,7 +562,7 @@ msgid "Cavalry Commander"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/cart_hero_maharbal.json:auraDescription
-msgid "+20% attack for cavalry melee soldiers."
+msgid "+30% attack for cavalry melee soldiers."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/gaul_hero_brennus.json:auraName
@@ -560,7 +570,7 @@ msgid "Sacker of Rome"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/gaul_hero_brennus.json:auraDescription
-msgid "+10 Metal loot for every enemy unit killed."
+msgid "+15 Metal loot for every enemy unit killed."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/gaul_hero_britomartus.json:auraName
@@ -595,8 +605,8 @@ msgstr ""
 
 #: simulation/data/auras/units/heroes/iber_hero_caros_1.json:auraDescription
 msgid ""
-"75% more arrows fired per garrisoned soldier for the building while he is "
-"garrisoned in it."
+"75% more arrows per soldier for the building or siege tower he is garrisoned "
+"in."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/iber_hero_caros_2.json:auraName
@@ -629,12 +639,20 @@ msgid ""
 "destroyed."
 msgstr ""
 
-#: simulation/data/auras/units/heroes/mace_hero_alexander.json:auraName
+#: simulation/data/auras/units/heroes/mace_hero_alexander_1.json:auraName
 msgid "Imperialism"
 msgstr ""
 
-#: simulation/data/auras/units/heroes/mace_hero_alexander.json:auraDescription
+#: simulation/data/auras/units/heroes/mace_hero_alexander_1.json:auraDescription
 msgid "+10% territory effect for all buildings while he lives."
+msgstr ""
+
+#: simulation/data/auras/units/heroes/mace_hero_alexander_2.json:auraName
+msgid "Conqueror"
+msgstr ""
+
+#: simulation/data/auras/units/heroes/mace_hero_alexander_2.json:auraDescription
+msgid "-50% garrisoned regeneration rate for enemy civic centers."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/mace_hero_craterus.json:auraName
@@ -642,7 +660,7 @@ msgid "Taxiarchès"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/mace_hero_craterus.json:auraDescription
-msgid "+20% attack and +20% capture for pikemen soldiers."
+msgid "+20% attack and +20% capture for pikemen."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/mace_hero_demetrius.json:auraName
@@ -650,7 +668,7 @@ msgid "Besieger"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/mace_hero_demetrius.json:auraDescription
-msgid "+15% range and +10% crush attack for siege engines."
+msgid "+10% attack, +10% range and +1 armor for siege engines."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/mace_hero_philip.json:auraName
@@ -678,17 +696,22 @@ msgstr ""
 msgid "Temples and temple technologies -50% cost, in resources and time."
 msgstr ""
 
-#: simulation/data/auras/units/heroes/maur_hero_chanakya.json:auraName
+#: simulation/data/auras/units/heroes/maur_hero_chanakya_1.json:auraName
 msgid "Teacher"
 msgstr ""
 
-#: simulation/data/auras/units/heroes/maur_hero_chanakya.json:auraDescription
+#: simulation/data/auras/units/heroes/maur_hero_chanakya_1.json:auraDescription
 msgid ""
-"Empower a building with -50% research time while he is garrisoned in it."
+"Empower a building with -20% cost and -50% research time while he is "
+"garrisoned in it."
+msgstr ""
+
+#: simulation/data/auras/units/heroes/maur_hero_chanakya_2.json:auraName
+msgid "Regeneration"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/pers_hero_cyrus.json:auraName
-msgid "Lead from the Front"
+msgid "Forefront Leader"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/pers_hero_cyrus.json:auraDescription
@@ -700,7 +723,7 @@ msgid "Leadership"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/pers_hero_darius.json:auraDescription
-msgid "+15% movement speed for all soldiers and siege engines."
+msgid "+10% movement speed for all soldiers, siege engines and traders."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/pers_hero_xerxes.json:auraName
@@ -737,7 +760,7 @@ msgid "Raphia"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/ptol_hero_ptolemy_IV.json:auraDescription
-msgid "Egyptian pikemen have 40% greater health during his lifetime."
+msgid "Pikemen have 40% greater health during his lifetime."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/ptol_hero_ptolemy_I_1.json:auraName
@@ -756,12 +779,17 @@ msgstr ""
 msgid "Mercenaries cost -50% resources during his lifetime."
 msgstr ""
 
-#: simulation/data/auras/units/heroes/rome_hero_marcellus.json:auraName
+#: simulation/data/auras/units/heroes/rome_hero_marcellus_1.json:auraName
+#: simulation/data/auras/units/heroes/rome_hero_marcellus_2.json:auraName
 msgid "Sword of Rome"
 msgstr ""
 
-#: simulation/data/auras/units/heroes/rome_hero_marcellus.json:auraDescription
-msgid "+20% attack and +2 capture for soldiers and siege engines."
+#: simulation/data/auras/units/heroes/rome_hero_marcellus_1.json:auraDescription
+msgid "+15% attack for cavalry."
+msgstr ""
+
+#: simulation/data/auras/units/heroes/rome_hero_marcellus_2.json:auraDescription
+msgid "-10% attack for enemy infantry."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/rome_hero_maximus.json:auraName
@@ -769,7 +797,15 @@ msgid "Shield of Rome"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/rome_hero_maximus.json:auraDescription
-msgid "+1 armor for all units and structures."
+msgid "+2 armor for all units and structures."
+msgstr ""
+
+#: simulation/data/auras/units/heroes/rome_hero_scipio.json:auraName
+msgid "Triumph"
+msgstr ""
+
+#: simulation/data/auras/units/heroes/rome_hero_scipio.json:auraDescription
+msgid "+20% attack and +2 capture for soldiers and siege engines."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/sele_hero_antiochus_great.json:auraName
@@ -801,7 +837,7 @@ msgid "Helot Reforms"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/spart_hero_brasidas.json:auraDescription
-msgid "+20% attack and +1 armor for javelin infantry soldiers."
+msgid "+25% attack and +1 armor for javelin infantry soldiers."
 msgstr ""
 
 #: simulation/data/auras/units/heroes/spart_hero_leonidas.json:auraName
@@ -809,5 +845,5 @@ msgid "Last Stand"
 msgstr ""
 
 #: simulation/data/auras/units/heroes/spart_hero_leonidas.json:auraDescription
-msgid "+20% attack and +1 capture for spear soldiers."
+msgid "+25% attack and +1 capture for spear soldiers."
 msgstr ""

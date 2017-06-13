@@ -17,8 +17,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 23:42+0000\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-09 21:05+0000\n"
 "Last-Translator: Vasilis Drosos <basilisd@gmail.com>\n"
 "Language-Team: Greek (http://www.transifex.com/wildfire-games/0ad/language/el/)\n"
 "MIME-Version: 1.0\n"
@@ -91,6 +91,7 @@ msgstr "Περικεφαλαία αλόγου"
 #: simulation/data/technologies/training_levy_infantry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_cavalry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonrequirementsTooltip
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_celt_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_iberian_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_italian_mercs.jsonrequirementsTooltip
@@ -703,8 +704,8 @@ msgid ""
 msgstr "Μυστικές τεχνικές στη χαλυβουργία δίνουν στις λεπίδες των σπαθιών διακριτικά και όμορφες επιγραφές. Και όχι μόνο αυτό, αλλά η σκληρότητα του χάλυβα είναι απαράμιλλη."
 
 #: simulation/data/technologies/attack_steel_working.jsontooltip
-msgid "+2 attack for all sword units."
-msgstr "+2 επίθεση για όλους τους ξιφομάχους."
+msgid "+20% Hack attack for all sword units."
+msgstr "+20% επίθεση κοψίματος για όλους τους ξιφομάχους."
 
 #: simulation/data/technologies/attack_steel_working.jsongenericName
 msgid "Steel Working"
@@ -921,8 +922,8 @@ msgid "Gather Training"
 msgstr "Εκπαίδευση στα όπλα"
 
 #: simulation/data/technologies/gather_fishing_net.jsondescription
-msgid "Using net improves the fishing productivity."
-msgstr "Το δίχτυ αυξάνει την αλίευση ψαριών."
+msgid "Nets improve the fishing productivity."
+msgstr "Τα δίχτυα αυξάνουν την αλίευση ψαριών."
 
 #: simulation/data/technologies/gather_fishing_net.jsontooltip
 msgid ""
@@ -1049,8 +1050,8 @@ msgid "Wedge and Mallet"
 msgstr "Σφήνα και Σφυρί"
 
 #: simulation/data/technologies/gather_wicker_baskets.jsondescription
-msgid "Baskets to carry foraged food stuffs."
-msgstr "Καλάθια για μεταφορά καρπών."
+msgid "Baskets for foraging."
+msgstr "Καλάθια για συγκομιδή."
 
 #: simulation/data/technologies/gather_wicker_baskets.jsontooltip
 msgid "Equip your foragers with wicker baskets. +50% fruit foraging rate."
@@ -1155,11 +1156,10 @@ msgstr "Ελευσίνεια Μυστήρια"
 
 #: simulation/data/technologies/health_females_01.jsondescription
 msgid ""
-"The Loom allowed the creation of finer clothing to clothe citizens in the "
-"settlement. Women of the household were taught from a young age how to weave"
-" on the loom, and subsequently spent a large  share of their lives working "
-"with it."
-msgstr "Ο αργαλειός επέτρεψε την δημιουργία καλλιτέρων ρούχων για να ντύνονται οι πολίτες στον οικισμό. Οι νοικοκυρές διδάσκονταν από νεαρή ηλικία πώς να υφαίνουν στον αργαλειό και στη συνέχεια αφιέρωναν ένα μεγάλο μέρος της ζωής τους απασχολούμενες με αυτόν."
+"The loom allowed the creation of finer clothing for settlers. Women of the "
+"household were taught from a young age how to weave on the loom, and "
+"subsequently spent a large share of their lives working with it."
+msgstr "Ο αργαλειός επέτρεψε την δημιουργία καλλιτέρων ρούχων για τους έποικους. Οι νοικοκυρές διδάσκονταν από νεαρή ηλικία πώς να υφαίνουν στον αργαλειό και στη συνέχεια αφιέρωναν ένα μεγάλο μέρος της ζωής τους απασχολούμενες με αυτόν."
 
 #: simulation/data/technologies/health_females_01.jsontooltip
 msgid "Female Citizens +50% Health."
@@ -1621,8 +1621,8 @@ msgid "Make your units 50% more expensive to bribe."
 msgstr "Κάντε τις μονάδες σας 50% ακριβότερες στη δωροδοκία."
 
 #: simulation/data/technologies/spy_counter.jsongenericName
-msgid "Counter Espionage"
-msgstr "Μετρητής Κατασκοπείας"
+msgid "Counterintelligence"
+msgstr "Αντικατασκοπεία"
 
 #: simulation/data/technologies/trade_commercial_treaty.jsondescription
 msgid "Improve the international trading profit."
@@ -1830,8 +1830,9 @@ msgid ""
 msgstr "Ο πρώτος στόχος των έμπορων ήταν η εμπορία, αλλά συγκέντρωναν επίσης και πληροφορίες σχετικά με τις χώρες από όπου πέρασαν."
 
 #: simulation/data/technologies/unlock_spies.jsontooltip
-msgid "Allows to bribe other players' units to share their vision."
-msgstr "Επιτρέπει να δωροδοκήσεις μονάδες άλλου παίχτη για να μοιραστείς αυτό που βλέπουν."
+msgid ""
+"Allows bribing the units of other players in order to share their vision."
+msgstr "Επιτρέπει τη δωροδοκία των μονάδων του άλλου παίχτη για να μοιραστείς αυτό που βλέπουν."
 
 #: simulation/data/technologies/unlock_spies.jsongenericName
 msgid "Espionage"
@@ -1873,6 +1874,19 @@ msgstr "Προαγωγή Πολίτη-Πεζικάριου"
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonspecificName.athen
 msgid "Zeugítai"
 msgstr "Ζευγίται"
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsondescription
+msgid "Hire professional mercenaries to fight in your army."
+msgstr "Μίσθωση επαγγελματιών μισθοφόρων για να πολεμήσουν με στο στρατό σου."
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsontooltip
+msgid ""
+"Mercenaries are promoted to advanced rank but require +20% training time."
+msgstr "Οι μισθοφόροι προάγονται σε ανώτερο βαθμό άλλα χρειάζονται +20% στο χρόνο εκπαίδευσης."
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsongenericName
+msgid "Expertise In War"
+msgstr "Τεχνογνωσία Πολέμου"
 
 #: simulation/data/technologies/upgrade_rank_elite_cavalry.jsontooltip
 msgid ""
@@ -2292,7 +2306,7 @@ msgid ""
 msgstr "Οι Σπαρτιάτες δεν είχαν το μεγαλύτερο στρατό στον κόσμο, αλλά είχαν τον καλύτερο στρατό στον κόσμο για την εποχή τους. Αυτό που δεν είχαν σε ποσότητα, το αντικατέστησαν με την ποιότητα. Είχε λεχθεί ότι η Σπάρτη δεν χρειαζόταν ισχυρά τείχη για την πόλη της, γιατί οι άνδρες της ήταν τα τείχη της."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsontooltip
-msgid "Spartans have 10% less maximum population"
+msgid "Spartans have 10% less maximum population."
 msgstr "Οι Σπαρτιάτες έχουν 10% λιγότερο στο μέγιστο του πληθυσμού."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsongenericName
@@ -2390,8 +2404,8 @@ msgid ""
 msgstr "Οι Μαουρύοι έχτιζαν τα τείχη της πόλης τους από ξύλο, έναν πλούσιο φυσικό πόρο της Ινδίας."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsontooltip
-msgid "Mauryan city walls have 20% less health and 20% less build time."
-msgstr "Τα Μαούρυα τείχη της πόλης έχουν 20% λιγότερη υγεία και 20% λιγότερο χρόνο κατασκευής."
+msgid "Mauryan city walls have -20% less health and -20% less build time."
+msgstr "Τα Μαούρυα τείχη της πόλης έχουν -20% λιγότερη υγεία και -20% λιγότερο χρόνο κατασκευής."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsongenericName
 msgid "Wooden Walls"
@@ -2422,8 +2436,8 @@ msgid ""
 msgstr "Ο πεζικάριος πρωταθλητής Ανασούγια εκπαιδεύετε δύο φορές πιο γρήγορα, αλλά μειώνετε λίγο η μέγιστη υγεία του."
 
 #: simulation/data/technologies/persians/immortals.jsontooltip
-msgid "Anusiya Champion Infantry -50% train time, but also -20 health."
-msgstr "Στο Πεζικάριο Πρωταθλητή Ανασούγια -50% στο χρόνο εκπαίδευσης, αλλά και -20 στην υγεία."
+msgid "Anusiya Champion Infantry -50% train time, but also -10% health."
+msgstr "Στο Πεζικάριο Πρωταθλητή Ανασούγια -50% στο χρόνο εκπαίδευσης, αλλά και -10 στην υγεία."
 
 #: simulation/data/technologies/persians/immortals.jsongenericName
 msgid "Immortals"
@@ -2492,15 +2506,15 @@ msgstr "Στρατολόγηση πεζικού"
 
 #: simulation/data/technologies/persians/training_levy_cavalry.jsontooltip
 msgid ""
-"All cavalry -20% train time, but also -10 health. Unlocks Cavalry "
+"All cavalry -20% train time, but also -5% health. Unlocks Cavalry "
 "Conscription."
-msgstr "Σε όλο το ιππικό -20% χρόνος εκπαίδευσης, αλλά και -10 υγεία. Ξεκλειδώνει την Επίταξη Ιππικού."
+msgstr "Σε όλο το ιππικό -20% χρόνος εκπαίδευσης, αλλά και -5% υγεία. Ξεκλειδώνει την Επίταξη Ιππικού."
 
 #: simulation/data/technologies/persians/training_levy_infantry.jsontooltip
 msgid ""
-"All infantry -10% train time, but also -5 health. Unlocks Infantry "
+"All infantry -20% train time, but also -5% health. Unlocks Infantry "
 "Conscription."
-msgstr "Σε όλο το πεζικό -10% χρόνος εκπαίδευσης, αλλά και -5 υγεία. Ξεκλειδώνει την Επίταξη Πεζικού."
+msgstr "Σε όλο το πεζικό -20% χρόνος εκπαίδευσης, αλλά και -5% υγεία. Ξεκλειδώνει την Επίταξη Πεζικού."
 
 #: simulation/data/technologies/romans/decay_logistics.jsondescription
 msgid "The Romans were masters of the logistics of warfare."

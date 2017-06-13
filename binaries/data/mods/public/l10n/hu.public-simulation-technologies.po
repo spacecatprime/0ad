@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Balázs Meskó <meskobalazs@gmail.com>, 2015-2017
-# Balázs Úr <urbalazs@gmail.com>, 2015-2016
+# Balázs Úr <urbalazs@gmail.com>, 2015-2017
 # Benedict Drummer <inactive+beni1999@transifex.com>, 2014
 # Benedict Drummer <inactive+beni1999@transifex.com>, 2014
 # Boross Péter <borosspet@web.de>, 2015
@@ -18,8 +18,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2017-04-28 09:02+0200\n"
-"PO-Revision-Date: 2017-04-28 18:36+0000\n"
+"POT-Creation-Date: 2017-06-04 09:07+0200\n"
+"PO-Revision-Date: 2017-06-06 14:42+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@gmail.com>\n"
 "Language-Team: Hungarian (http://www.transifex.com/wildfire-games/0ad/language/hu/)\n"
 "MIME-Version: 1.0\n"
@@ -92,6 +92,7 @@ msgstr "Chamfron"
 #: simulation/data/technologies/training_levy_infantry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_cavalry.jsonrequirementsTooltip
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonrequirementsTooltip
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_celt_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_iberian_mercs.jsonrequirementsTooltip
 #: simulation/data/technologies/carthaginians/cost_italian_mercs.jsonrequirementsTooltip
@@ -704,8 +705,8 @@ msgid ""
 msgstr "A titkos acélmegmunkálási technikák egyedivé teszik a kardpengét és gyönyörű mintázatot adnak. Ezeken kívül az acél keménysége is összehasonlíthatatlan."
 
 #: simulation/data/technologies/attack_steel_working.jsontooltip
-msgid "+2 attack for all sword units."
-msgstr "+2 támadás minden kardos egységnek."
+msgid "+20% Hack attack for all sword units."
+msgstr "+20% vágási támadás minden kardos egységnek."
 
 #: simulation/data/technologies/attack_steel_working.jsongenericName
 msgid "Steel Working"
@@ -922,8 +923,8 @@ msgid "Gather Training"
 msgstr "Begyűjtési kiképzés"
 
 #: simulation/data/technologies/gather_fishing_net.jsondescription
-msgid "Using net improves the fishing productivity."
-msgstr "A háló használata növeli a halászat termelékenységét."
+msgid "Nets improve the fishing productivity."
+msgstr "A hálók növelik a halászat termelékenységét."
 
 #: simulation/data/technologies/gather_fishing_net.jsontooltip
 msgid ""
@@ -1050,8 +1051,8 @@ msgid "Wedge and Mallet"
 msgstr "Ék és fakalapács"
 
 #: simulation/data/technologies/gather_wicker_baskets.jsondescription
-msgid "Baskets to carry foraged food stuffs."
-msgstr "Kosarak takarmányélelmi dolgok szállításához."
+msgid "Baskets for foraging."
+msgstr "Kosarak gyűjtögetéshez."
 
 #: simulation/data/technologies/gather_wicker_baskets.jsontooltip
 msgid "Equip your foragers with wicker baskets. +50% fruit foraging rate."
@@ -1156,11 +1157,10 @@ msgstr "Eleusziszi misztériumok"
 
 #: simulation/data/technologies/health_females_01.jsondescription
 msgid ""
-"The Loom allowed the creation of finer clothing to clothe citizens in the "
-"settlement. Women of the household were taught from a young age how to weave"
-" on the loom, and subsequently spent a large  share of their lives working "
-"with it."
-msgstr "A szövőszék tette lehetővé a finomabb ruházat létrehozását a településen élő polgárok öltöztetéséhez. A háztartásban lévő nőket fiatal koruktól kezdve tanították, hogy hogyan kell szőni a szövőszéken, és azután az életük nagy részét azzal töltötték, hogy a szövőszéken dolgoztak."
+"The loom allowed the creation of finer clothing for settlers. Women of the "
+"household were taught from a young age how to weave on the loom, and "
+"subsequently spent a large share of their lives working with it."
+msgstr "A szövőszék tette lehetővé a finomabb ruházat készítését a telepeseknek. A háztartásban lévő nőket fiatal koruktól kezdve tanították, hogy hogyan kell szőni a szövőszéken, és azután az életük nagy részét azzal töltötték, hogy a szövőszéken dolgoztak."
 
 #: simulation/data/technologies/health_females_01.jsontooltip
 msgid "Female Citizens +50% Health."
@@ -1622,7 +1622,7 @@ msgid "Make your units 50% more expensive to bribe."
 msgstr "Az egységeid 50%-kal drágábban fizethetőek le."
 
 #: simulation/data/technologies/spy_counter.jsongenericName
-msgid "Counter Espionage"
+msgid "Counterintelligence"
 msgstr "Kémelhárítás"
 
 #: simulation/data/technologies/trade_commercial_treaty.jsondescription
@@ -1831,8 +1831,9 @@ msgid ""
 msgstr "A kereskedők elsődleges célja a kereskedelem volt, de információt is gyűjtöttek azokról az országok, ahol megfordultak."
 
 #: simulation/data/technologies/unlock_spies.jsontooltip
-msgid "Allows to bribe other players' units to share their vision."
-msgstr "Lefizethetek a többi játékos egységeit, hogy osztozz a látókörükön."
+msgid ""
+"Allows bribing the units of other players in order to share their vision."
+msgstr "Lefizethetővé teszi a többi játékos egységeit, hogy osztozz a látókörükön."
 
 #: simulation/data/technologies/unlock_spies.jsongenericName
 msgid "Espionage"
@@ -1874,6 +1875,19 @@ msgstr "Fejlett gyalogos polgár"
 #: simulation/data/technologies/upgrade_rank_advanced_infantry.jsonspecificName.athen
 msgid "Zeugítai"
 msgstr "Zeugítai"
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsondescription
+msgid "Hire professional mercenaries to fight in your army."
+msgstr "Hivatásos zsoldosok felbérlése, hogy a seregedben harcoljanak."
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsontooltip
+msgid ""
+"Mercenaries are promoted to advanced rank but require +20% training time."
+msgstr "A zsoldosok fejlett ranggal érkeznek, de +20%-kal hosszabb a kiképzési idejük."
+
+#: simulation/data/technologies/upgrade_rank_advanced_mercenary.jsongenericName
+msgid "Expertise In War"
+msgstr "Hadi tapasztalat"
 
 #: simulation/data/technologies/upgrade_rank_elite_cavalry.jsontooltip
 msgid ""
@@ -2293,8 +2307,8 @@ msgid ""
 msgstr "A spártaiak hadserege nem a legnagyobb, de az akkori világ legjobbja volt. Ami mennyiségben hiányzott, azt minőséggel kompenzálták. Azt mondták, hogy Spártának nincs szüksége erős városfalakra, mert az emberek maguk a fal."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsontooltip
-msgid "Spartans have 10% less maximum population"
-msgstr "A spártaiknak 10%-kal kisebb a maximális népességkorlátja"
+msgid "Spartans have 10% less maximum population."
+msgstr "A spártaiknak 10%-kal kisebb a maximális népességkorlátja."
 
 #: simulation/data/technologies/hellenes/civpenalty_spart_popcap.jsongenericName
 msgid "Underdogs"
@@ -2391,8 +2405,8 @@ msgid ""
 msgstr "A maurják a városfalaikat fából építették, amely bőséges nyersanyag volt Indiában."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsontooltip
-msgid "Mauryan city walls have 20% less health and 20% less build time."
-msgstr "A maurja városfalaknak 20%-kal kevesebb az életerejük, és 20%-kal kevesebb idő alatt épülnek fel."
+msgid "Mauryan city walls have -20% less health and -20% less build time."
+msgstr "A maurja városfalaknak -20%-kal kevesebb az életerejük, és -20%-kal kevesebb idő alatt épülnek fel."
 
 #: simulation/data/technologies/mauryans/wooden_walls.jsongenericName
 msgid "Wooden Walls"
@@ -2423,8 +2437,8 @@ msgid ""
 msgstr "Az Anusiya Bajnok gyalogos kétszer gyorsabban kiképződik, de veszít egy keveset a max életerőből."
 
 #: simulation/data/technologies/persians/immortals.jsontooltip
-msgid "Anusiya Champion Infantry -50% train time, but also -20 health."
-msgstr "Az Anusiya Bajnok gyalogosnak -50% kiképzési idő, de -20 életerő."
+msgid "Anusiya Champion Infantry -50% train time, but also -10% health."
+msgstr "Az Anusiya bajnok gyalogságnak -50% kiképzési idő, de -10% életerő."
 
 #: simulation/data/technologies/persians/immortals.jsongenericName
 msgid "Immortals"
@@ -2493,15 +2507,15 @@ msgstr "Gyalogság sorozása"
 
 #: simulation/data/technologies/persians/training_levy_cavalry.jsontooltip
 msgid ""
-"All cavalry -20% train time, but also -10 health. Unlocks Cavalry "
+"All cavalry -20% train time, but also -5% health. Unlocks Cavalry "
 "Conscription."
-msgstr "Minden lovassági egységnek -20% kiképzési idő, de -10 életerő. Elérhetővé teszi a lovasság sorozását."
+msgstr "Minden lovassági egységnek -20% kiképzési idő, de -5% életerő. Elérhetővé teszi a lovasság sorozását."
 
 #: simulation/data/technologies/persians/training_levy_infantry.jsontooltip
 msgid ""
-"All infantry -10% train time, but also -5 health. Unlocks Infantry "
+"All infantry -20% train time, but also -5% health. Unlocks Infantry "
 "Conscription."
-msgstr "Minden gyalogsági egységnek -10% kiképzési idő, de -5 életerő. Elérhetővé teszi a gyalogság sorozását."
+msgstr "Minden gyalogsági egységnek -20% kiképzési idő, de -5% életerő. Elérhetővé teszi a gyalogság sorozását."
 
 #: simulation/data/technologies/romans/decay_logistics.jsondescription
 msgid "The Romans were masters of the logistics of warfare."

@@ -15,6 +15,7 @@
 # Ender Türsen <ado.ender@gmail.com>, 2016
 # mahmut özcan <faradundamarti@yandex.com>, 2013
 # Furkan Çevik <furkan_ts1967@hotmail.com>, 2013
+# Gokhan" Colpan <golpan27lp@yahoo.com>, 2017
 # Kudret <kudretemre@hotmail.com.tr>, 2014
 # mehmet akar <mehmettakar.35@gmail.com>, 2013
 # Merve BİÇKES <dark_angel_369_06@hotmail.com>, 2014
@@ -33,15 +34,15 @@
 # volcanology <volkansag@hotmail.com>, 2014
 # Volkan Gezer <volkangezer@gmail.com>, 2014-2015
 # Volkan SARIBÜLBÜL <rvolkansaribulbul@gmail.com>, 2015
-# yakup <mutouk@yandex.ru>, 2014-2016
+# yakup <mutouk@yandex.ru>, 2014-2017
 # Yavuz Karakişi <yavuzka@hotmail.com.tr>, 2014
 # Yunus Emre  Çakmak <yuney12345@gmail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: 0 A.D.\n"
-"POT-Creation-Date: 2016-11-28 09:00+0100\n"
-"PO-Revision-Date: 2016-12-07 22:21+0000\n"
-"Last-Translator: ozgur gursoy <lowopacity@gmail.com>\n"
+"POT-Creation-Date: 2017-06-05 09:01+0200\n"
+"PO-Revision-Date: 2017-06-10 23:10+0000\n"
+"Last-Translator: yakup <mutouk@yandex.ru>\n"
 "Language-Team: Turkish (http://www.transifex.com/wildfire-games/0ad/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -216,13 +217,14 @@ msgstr "Klasik falanks düzeni millattan önce yaklaşık VIII. yüzyılda geli�
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[0].History
 msgid ""
-"The general whom persuaded the Athenians to invest their income from silver "
+"The general who persuaded the Athenians to invest their income from silver "
 "mines in a war navy of 200 Triremes. A key figure during the Persian Wars, "
 "he commanded the victorious Athenian navy at the decisive battle of Salamis "
 "in 479 B.C. Later, he pursued an active policy against the Persians in the "
-"Aegean, thereby laying the foundations of future Athenian power. Ostracised "
-"by the Athenians, he was forced to flee to the protection of the Persians."
-msgstr "Atinalıları gümüş madenlerinden elde ettikleri gelirle 200 kürekli kadırga yapmaya ikna eden general. Pers Savaşları'nda  önemli bir isim. M.Ö. 479'daki önemli Salamis Savaşı'nda galip Atina donanmasını komuta etti. Sonra, Ege'de Persler'e karşı aktif mücadele vererek Atinalıların gelecekteki gücünün temelini attı. Ancak Atinalılar tarafından sürgüne gönderildi ve Persler'e sığınmak zorunda kaldı."
+"Aegean, thereby laying the foundations of future Athenian power. However, he"
+" was eventually ostracised by the Athenians and forced to flee to the "
+"protection of the Persians."
+msgstr "Atinalıları, gümüş madenlerinden kazandıklarını, 200 kadırgalık savaş donanmasına yatırmalarına ikna eden general. Pers savaşlarındaki kilit isim, M.Ö. 479'daki belirleyici Salamis savaşında Atina donanmasına komuta etmiştir. Sonrasında Ege'de Perslere karşı aktif bir politika izlemiş, böylece gelecekteki Atina gücünün temellerini atmıştır. Ancak, sonunda Atinalılar tarafından dışlanmış ve Perslerin himayesine kaçmaya zorlanmıştır."
 
 #: simulation/data/civs/athen.jsonFactions[0].Heroes[1].History
 msgid "Pericles was the foremost Athenian politician of the 5th Century B.C."
@@ -340,17 +342,14 @@ msgid "Celtic religion and druidry inspired their warlike mindset. "
 msgstr "Kelt dini ve Druidlik onların savaşçı zihniyet ilham verir."
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Description
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
-msgid "Bonus to tech speed."
-msgstr "Teknoloji hız ödülü"
+msgid "-20% resources cost for allies healers."
+msgstr "Müttefik şifacılar için -20% kaynak masrafı."
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].Name
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
-msgid "Druides"
-msgstr "Druideler"
+msgid "Druids"
+msgstr "Druidler"
 
 #: simulation/data/civs/brit.jsonTeamBonuses[0].History
-#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
 msgid ""
 "The Druids of the Celts maintained an organized religion that advanced the "
 "technology of their people even during wartime."
@@ -588,8 +587,8 @@ msgid ""
 msgstr "İber Yarımadası'nın aksine, Kuzey Afrika  at ülkesi olarak bilinir, her yıl 100.000 yeni at sağlar. Ayrıca Kuzey Afrika Ormanları fillere ev sahipliği yapar."
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Description
-msgid "+33% trade profit international routes."
-msgstr "Uluslararası güzergahlar +%33 ticaret sağlar"
+msgid "10% bonus of trade profit for allies' international routes."
+msgstr "Müttfeiklerin uluslararası ticaret rotaları için %10 ticaret bonusu"
 
 #: simulation/data/civs/cart.jsonTeamBonuses[0].Name
 msgid "Trademasters"
@@ -794,15 +793,29 @@ msgstr "Günümüz Tunus'unda bir şehir devleti olan Kartaca, batı Akdeniz'in 
 msgid "Gauls"
 msgstr "Galyalılar"
 
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Description
+msgid "-10% research time for technologies of allies."
+msgstr "Müttefiklerin araştırma sürelerini %10 kısaltır."
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].Name
+msgid "Druidic Wisdom"
+msgstr "Kelt Şaman Bilgeliği"
+
+#: simulation/data/civs/gaul.jsonTeamBonuses[0].History
+msgid ""
+"The Druids of the Gauls maintained an organized religion that advanced the "
+"technology of their people even during wartime."
+msgstr "Galyalı şamanlar, savaş zamanlarında bile halkının teknolojisini geliştiren düzenli bir dini yaşattılar."
+
 #: simulation/data/civs/gaul.jsonAINames[0]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].Name
-msgid "Britomartos"
-msgstr "Britomartos"
+msgid "Viridomarus"
+msgstr "Viridomarus"
 
 #: simulation/data/civs/gaul.jsonAINames[1]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].Name
-msgid "Brennos"
-msgstr "Brennos"
+msgid "Brennus"
+msgstr "Brennus"
 
 #: simulation/data/civs/gaul.jsonAINames[2]
 msgid "Cativolcus"
@@ -814,8 +827,8 @@ msgstr "Cingetorix"
 
 #: simulation/data/civs/gaul.jsonAINames[4]
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].Name
-msgid "Uerkingetorix"
-msgstr "Yuerkingetoriks"
+msgid "Vercingetorix"
+msgstr "Vercingetorix"
 
 #: simulation/data/civs/gaul.jsonAINames[5]
 msgid "Divico"
@@ -830,8 +843,8 @@ msgid "Liscus"
 msgstr "Liscus"
 
 #: simulation/data/civs/gaul.jsonAINames[8]
-msgid "Valetiacos"
-msgstr "Valetiakos"
+msgid "Valetiacus"
+msgstr "Valetiacus"
 
 #: simulation/data/civs/gaul.jsonAINames[9]
 msgid "Viridovix"
@@ -843,14 +856,17 @@ msgid ""
 msgstr "Yıkılan veya ele geçirilen her yapıdan metal ve gıda miktar ayarı"
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].Name
-msgid "Uae Uictos"
-msgstr "Yuae Uiktos"
+msgid "Vae Victis"
+msgstr "Vae Victis"
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[0].History
 msgid ""
-"Means Woe to the Defeated. It was the words that the Gallic Leader, Brennos,"
-" spoke at the Capitol at Rome after they took their plunder."
-msgstr "Vay canına yenilmiş demektir. Galya Lideri Brennos'un, Roma Capitol'unda yağma aldıktan sonra söylediği sözlerdi."
+"Woe to the Defeated! The Gallic chieftain Brennus seized Rome (with the "
+"exception of a garrison on Capitoline Hill). When Camillus besieged him with"
+" a relief force from Veii, he negotiated his surrender for 1000 pounds of "
+"gold, and adding the weight of his sword on the scale when the Romans "
+"complained that he used false weights he uttered those famous words."
+msgstr "\"Vah olsun Mağluplara\" Galyalı kabile reisi Brennus Roma'yı ele geçirmişti (Kapitoline Tepesindeki bir garnizon hariç). Camillus, Veii'den getirdiği yardım birlikleriyle kendisini kuşattığında, şehri teslim etmek için yarım ton altın talep eder, Romalılar tartıya hileli ağırlık koyulduğu için itiraz edince, ağırlıklara kendi kılıcını da koyar ve bu meşhur sözünü söyler."
 
 #: simulation/data/civs/gaul.jsonFactions[0].Technologies[1].Description
 msgid "Gallic druids gain a small melee attack."
@@ -869,21 +885,21 @@ msgstr "Karnutelar Aulercia'dan druidlerdi. İhtiyaç duyduklarında savaşmış
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[0].History
 msgid ""
-"When celt armies met the enemy, before the battle would start, the celt "
+"When Celtic armies met the enemy, before the battle would start, the Celtic "
 "leader would go to the first line and challenge the bravest of the enemy "
 "warriors to a single combat. The story of how Marcus Claudius Marcellus "
 "killed a Gallic leader at Clastidium (222 B.C.) is typical of such "
-"encounters. Advancing with a smallish army, Marcellus met a combined force "
-"of Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with"
-" the usual rush and terrifying cries, and their king, Britomartos, picking "
+"encounters. Advancing with a small army, Marcellus met a combined force of "
+"Insubrian Gauls and Gaesatae at Clastidium. The Gallic army advanced with "
+"the usual rush and terrifying cries, and their king, Viridomarus, picking "
 "out Marcellus by means of his badges of rank, made for him, shouting a "
-"challenge and brandishing his spear. Britomartos was an outstanding figure "
+"challenge and brandishing his spear. Viridomarus was an outstanding figure "
 "not only for his size but also for his adornments; for he was resplendent in"
 " bright colors and his armor shone with gold and silver. This armor, thought"
 " Marcellus, would be a fitting offering to the gods. He charged the Gaul, "
 "pierced his bright breastplate and cast him to the ground. It was an easy "
-"task to kill Britomartos and strip him of his armor."
-msgstr "Kelt orduları düşmanla bir araya geldiğinde, savaş başlamadan önce, kelt lideri ilk hattına gider ve düşman savaşçılarının cesaretini tek bir dövüşe zorlardı. Marcus Claudius Marcellus'un Clastidium'da (222C.) Galyalı bir lideri nasıl öldürdüğünün öyküsü bu buluşmaların tipik bir örneğidir. Küçük bir orduyla ilerleyen Marcellus, Clubidium'da Insubrian Gauls ve Gaesatae'nin bir araya geldi. Gallic ordusu her zamanki aceleci ve korkunç çığlıklarla ilerledi ve kral Britomartos, Marcellus'u rütbeli rozetleri ile topladı, bir meydan okuma bağışlayarak mızrağını salladı. Britomartos, yalnızca ebadı için değil aynı zamanda süslemeleri için olağanüstü bir figür; Zira parlak renklerle göz kamaştı ve zırhı altın ve gümüş ile parladı. Bu zırh, Marcellus'un tanrılara uygun bir teklif olacağını düşündü. Galya'yı suçladı, parlak göğüs plakasını delip yere döktü. Britomartos'u öldürüp zırhını çıkarmak kolay bir görevdi."
+"task to kill Viridomarus and strip him of his armor."
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[1].History
 msgid ""
@@ -894,19 +910,19 @@ msgid ""
 "that Britons had conquered Rome, the greatest civilization in the world, "
 "long before Rome conquered the Britons. We know from many ancient sources "
 "which predate Geoffrey that Rome was indeed sacked, but in 387 not 390, and "
-"that the raid was led by a man named Brennos (which was latinized to "
-"Brennus), but he and his invading horde were Gallic Senones, not British. In"
-" this episode several features of Geoffrey's editing method can be seen: he "
-"modified the historical Brennus/Brennos, created the brother Belinus, "
-"borrowed the Gallic invasion, but omitted the parts where the Celts seemed "
-"weak or foolish. His technique is both additive and subtractive. Like the "
-"tale of Trojan origin, the story of the sack of Rome is not pure "
-"fabrication; it is a creative rearrangement of the available facts, with "
-"details added as necessary. By virtue of their historical association, Beli "
-"and Bran are often muddled with the earlier brothers Belinus and Brennus "
-"(the sons of Dunvallo Molmutius) who contended for power in northern Britain"
-" in around 390 B.C., and were regarded as gods in old Celtic tradition."
-msgstr "Brennus, Roma tarihçilerinin Camillus döneminde Roma'yı ele geçiren ünlü Galalyalı liderine verdiği isimdir. Brennus ve kardeşi Belinus, Monmouth'un \"Britanya Kralılarının Tarihi\" adlı mektubunu, M.Ö. 390'da Galya'yı istila edip Roma'yı görevden alıp \"Britanyalıların dünyadaki en büyük uygarlık olan Roma'yı fethederek kanıtladığını\" kanıtladı. Roma Britanyalıları fethedemeden önce. Geoffrey'den önce gelen birçok eski kaynaklardan biliyoruz ki, Roma gerçekten de görevden alındı, fakat 387'de değil 390'da ve baskın Brennos (Brennus'a lateneded) tarafından yönetilen bir adam tarafından yönlendirildi, ancak o ve işgal altındaki kalabalığı Gallic Senones, İngiliz değil. Bu bölümde, Geoffrey'in düzenleme yönteminin birkaç özelliği görülebilir: tarihi Brennus / Brennos'u değiştirdi, kardeşi Belinus'u yarattı, Galya istilasını ödünç aldı, ancak Keltlerin zayıf ya da aptalca göründüğü parçaları atladı. Onun tekniği hem katkı hem de çıkarıcıdır. Trojan kökenli bir masal gibi, Roma çuvalının hikayesi saf bir imalat değildir; Mevcut olguların yaratıcı bir şekilde düzenlenmesi, ayrıntılar ise gerektiği gibi eklenmiştir. Tarihi birlikteliklerinden dolayı, Beli ve Kepek, çoğunlukla, M.Ö. 390 civarında İngiltere'nin kuzeyindeki iktidara itiraz eden ve eski Kelt geleneğinde tanrılar olarak görülen önceki kardeşler Belinus ve Brennus'la (Dunvallo Molmutius oğulları) karıştırılırlar."
+"that the raid was led by a man named Brennus, but he and his invading horde "
+"were Gallic Senones, not British. In this episode several features of "
+"Geoffrey's editing method can be seen: he modified the historical Brennus, "
+"created the brother Belinus, borrowed the Gallic invasion, but omitted the "
+"parts where the Celts seemed weak or foolish. His technique is both additive"
+" and subtractive. Like the tale of Trojan origin, the story of the sack of "
+"Rome is not pure fabrication; it is a creative rearrangement of the "
+"available facts, with details added as necessary. By virtue of their "
+"historical association, Beli and Bran are often muddled with the earlier "
+"brothers Belinus and Brennus (the sons of Dunvallo Molmutius) who contended "
+"for power in northern Britain in around 390 B.C., and were regarded as gods "
+"in old Celtic tradition."
+msgstr ""
 
 #: simulation/data/civs/gaul.jsonFactions[0].Heroes[2].History
 msgid ""
@@ -1186,8 +1202,8 @@ msgid ""
 msgstr "Yunanlılar birçok yabancıyı Helenleştirmek konusunda çok başarılıydılar. Helenik Çağ'da, Yunanca İspanya'dan Hindistan'a kadar Antik Dünya'nın ortak diliydi."
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Description
-msgid "+15% tribute and trade bonus on metal."
-msgstr "Metalde +15% haraç ve ticaret ödülü."
+msgid "+20% sell prices at market."
+msgstr "Markette +20% satış fiyatı."
 
 #: simulation/data/civs/mace.jsonTeamBonuses[0].Name
 msgid "Standardized Currency"
@@ -1447,12 +1463,12 @@ msgid ""
 msgstr "Kshatriya ya da Kashtriya, savaşçı demek, Hinduizmdeki dört türden (toplumsal düzen) biridir. Geleneksel olarak Kshatriya, Vedalar ve Manu Yasalarıyla tasvir edilen Vedik-Hindu toplumsal sisteminin askeri ve egemen seçkinlerini oluşturur."
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Description
-msgid "Allied Temple techs -50% cost and research time."
-msgstr "Müttefik Tapınağı -50% maliyet ve araştırma zamanına sebep olur."
+msgid "Allied temples and temple technologies -50% cost and research time."
+msgstr ""
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].Name
-msgid "Evangelism."
-msgstr "Evanjelizm."
+msgid "Ashoka's Religious Support"
+msgstr ""
 
 #: simulation/data/civs/maur.jsonTeamBonuses[0].History
 msgid ""
@@ -1625,8 +1641,8 @@ msgid ""
 msgstr "Ahameniş Hanedanlığı imparatorluğun yapısı ve büyüklüğü sebebiyle savaş zamanları çok büyük miktarlarda askere alma imkanına sahipti ve öyle de yaptı. Genellikle Pers piyadeleri iyi eğitimliydi ve yüksek cesaretle savaşırlardı. Ancak, yine de yakın dövüşte zayıf kalıyorlardı. Ayrıca, seçkin birlikler haricinde, Pers piyadeleri sürekli silah altında tutulan kuvvetler değildi."
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Description
-msgid "+25% trade profit land routes."
-msgstr "+25% karayolu ticareti kazancı."
+msgid "Higher income (+15%) from land trade routes for ally's traders."
+msgstr ""
 
 #: simulation/data/civs/pers.jsonTeamBonuses[0].Name
 msgid "Royal Road"
@@ -1721,11 +1737,11 @@ msgstr "Pers Mimarisi"
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[1].History
 msgid ""
-"The Persians built the wonderful 1677 mile-long Royal Highway from Sardis to"
-" Susa; Darius the Great and Xerxes also built the magnificent Persepolis; "
-"Cyrus the Great greatly improved Ecbatana and virtually 'rebuilt' the old "
-"Elamite capital of Susa."
-msgstr "İranlılar Sardis'ten Susa'ya uzanan 1677 mil uzunluğundaki olağanüstü Saltanat Yolu'nu yaptı; ayrıca Büyük Darius ve Xerxes muhteşem Persepolis'i kurdu; Büyük Cyrus Ecbatana'yı büyük ölçüde geliştirdi ve eski Elamite başkenti Susa'yı neredeyse baştan inşa etti."
+"The Persians built the wonderful 2700 kilometer-long Royal Highway from "
+"Sardis to Susa; Darius the Great and Xerxes also built the magnificent "
+"Persepolis; Cyrus the Great greatly improved Ecbatana and virtually "
+"'rebuilt' the old Elamite capital of Susa."
+msgstr ""
 
 #: simulation/data/civs/pers.jsonFactions[0].Technologies[2].Description
 msgid "Reduces train time for Anusiya champion infantry by half."
@@ -1840,17 +1856,16 @@ msgid "Mercenary Army"
 msgstr "Paralı Ordu"
 
 #: simulation/data/civs/ptol.jsonCivBonuses[0].History
-#: simulation/data/civs/ptol.jsonStructures[1].History
 msgid ""
 "The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
 "foreign mercenaries for the bulk of its military force, mainly because the "
 "loyalty of native Egyptian units was often suspect. Indeed, during one "
 "native uprising, Upper Egypt was lost to the Ptolemies for decades. "
-"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"Mercenaries were often battle-hardened and their loyalty could be bought, "
 "sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
 " under the Ptolemies was so prosperous as to be the richest of Alexander's "
 "successor states."
-msgstr "Greko-Makedon Ptolemi Hanedanlığı, askeri gücünü büyük miktarda Yunan ve yabancı paralı asker kullanıyordu, zira esas olarak yerli Mısır birimlerinin sadakati genellikle şüpheli idi. Nitekim, bir yerli ayaklanma sırasında, Üst Mısır onlarca yıl boyunca Ptolemeioslar tarafından kaybedildi. Paralı askerler sık sık savaşa zorlandılar ve bağlılıkları bazen ucuza, bazen de ucuza satılmamalıydı. Bu, sorun değildi, çünkü Ptolemeios altındaki Mısır, İskender'in halefi devletlerinin en zenginleri olacak kadar müreffehti."
+msgstr ""
 
 #: simulation/data/civs/ptol.jsonCivBonuses[1].Description
 msgid "The Ptolemaic Egyptians receive 3 additional farming technologies."
@@ -2027,6 +2042,18 @@ msgid ""
 "Trains all 'mercenary' units."
 msgstr "Tarafsız bölgede inşa edilmiş. Herhangibir çevre etkisi yoktur. Tüm birimler 'paralı' olarak eğitilir."
 
+#: simulation/data/civs/ptol.jsonStructures[1].History
+msgid ""
+"The Greco-Macedonian Ptolemy Dynasty relied on large numbers of Greek and "
+"foreign mercenaries for the bulk of its military force, mainly because the "
+"loyalty of native Egyptian units was often suspect. Indeed, during one "
+"native uprising, Upper Egypt was lost to the Ptolemies for decades. "
+"Mercenaries were often battle-hardened and their loyalty can be bought, "
+"sometimes cheaply, sometimes not cheaply. This was of no matter, since Egypt"
+" under the Ptolemies was so prosperous as to be the richest of Alexander's "
+"successor states."
+msgstr "Greko-Makedon Ptolemi Hanedanlığı, askeri gücünü büyük miktarda Yunan ve yabancı paralı asker kullanıyordu, zira esas olarak yerli Mısır birimlerinin sadakati genellikle şüpheli idi. Nitekim, bir yerli ayaklanma sırasında, Üst Mısır onlarca yıl boyunca Ptolemeioslar tarafından kaybedildi. Paralı askerler sık sık savaşa zorlandılar ve bağlılıkları bazen ucuza, bazen de ucuza satılmamalıydı. Bu, sorun değildi, çünkü Ptolemeios altındaki Mısır, İskender'in halefi devletlerinin en zenginleri olacak kadar müreffehti."
+
 #: simulation/data/civs/ptol.jsonStructures[2].Name
 msgid "Lighthouse"
 msgstr "Deniz Feneri"
@@ -2092,17 +2119,23 @@ msgid ""
 msgstr "Roma vatandaşlığı antik dünyada çok değerlidir. Temel haklar ve ayrıcalıklar, diğer fethedilen halkları reddeden Roma vatandaşlarına tanınmıştı. Bir Roma vatandaşına zarar vermek, Roma'nın kendisine zarar vermeye benzer ve Roma'nın bütün gücünün failin üzerine düşmesine neden olacağı söylenir."
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Description
-msgid "Allied citizen-soldiers gain a +15% attack when in Roman territory."
-msgstr "Müttefik şehirli askerler Roma topraklarında %+15 daha fazla saldırı sağlarlar."
+msgid "-20% training time for allied infantry."
+msgstr "Müttefik askerler için -20% eğitim süresi."
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].Name
-msgid "Socii"
-msgstr "Socii"
+msgid "Conscription"
+msgstr "Zorunlu Hizmet"
 
 #: simulation/data/civs/rome.jsonTeamBonuses[0].History
 msgid ""
-"Being allied with Rome came with great benefits (as well as great peril)."
-msgstr "Roma ile müttefik olmak beraberinde büyük faydalar getirir (büyük zararlar getirdiği kadar)"
+"Many Roman soldiers were conscripted into service. While volunteers were "
+"preferred, the Roman state did maintain an annual military draft. During an "
+"emergency the draft and the terms of service were enlarged. The importance "
+"of military service in Republican Rome was so great it was a prerequisite "
+"for a political career. Members of the Senate were called Conscript Fathers "
+"because of this, reflected in how the ordo equester was said to have been "
+"\"conscripted\" into the Senate."
+msgstr "Çoğu Romalı asker görevden alındı. Gönüllüler tercih edilirken, Roma devleti yıllık bir askeri taslak hazırladı. Acil durumlarda taslak ve hizmet şartları genişletildi. Cumhuriyet Roma'sında askerlik hizmetinin önemi o kadar büyüktü ki, siyasi bir kariyer için bir ön şarttı. Senato üyelerine Conscript Babalar denirdi, bunun sebebi, ordo talebinin Senatoda \"askere alındığı\" şeklinde yansıyan bir ifadeydi."
 
 #: simulation/data/civs/rome.jsonAINames[0]
 msgid "Lucius Junius Brutus"
@@ -2483,14 +2516,14 @@ msgstr "Selevkos I. Nikator"
 msgid ""
 "Antiochus inherited a troubled kingdom upon the beginning of his reign. From"
 " the verge of collapse he managed to weld back together the empire Seleukus "
-"I so hard to found. The rebellious eastern satraps of Bactria and Parthia "
-"were brought to heel , temporarily securing his eastern borders. He then "
-"turned his attention to mother Greece, attempting to fulfill the dreams of "
-"his fathers by invading Greece under the pretext of liberation. The Achaean "
-"League and the Kingdom of Pergamon banded together with the Romans to defeat"
-" him at the Battle of Magnesia, forever burying the dream of reuniting "
-"Alexander's empire."
-msgstr "Antiochus saltanatının başında sorunlu bir krallık miras aldı. Çöküşün eşiğinde, İmparator Seleukus'u birbirine bağlamayı başararak o kadar zor buldum ki. Bactria ve Parthia'nın isyankar doğu satrapları geçici olarak doğu sınırlarını güvence altına alan topuk haline getirildi. Daha sonra Yunanistan'ın dikkatini Yunanistan'ın kurtuluş bahanesiyle işgal ederek atalarının rüyalarını yerine getirmeye çalışarak Yunanistan'a yöneldi. Achaean Ligi ve Bergama Krallığı, Roma İmparatorluğu ile bir araya gelerek onu Magnesia Savaşı'nda yenip sonsuza kadar İskender'in imparatorluğunu yeniden birleştirme hayalini gömdü."
+"I fought so hard to found. The rebellious eastern satraps of Bactria and "
+"Parthia were brought to heel , temporarily securing his eastern borders. He "
+"then turned his attention to mother Greece, attempting to fulfill the dreams"
+" of his fathers by invading Greece under the pretext of liberation. The "
+"Achaean League and the Kingdom of Pergamon banded together with the Romans "
+"to defeat him at the Battle of Magnesia, forever burying the dream of "
+"reuniting Alexander's empire."
+msgstr ""
 
 #: simulation/data/civs/sele.jsonFactions[0].Heroes[1].Name
 msgid "Antiokhos G' Megas"
@@ -2586,8 +2619,10 @@ msgid ""
 msgstr "Mitolojik kanuni veren Lycurgus tarafından yazılan Anayasa uyarınca Spartalıların Spartalı devletin savunmasında üstün savaşçılar olmak için Spartalıların 6 yaşından itibaren eğitildiği Agogenin kuruluşu kuruldu."
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Description
-msgid "Allies can train Spartiates."
-msgstr "Müttefikler Spartalıları eğitebilir."
+msgid ""
+"Increases the health for citizen-soldier infantry spearmen by 10% for allies"
+" of Spartan players."
+msgstr "Spartalı oyuncuların müttefikleri için vatandaş-asker mızraklı piyadelerin sağlığını %10 artırır."
 
 #: simulation/data/civs/spart.jsonTeamBonuses[0].Name
 msgid "Peloponnesian League"

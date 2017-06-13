@@ -425,8 +425,9 @@ function diplomacyFormatStanceButtons(i, hidden)
 		if (hidden)
 			continue;
 
-		button.caption = g_Players[g_ViewedPlayer]["is" + stance][i] ? translate("x") : "";
-		button.enabled = controlsPlayer(g_ViewedPlayer);
+		let isCurrentStance = g_Players[g_ViewedPlayer]["is" + stance][i];
+		button.caption = isCurrentStance ? translate("x") : "";
+		button.enabled = controlsPlayer(g_ViewedPlayer) && !isCurrentStance;
 
 		button.onPress = (function(player, stance) { return function() {
 			Engine.PostNetworkCommand({
@@ -773,7 +774,7 @@ function barterUpdateCommon(resourceCode, idx, prefix, player)
 	barterIcon.Buy.sprite = canBuyAny + "stretched:" + grayscale + "session/icons/resources/" + resourceCode + ".png";
 
 	barterAmount.Sell.caption = "-" + amountToSell;
-	let prices = GetSimState().barterPrices;
+	let prices = GetSimState().players[player].barterPrices;
 	barterAmount.Buy.caption = "+" + Math.round(prices.sell[g_BarterSell] / prices.buy[resourceCode] * amountToSell);
 
 	barterButton.Buy.onPress = function() {
@@ -1101,7 +1102,7 @@ function updatePauseOverlay()
 
 	Engine.GetGUIObjectByName("pausedByText").hidden = !g_IsNetworked;
 	Engine.GetGUIObjectByName("pausedByText").caption = sprintf(translate("Paused by %(players)s"),
-		{ "players": g_PausingClients.map(guid => colorizePlayernameByGUID(guid)).join(translate(", ")) });
+		{ "players": g_PausingClients.map(guid => colorizePlayernameByGUID(guid)).join(translateWithContext("Separator for a list of players", ", ")) });
 
 	Engine.GetGUIObjectByName("pauseOverlay").hidden = !(g_Paused || g_PausingClients.length);
 	Engine.GetGUIObjectByName("pauseOverlay").onPress = g_Paused ? togglePause : function() {};
@@ -1122,7 +1123,7 @@ function openManual()
 
 function toggleDeveloperOverlay()
 {
-	if (!g_GameAttributes.settings.CheatsEnabled)
+	if (!g_GameAttributes.settings.CheatsEnabled && !g_IsReplay)
 		return;
 
 	let devCommands = Engine.GetGUIObjectByName("devCommands");

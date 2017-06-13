@@ -124,7 +124,8 @@ GuiInterface.prototype.GetSimulationState = function()
 			"researchedTechs": cmpTechnologyManager ? cmpTechnologyManager.GetResearchedTechs() : null,
 			"classCounts": cmpTechnologyManager ? cmpTechnologyManager.GetClassCounts() : null,
 			"typeCountsByClass": cmpTechnologyManager ? cmpTechnologyManager.GetTypeCountsByClass() : null,
-			"canBarter": Engine.QueryInterface(SYSTEM_ENTITY, IID_Barter).PlayerHasMarket(playerEnt)
+			"canBarter": Engine.QueryInterface(SYSTEM_ENTITY, IID_Barter).PlayerHasMarket(playerEnt),
+			"barterPrices": Engine.QueryInterface(SYSTEM_ENTITY, IID_Barter).GetPrices(playerEnt)
 		});
 	}
 
@@ -134,7 +135,7 @@ GuiInterface.prototype.GetSimulationState = function()
 
 	let cmpTerrain = Engine.QueryInterface(SYSTEM_ENTITY, IID_Terrain);
 	if (cmpTerrain)
-		ret.mapSize = 4 * cmpTerrain.GetTilesPerSide();
+		ret.mapSize = cmpTerrain.GetMapSize();
 
 	// Add timeElapsed
 	let cmpTimer = Engine.QueryInterface(SYSTEM_ENTITY, IID_Timer);
@@ -152,8 +153,6 @@ GuiInterface.prototype.GetSimulationState = function()
 	let cmpEndGameManager = Engine.QueryInterface(SYSTEM_ENTITY, IID_EndGameManager);
 	ret.gameType = cmpEndGameManager.GetGameType();
 	ret.alliedVictory = cmpEndGameManager.GetAlliedVictory();
-
-	ret.barterPrices = Engine.QueryInterface(SYSTEM_ENTITY, IID_Barter).GetPrices();
 
 	// Add Resource Codes, untranslated names and AI Analysis
 	ret.resources = {
@@ -241,6 +240,7 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 
 		"alertRaiser": null,
 		"builder": null,
+		"canGarrison": null,
 		"identity": null,
 		"fogging": null,
 		"foundation": null,
@@ -374,6 +374,8 @@ GuiInterface.prototype.GetEntityState = function(player, ent)
 			"capacity": cmpGarrisonHolder.GetCapacity(),
 			"garrisonedEntitiesCount": cmpGarrisonHolder.GetGarrisonedEntitiesCount()
 		};
+
+	ret.canGarrison = !!Engine.QueryInterface(ent, IID_Garrisonable);
 
 	let cmpUnitAI = Engine.QueryInterface(ent, IID_UnitAI);
 	if (cmpUnitAI)
@@ -891,7 +893,7 @@ GuiInterface.prototype.SetSelectionHighlight = function(player, cmd)
 		if (!cmpRangeVisualization || player != owner && player != -1)
 			continue;
 
-		cmpRangeVisualization.SetEnabled(cmd.selected, this.enabledVisualRangeOverlayTypes);
+		cmpRangeVisualization.SetEnabled(cmd.selected, this.enabledVisualRangeOverlayTypes, false);
 	}
 };
 
@@ -946,7 +948,7 @@ GuiInterface.prototype.SetRangeOverlays = function(player, cmd)
 	{
 		let cmpRangeVisualization = Engine.QueryInterface(ent, IID_RangeVisualization);
 		if (cmpRangeVisualization)
-			cmpRangeVisualization.SetEnabled(cmd.enabled, this.enabledVisualRangeOverlayTypes);
+			cmpRangeVisualization.SetEnabled(cmd.enabled, this.enabledVisualRangeOverlayTypes, true);
 	}
 };
 
